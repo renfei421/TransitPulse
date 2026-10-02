@@ -1,0 +1,30 @@
+name: transitpulse-replay
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.19.22@sha256:e98f9c3b09beb2fbb9eaf667d602df3f0e00bd3644138b8458dc17ba1a675595
+    environment:
+      discovery.type: single-node
+      xpack.security.enabled: "false"
+      ES_JAVA_OPTS: -Xms1g -Xmx1g
+    ports: ["127.0.0.1:19222:9200"]
+    volumes: ["replay-es:/usr/share/elasticsearch/data"]
+    mem_limit: 3g
+    healthcheck:
+      test: [CMD-SHELL, "curl -fsS http://localhost:9200/_cluster/health >/dev/null"]
+      interval: 5s
+      timeout: 3s
+      retries: 40
+  api:
+    image: transport-app:replay
+    build: {context: ., target: base}
+    command: [python, -m, flask, --app, "backend.api.app:create_app", run, --host, "0.0.0.0", --port, "9090"]
+    environment:
+      ES_HOST: http://elasticsearch:9200
+      ES_ALLOW_ANONYMOUS: "true"
+      ES_INDEX_PREFIX: v2_
+      SOCIAL_ACTIVE_MODEL: jev-1.13.0
+    ports: ["127.0.0.1:9092:9090"]
+    depends_on:
+      elasticsearch: {condition: service_healthy}
+volumes:
+  replay-es:

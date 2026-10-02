@@ -1,0 +1,356 @@
+{
+  "checked_at_utc": "2026-10-01T11:33:53.631029+00:00",
+  "status": "live_protocol_passed_quality_gates_not_ready_for_cloud_cutover",
+  "model": "jev-1.13.0",
+  "cloud_changed": false,
+  "credential_values_recorded": false,
+  "provider_model_access_http_status": 200,
+  "live_inference_calls": 80,
+  "unique_real_posts": 38,
+  "unique_synthetic_posts": 6,
+  "initial_strict_validation_rejections": 1,
+  "offline_recovered_without_rebilling": 1,
+  "unresolved_protocol_rejections": 0,
+  "input_tokens_all_requests": 228687,
+  "estimated_total_cost_usd": 0.009604854,
+  "pricing": {
+    "input_usd_per_million_tokens": 0.042,
+    "output_free": true,
+    "source": "https://docs.typesafe.ai/models",
+    "not_billing_invoice": true
+  },
+  "confidence_threshold": 0.6,
+  "validation_version": "jev-rounded-wire-v2",
+  "latency_scope": "Per-original-request local wall time around HTTPS call plus JSON parsing; includes network/TLS, excludes candidate persistence. One question bundle of 12 questions per request. Percentiles use linear interpolation; not cloud API p95 or load benchmark. Cache replay times not treated as inference timing.",
+  "summaries": {
+    "original_v1": {
+      "records": 30,
+      "model": "jev-1.13.0",
+      "rubric_version": "transport-jev-v1",
+      "contract_sha256": "00b2f9a3993e55cbcf749b94a55543d1775f9ad63b088118b389a7a29d2cf922",
+      "labels": {
+        "unclassified": 7,
+        "mixed": 1,
+        "positive": 4,
+        "neutral": 12,
+        "negative": 6
+      },
+      "overall_scored": 22,
+      "posts_with_accepted_target": 4,
+      "accepted_targets": {
+        "public_transport": 1,
+        "ev": 1,
+        "fuel_price": 2
+      },
+      "relevance": {
+        "insufficient": 4,
+        "unrelated": 2,
+        "related": 19,
+        "adjacent": 5
+      },
+      "relevance_confident_related": 13,
+      "content_types": {
+        "other": 2,
+        "opinion": 7,
+        "news_or_link": 20,
+        "promotion": 1
+      },
+      "latency_seconds": {
+        "p50": 0.281,
+        "p95": 0.40085,
+        "min": 0.25,
+        "max": 0.5
+      },
+      "input_tokens": 75243,
+      "estimated_input_cost_usd": 0.003160206,
+      "report_file": "data\\jev_live_20261001\\pilot\\report.json"
+    },
+    "original_v2": {
+      "records": 30,
+      "model": "jev-1.13.0",
+      "rubric_version": "transport-jev-v2",
+      "contract_sha256": "1fd68c77ba3a4febbbb5fc7fae903f643ac69d7cab2e51312edae1027b19d416",
+      "labels": {
+        "unclassified": 7,
+        "mixed": 1,
+        "positive": 4,
+        "neutral": 12,
+        "negative": 6
+      },
+      "overall_scored": 22,
+      "posts_with_accepted_target": 0,
+      "accepted_targets": {},
+      "relevance": {
+        "insufficient": 3,
+        "unrelated": 2,
+        "adjacent": 7,
+        "related": 18
+      },
+      "relevance_confident_related": 14,
+      "content_types": {
+        "other": 2,
+        "opinion": 7,
+        "news_or_link": 20,
+        "promotion": 1
+      },
+      "latency_seconds": {
+        "p50": 0.297,
+        "p95": 0.328,
+        "min": 0.265,
+        "max": 0.344
+      },
+      "input_tokens": 95523,
+      "estimated_input_cost_usd": 0.004011966,
+      "report_file": "data\\jev_live_20261001\\pilot-v2\\report.json"
+    },
+    "synthetic_v1": {
+      "records": 6,
+      "model": "jev-1.13.0",
+      "rubric_version": "transport-jev-v1",
+      "contract_sha256": "00b2f9a3993e55cbcf749b94a55543d1775f9ad63b088118b389a7a29d2cf922",
+      "labels": {
+        "mixed": 2,
+        "neutral": 2,
+        "negative": 2
+      },
+      "overall_scored": 4,
+      "posts_with_accepted_target": 3,
+      "accepted_targets": {
+        "public_transport": 3,
+        "fuel_price": 1,
+        "oil_vehicle": 1
+      },
+      "relevance": {
+        "related": 6
+      },
+      "relevance_confident_related": 6,
+      "content_types": {
+        "personal_experience": 2,
+        "news_or_link": 2,
+        "opinion": 2
+      },
+      "latency_seconds": {
+        "p50": 0.289,
+        "p95": 0.309,
+        "min": 0.266,
+        "max": 0.313
+      },
+      "input_tokens": 14399,
+      "estimated_input_cost_usd": 0.000604758,
+      "report_file": "data\\jev_live_20261001\\synthetic\\run\\report.json"
+    },
+    "synthetic_v2": {
+      "records": 6,
+      "model": "jev-1.13.0",
+      "rubric_version": "transport-jev-v2",
+      "contract_sha256": "1fd68c77ba3a4febbbb5fc7fae903f643ac69d7cab2e51312edae1027b19d416",
+      "labels": {
+        "mixed": 2,
+        "neutral": 2,
+        "negative": 2
+      },
+      "overall_scored": 4,
+      "posts_with_accepted_target": 3,
+      "accepted_targets": {
+        "public_transport": 3,
+        "fuel_price": 1
+      },
+      "relevance": {
+        "related": 6
+      },
+      "relevance_confident_related": 6,
+      "content_types": {
+        "personal_experience": 1,
+        "news_or_link": 2,
+        "opinion": 3
+      },
+      "latency_seconds": {
+        "p50": 0.297,
+        "p95": 0.324,
+        "min": 0.265,
+        "max": 0.328
+      },
+      "input_tokens": 18455,
+      "estimated_input_cost_usd": 0.00077511,
+      "report_file": "data\\jev_live_20261001\\synthetic\\v2\\report.json"
+    },
+    "personal_v2": {
+      "records": 8,
+      "model": "jev-1.13.0",
+      "rubric_version": "transport-jev-v2",
+      "contract_sha256": "1fd68c77ba3a4febbbb5fc7fae903f643ac69d7cab2e51312edae1027b19d416",
+      "labels": {
+        "positive": 3,
+        "negative": 3,
+        "neutral": 1,
+        "mixed": 1
+      },
+      "overall_scored": 7,
+      "posts_with_accepted_target": 2,
+      "accepted_targets": {
+        "ev": 1,
+        "public_transport": 1
+      },
+      "relevance": {
+        "related": 7,
+        "adjacent": 1
+      },
+      "relevance_confident_related": 7,
+      "content_types": {
+        "personal_experience": 8
+      },
+      "latency_seconds": {
+        "p50": 0.289,
+        "p95": 0.3325,
+        "min": 0.25,
+        "max": 0.343
+      },
+      "input_tokens": 25067,
+      "estimated_input_cost_usd": 0.001052814,
+      "report_file": "data\\jev_live_20261001\\personal\\run\\report.json"
+    }
+  },
+  "synthetic_checks": [
+    {
+      "version": "v1",
+      "doc_id": "jev-synthetic-contrast",
+      "passed": false,
+      "failures": [
+        {
+          "target": "oil_vehicle",
+          "expected": "abstain",
+          "actual": "negative",
+          "score": -0.8500000000000001
+        }
+      ]
+    },
+    {
+      "version": "v1",
+      "doc_id": "jev-synthetic-factual",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "version": "v1",
+      "doc_id": "jev-synthetic-quotation",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "version": "v1",
+      "doc_id": "jev-synthetic-mixed",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "version": "v1",
+      "doc_id": "jev-synthetic-sarcasm",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "version": "v1",
+      "doc_id": "jev-synthetic-injection",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "version": "v2",
+      "doc_id": "jev-synthetic-contrast",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "version": "v2",
+      "doc_id": "jev-synthetic-factual",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "version": "v2",
+      "doc_id": "jev-synthetic-quotation",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "version": "v2",
+      "doc_id": "jev-synthetic-mixed",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "version": "v2",
+      "doc_id": "jev-synthetic-sarcasm",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "version": "v2",
+      "doc_id": "jev-synthetic-injection",
+      "passed": true,
+      "failures": []
+    }
+  ],
+  "review": {
+    "reviewer": "assistant, not human gold",
+    "real_posts_initially_reviewed": 30,
+    "additional_personal_diagnostics_reviewed": 8,
+    "attribution_concerns_removed": [
+      "S008",
+      "S013",
+      "S024",
+      "S026"
+    ],
+    "remaining_coverage_concerns": [
+      "S021",
+      "S029",
+      "P02",
+      "P08"
+    ],
+    "near_duplicate_group": [
+      "S024",
+      "S026"
+    ],
+    "no_accuracy_or_f1_claim": true
+  },
+  "cache_replay": {
+    "records": 30,
+    "http_calls": 0,
+    "estimated_new_cost_usd": 0,
+    "semantic_fields_identical": true,
+    "network_post_mocked_to_fail_if_used": true
+  },
+  "tests": {
+    "passed": 19,
+    "skipped": 0,
+    "scope": "Jev adapter and pilot regressions plus real local Elasticsearch candidate persistence; model protocol responses mocked in automated tests"
+  },
+  "limits": [
+    "Both rubric versions tested on the same small development sample; no independent accuracy estimate.",
+    "First 30 posts are deliberately stratified harvesting-review cases, not representative random posts or 30 proven personal opinions.",
+    "Eight personal-experience examples selected by assistant from separate eligible captured posts; no source/thread leakage guarantee beyond disjoint doc_ids.",
+    "Synthetic cases and expected outcomes authored by assistant, useful diagnostics only.",
+    "Threshold 0.6 remains uncalibrated; missing/null is not neutral.",
+    "No full-corpus backfill, no new cloud index, no Secret upload, no cloud API cutover."
+  ],
+  "artifact_sha256": {
+    "data/jev_live_20261001/preflight/report.json": "26ac355e3908c5df2d63c57f7b0acfb52f3ad734c4de3c911bb14190bd3eec6b",
+    "data/jev_live_20261001/pilot/report.json": "6783ad3cf26a313d09d6f69d9ae31d3d7d1ab438f7ddbebfe8194d55461e3491",
+    "data/jev_live_20261001/synthetic/run/report.json": "30f63ef4b50d5477fa16e3338aa60e6fbd75fae425cb26c4f3494024ae0a7aba",
+    "data/jev_live_20261001/synthetic/v2/report.json": "072772e1400e5c7b07f9fd090c08968abd20a213e53a29b0275ac36a1cd09dc2",
+    "data/jev_live_20261001/pilot-v2/report.json": "744fa36c44f3e481b1dc5e8fe4d43126a19498f106aa5e07707e809f35a23578",
+    "data/jev_live_20261001/personal/run/report.json": "7860191497a3a3de41488a82a2fda76c0a0dc46d20b48049593cc02b7734ec01",
+    "data/jev_live_20261001/replay-v2/report.json": "1c2433c0ffcdd0a7811a4394e8feb73e5527826241aa369475e9caed34c84c2e",
+    "data/jev_live_20261001/pilot/processed-candidates.json": "10d0398d178321b6f79cec2f5b12b792843e0a2478c6e4b7fc937c9ae4e5869b",
+    "data/jev_live_20261001/pilot-v2/processed-candidates.json": "8e819d23c7d98ff082768a09fc7750724bfdcabfbe8747dc7903cffb8b87c1e2",
+    "data/jev_live_20261001/synthetic/run/processed-candidates.json": "63342cab8964c51034b96490daccf6280a3eafcef7dc14cd48d0992994a3ae5b",
+    "data/jev_live_20261001/synthetic/v2/processed-candidates.json": "acf7e0270fb250c11152611d44b5dcf61d506418f5f2c2039c60a16a36992059",
+    "data/jev_live_20261001/personal/run/processed-candidates.json": "8c36806dca8e37bc4169619f31b65efdffe3f7256edebb37455bdb801a4ede0c",
+    "data/jev_live_20261001/assistant-review.json": "de3f421c3c842e0cf1b51fdf87f5cb402c7130dad05a9e823c5d692143e9a1a3",
+    "data/jev_live_20261001/synthetic/input.json": "9641bcb99ec540fcd8556ab92473bd93c13a2a9d6a7a2147c48d5b8ef811d9af",
+    "data/jev_live_20261001/synthetic/expectations.json": "fc5cfccb1dc762400ff7f707f60ee10145350d95e03a116c8e512dbc86d6006c",
+    "data/jev_live_20261001/personal/input.json": "3c32f99a91fba89554602cdc417cb4cbd69b5caa0721f127811b3378083e7ff6",
+    "data/jev_live_20261001/personal/selection.json": "71cd2ce5c53613d0218250612c08023b3050f54310cc2b76a6490420798005f6",
+    "artifacts/jev-live-tests-20261001.xml": "e42c155e97d53653c61e78a8383b2c70702e412a1c0ae42bfa1f9dcb53961319"
+  }
+}

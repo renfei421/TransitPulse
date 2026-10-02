@@ -1,0 +1,318 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: transport-health
+  namespace: default
+  labels: &id001
+    app.kubernetes.io/part-of: transport-analytics
+spec:
+  schedule: 15 * * * *
+  timeZone: Australia/Sydney
+  concurrencyPolicy: Forbid
+  startingDeadlineSeconds: 1800
+  successfulJobsHistoryLimit: 2
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      backoffLimit: 2
+      activeDeadlineSeconds: 3600
+      ttlSecondsAfterFinished: 86400
+      template:
+        metadata:
+          labels: *id001
+        spec:
+          restartPolicy: Never
+          automountServiceAccountToken: false
+          securityContext:
+            runAsNonRoot: true
+            runAsUser: 10001
+            fsGroup: 10001
+          containers:
+          - name: transport
+            image: transport-app:review
+            command:
+            - python
+            - -m
+            - backend.health_check.health_check
+            args: []
+            envFrom:
+            - configMapRef:
+                name: transport-config
+            - secretRef:
+                name: transport-secrets
+            resources:
+              requests:
+                cpu: 100m
+                memory: 256Mi
+              limits:
+                cpu: '1'
+                memory: 1Gi
+            securityContext:
+              allowPrivilegeEscalation: false
+              capabilities:
+                drop:
+                - ALL
+            volumeMounts:
+            - name: es-ca
+              mountPath: /etc/es-ca
+              readOnly: true
+          volumes:
+          - name: es-ca
+            secret:
+              secretName: transport-es-ca
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: transport-correlation
+  namespace: default
+  labels: &id001
+    app.kubernetes.io/part-of: transport-analytics
+spec:
+  schedule: 45 3 * * *
+  timeZone: Australia/Sydney
+  concurrencyPolicy: Forbid
+  startingDeadlineSeconds: 1800
+  successfulJobsHistoryLimit: 2
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      backoffLimit: 2
+      activeDeadlineSeconds: 3600
+      ttlSecondsAfterFinished: 86400
+      template:
+        metadata:
+          labels: *id001
+        spec:
+          restartPolicy: Never
+          automountServiceAccountToken: false
+          securityContext:
+            runAsNonRoot: true
+            runAsUser: 10001
+            fsGroup: 10001
+          containers:
+          - name: transport
+            image: transport-app:review
+            command:
+            - python
+            - -m
+            - backend.oil_sentiment_corr.compute
+            args: []
+            envFrom:
+            - configMapRef:
+                name: transport-config
+            - secretRef:
+                name: transport-secrets
+            resources:
+              requests:
+                cpu: 100m
+                memory: 256Mi
+              limits:
+                cpu: '1'
+                memory: 1Gi
+            securityContext:
+              allowPrivilegeEscalation: false
+              capabilities:
+                drop:
+                - ALL
+            volumeMounts:
+            - name: es-ca
+              mountPath: /etc/es-ca
+              readOnly: true
+          volumes:
+          - name: es-ca
+            secret:
+              secretName: transport-es-ca
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: transport-brent
+  namespace: default
+  labels: &id001
+    app.kubernetes.io/part-of: transport-analytics
+spec:
+  schedule: 30 2 * * 2-6
+  timeZone: Australia/Sydney
+  concurrencyPolicy: Forbid
+  startingDeadlineSeconds: 1800
+  successfulJobsHistoryLimit: 2
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      backoffLimit: 2
+      activeDeadlineSeconds: 3600
+      ttlSecondsAfterFinished: 86400
+      template:
+        metadata:
+          labels: *id001
+        spec:
+          restartPolicy: Never
+          automountServiceAccountToken: false
+          securityContext:
+            runAsNonRoot: true
+            runAsUser: 10001
+            fsGroup: 10001
+          containers:
+          - name: transport
+            image: transport-app:review
+            command:
+            - python
+            - -m
+            - backend.brent_ingest.fetch_brent
+            args: []
+            envFrom:
+            - configMapRef:
+                name: transport-config
+            - secretRef:
+                name: transport-secrets
+            resources:
+              requests:
+                cpu: 100m
+                memory: 256Mi
+              limits:
+                cpu: '1'
+                memory: 1Gi
+            securityContext:
+              allowPrivilegeEscalation: false
+              capabilities:
+                drop:
+                - ALL
+            volumeMounts:
+            - name: es-ca
+              mountPath: /etc/es-ca
+              readOnly: true
+          volumes:
+          - name: es-ca
+            secret:
+              secretName: transport-es-ca
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: transport-news-volume
+  namespace: default
+  labels: &id001
+    app.kubernetes.io/part-of: transport-analytics
+spec:
+  schedule: 0 2 * * *
+  timeZone: Australia/Sydney
+  concurrencyPolicy: Forbid
+  startingDeadlineSeconds: 1800
+  successfulJobsHistoryLimit: 2
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      backoffLimit: 2
+      activeDeadlineSeconds: 3600
+      ttlSecondsAfterFinished: 86400
+      template:
+        metadata:
+          labels: *id001
+        spec:
+          restartPolicy: Never
+          automountServiceAccountToken: false
+          securityContext:
+            runAsNonRoot: true
+            runAsUser: 10001
+            fsGroup: 10001
+          containers:
+          - name: transport
+            image: transport-app:review
+            command:
+            - python
+            - -m
+            - backend.news_harvester.volume
+            args: []
+            envFrom:
+            - configMapRef:
+                name: transport-config
+            - secretRef:
+                name: transport-secrets
+            resources:
+              requests:
+                cpu: 100m
+                memory: 256Mi
+              limits:
+                cpu: '1'
+                memory: 1Gi
+            securityContext:
+              allowPrivilegeEscalation: false
+              capabilities:
+                drop:
+                - ALL
+            volumeMounts:
+            - name: es-ca
+              mountPath: /etc/es-ca
+              readOnly: true
+          volumes:
+          - name: es-ca
+            secret:
+              secretName: transport-es-ca
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: transport-news-articles
+  namespace: default
+  labels: &id001
+    app.kubernetes.io/part-of: transport-analytics
+spec:
+  schedule: 15 2 * * *
+  timeZone: Australia/Sydney
+  concurrencyPolicy: Forbid
+  startingDeadlineSeconds: 1800
+  successfulJobsHistoryLimit: 2
+  failedJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      backoffLimit: 2
+      activeDeadlineSeconds: 3600
+      ttlSecondsAfterFinished: 86400
+      template:
+        metadata:
+          labels: *id001
+        spec:
+          restartPolicy: Never
+          automountServiceAccountToken: false
+          securityContext:
+            runAsNonRoot: true
+            runAsUser: 10001
+            fsGroup: 10001
+          containers:
+          - name: transport
+            image: transport-app:review
+            command:
+            - python
+            - -m
+            - backend.news_harvester.articles
+            args:
+            - --target-articles
+            - '300'
+            - --time-budget-minutes
+            - '30'
+            envFrom:
+            - configMapRef:
+                name: transport-config
+            - secretRef:
+                name: transport-secrets
+            resources:
+              requests:
+                cpu: 100m
+                memory: 256Mi
+              limits:
+                cpu: '1'
+                memory: 1Gi
+            securityContext:
+              allowPrivilegeEscalation: false
+              capabilities:
+                drop:
+                - ALL
+            volumeMounts:
+            - name: es-ca
+              mountPath: /etc/es-ca
+              readOnly: true
+          volumes:
+          - name: es-ca
+            secret:
+              secretName: transport-es-ca

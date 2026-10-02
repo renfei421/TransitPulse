@@ -1,0 +1,49 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 1,
+      "number_of_replicas": 1
+    }
+  },
+  "mappings": {
+    "properties": {
+      "date": {
+        "type": "date"
+      },
+      "ticker": {
+        "type": "keyword"
+      },
+      "price": {
+        "type": "double"
+      },
+      "volume": {
+        "type": "long"
+      },
+      "daily_return_pct": {
+        "type": "double"
+      },
+      "source_dataset": {
+        "type": "keyword"
+      },
+      "dataset_kind": {
+        "type": "keyword"
+      },
+      "source_url": {
+        "type": "keyword"
+      },
+      "fetched_at": {
+        "type": "date"
+      },
+      "id": {
+        "type": "keyword"
+      },
+      "return_definition": {
+        "type": "keyword"
+      }
+    },
+    "_meta": {
+      "schema_version": 2,
+      "source": "database/mappings"
+    }
+  }
+}

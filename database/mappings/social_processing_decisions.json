@@ -1,0 +1,67 @@
+{
+  "mappings": {
+    "properties": {
+      "doc_id": {
+        "type": "keyword"
+      },
+      "source_dataset": {
+        "type": "keyword"
+      },
+      "dataset_kind": {
+        "type": "keyword"
+      },
+      "processing_run_id": {
+        "type": "keyword"
+      },
+      "eligibility_policy": {
+        "type": "keyword"
+      },
+      "language_model": {
+        "type": "keyword"
+      },
+      "provider_language": {
+        "type": "keyword"
+      },
+      "detected_language": {
+        "type": "keyword"
+      },
+      "content_kind": {
+        "type": "keyword"
+      },
+      "text_fingerprint": {
+        "type": "keyword"
+      },
+      "decision": {
+        "type": "keyword"
+      },
+      "reason": {
+        "type": "keyword"
+      },
+      "created_at": {
+        "type": "date"
+      },
+      "decided_at": {
+        "type": "date"
+      },
+      "language_confidence": {
+        "type": "float"
+      },
+      "substantive_words": {
+        "type": "integer"
+      },
+      "experiment_id": {
+        "type": "keyword"
+      },
+      "experiment_phase": {
+        "type": "keyword"
+      },
+      "analysis_timezone": {
+        "type": "keyword"
+      }
+    },
+    "_meta": {
+      "schema_version": 2,
+      "source": "database/mappings"
+    }
+  }
+}

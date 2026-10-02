@@ -1,0 +1,52 @@
+{
+  "verified_at": "2026-10-01T17:53:04.550852+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "resource": "meta",
+      "status": 200
+    },
+    {
+      "resource": "health",
+      "status": 200
+    },
+    {
+      "resource": "openapi.json",
+      "status": 200
+    },
+    {
+      "resource": "social/posts",
+      "status": 200
+    },
+    {
+      "resource": "social/posts",
+      "status": 200
+    },
+    {
+      "resource": "quality",
+      "status": 200
+    },
+    {
+      "resource": "social/posts",
+      "status": 200
+    },
+    {
+      "resource": "social/target-sentiment",
+      "status": 400
+    },
+    {
+      "resource": "social/posts",
+      "status": 400
+    },
+    {
+      "resource": "unknown",
+      "status": 404
+    },
+    {
+      "resource": "experiments/status",
+      "status": 200
+    }
+  ],
+  "distinct_paginated_posts": 16,
+  "old_baseline_examples": 2
+}

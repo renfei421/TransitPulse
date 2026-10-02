@@ -1,0 +1,275 @@
+{
+  "checked_at_utc": "2026-10-01T09:54:44.691828+00:00",
+  "context": "do-sgp1-k8s-1-34-10-do-5-sgp1-1790830229700",
+  "job": "transport-model-b7c1ca29ae",
+  "job_start": "2026-10-01T09:36:54Z",
+  "job_complete": "2026-10-01T09:45:17Z",
+  "pipeline_summary": {
+    "run_id": "social_8a15ed58a32642d6b924834c1c973e20",
+    "component": "social_processing",
+    "status": "success",
+    "start_date": "2026-10-01T00:00:00Z",
+    "end_date": "2026-10-02T00:00:00Z",
+    "time_field": "fetched_at",
+    "processed_rows": 1047,
+    "writes": {
+      "attempted": 1047,
+      "created": 1047,
+      "updated": 0,
+      "noop": 0,
+      "failed": 0,
+      "succeeded": 1047
+    },
+    "dry_run": false,
+    "duration_seconds": 382.047,
+    "completed_at": "2026-10-01T09:45:13.589298+00:00",
+    "model_name": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+    "model_revision": "3216a57f2a0d9c45a2e6c20157c20c49fb4bf9c7",
+    "input_records": 1403,
+    "seen_rows": 1403,
+    "filtered": 356,
+    "dataset_kind": "live",
+    "details": {
+      "eligibility_policy": "global-en-v1",
+      "source_datasets": [
+        "mastodon_query_reuse_20261001",
+        "mastodon_global_en_20261001"
+      ],
+      "max_documents": 2000,
+      "local_only": true,
+      "sentiment_scope": "whole_post_tone_not_target_stance",
+      "truncation_side": "right",
+      "release_sha256": "a495a1fd8ba6624730e31b1fb88f6c248ce5013a207f748a9ea29df5c1b70d23",
+      "filter_reasons": {
+        "provider_language_unknown": 103,
+        "eligible": 1047,
+        "language_disagreement": 71,
+        "language_uncertain": 23,
+        "provider_non_english": 97,
+        "insufficient_prose": 18,
+        "duplicate_model_text": 44
+      },
+      "content_kinds": {
+        "commentary_candidate": 165,
+        "link_post": 720,
+        "other_text": 158,
+        "promotion_candidate": 4
+      }
+    }
+  },
+  "counts": {
+    "social_discussion_posts_raw": 1403,
+    "social_posts_processed": 1047,
+    "social_processing_decisions": 1403,
+    "social_posts_annotations": 26
+  },
+  "readback_checks": {
+    "processed_original_text_source_model_probabilities": 1047,
+    "annotation_input_hash_source_schema_evidence": 26
+  },
+  "processed_labels": {
+    "positive": 149,
+    "neutral": 681,
+    "negative": 217
+  },
+  "processed_input_truncated": 6,
+  "processed_content_kinds": {
+    "link_post": 720,
+    "commentary_candidate": 165,
+    "other_text": 158,
+    "promotion_candidate": 4
+  },
+  "filter_reasons": {
+    "provider_language_unknown": 103,
+    "eligible": 1047,
+    "language_disagreement": 71,
+    "language_uncertain": 23,
+    "provider_non_english": 97,
+    "insufficient_prose": 18,
+    "duplicate_model_text": 44
+  },
+  "api_quality": {
+    "raw_documents": 1403,
+    "processed_documents": 1047,
+    "selected_processed_documents": 1047,
+    "processing_coverage": 0.7462580185317177,
+    "coverage_scope": "Source/date/platform cohort before topic/content_kind filtering; optional model filter applies to processed records only",
+    "unique_authors_approx": 363,
+    "unique_threads_approx": 1047,
+    "unassigned_topics": 0,
+    "missing_parent_context": 27,
+    "models": [
+      {
+        "name": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+        "count": 1047
+      }
+    ],
+    "latest_fetched_at": "2026-10-01T09:11:50.930Z",
+    "latest_processed_at": "2026-10-01T09:45:13.546Z",
+    "interpretation": "Observed sample; topic groups overlap; counts do not estimate population opinion."
+  },
+  "api_checks": [
+    {
+      "resource": "quality",
+      "filters": {},
+      "status": 200
+    },
+    {
+      "resource": "social/posts",
+      "filters": {
+        "limit": 100
+      },
+      "status": 200
+    },
+    {
+      "resource": "social/posts",
+      "filters": {
+        "limit": 100,
+        "cursor": "[pagination cursor omitted]"
+      },
+      "status": 200
+    },
+    {
+      "resource": "social/posts",
+      "filters": {
+        "limit": 100,
+        "cursor": "[pagination cursor omitted]"
+      },
+      "status": 200
+    },
+    {
+      "resource": "social/posts",
+      "filters": {
+        "limit": 100,
+        "cursor": "[pagination cursor omitted]"
+      },
+      "status": 200
+    },
+    {
+      "resource": "social/posts",
+      "filters": {
+        "limit": 100,
+        "cursor": "[pagination cursor omitted]"
+      },
+      "status": 200
+    },
+    {
+      "resource": "social/posts",
+      "filters": {
+        "limit": 100,
+        "cursor": "[pagination cursor omitted]"
+      },
+      "status": 200
+    },
+    {
+      "resource": "social/posts",
+      "filters": {
+        "limit": 100,
+        "cursor": "[pagination cursor omitted]"
+      },
+      "status": 200
+    },
+    {
+      "resource": "social/posts",
+      "filters": {
+        "limit": 100,
+        "cursor": "[pagination cursor omitted]"
+      },
+      "status": 200
+    },
+    {
+      "resource": "social/posts",
+      "filters": {
+        "limit": 100,
+        "cursor": "[pagination cursor omitted]"
+      },
+      "status": 200
+    },
+    {
+      "resource": "social/posts",
+      "filters": {
+        "limit": 100,
+        "cursor": "[pagination cursor omitted]"
+      },
+      "status": 200
+    },
+    {
+      "resource": "social/posts",
+      "filters": {
+        "limit": 100,
+        "cursor": "[pagination cursor omitted]"
+      },
+      "status": 200
+    },
+    {
+      "resource": "social/annotations",
+      "filters": {
+        "limit": 100
+      },
+      "status": 200
+    },
+    {
+      "resource": "quality",
+      "filters": {
+        "content_kind": "commentary_candidate"
+      },
+      "status": 200
+    },
+    {
+      "resource": "social/sentiment",
+      "filters": {
+        "topic": "oil_vehicle"
+      },
+      "status": 200
+    },
+    {
+      "resource": "social/annotations",
+      "filters": {
+        "relevance": "unrelated"
+      },
+      "status": 200
+    },
+    {
+      "resource": "social/posts",
+      "filters": {
+        "timezone": "invalid"
+      },
+      "status": 400
+    },
+    {
+      "resource": "social/annotations",
+      "filters": {
+        "content_type": "invalid"
+      },
+      "status": 400
+    }
+  ],
+  "api_package": {
+    "archive": "artifacts/transport-api-linux.zip (package during full pagination verification)",
+    "sha256": "a6d1edc26a1f8daed3f63c4e5bce95e8f8134e12f71b1582bf9396bb276c857d",
+    "bytes": 3506910,
+    "runtime_image": "ghcr.io/fission/python-env@sha256:446f2cd7c2a8c835deb925586d8f761aed288e0eba4437230996573612bab266",
+    "dependency_lock_sha256": "0d2ebe581bcc4b3e593fff1f1c405d48c43ba0a1b2e4e4235358b3af221823eb"
+  },
+  "limits": [
+    "Batch acceptance on the existing cluster, not continuous collection or autoscaling proof",
+    "LLM schema/evidence checks do not establish semantic correctness",
+    "Observed sample, not a population estimate"
+  ],
+  "raw_first_observation_preserved": 1403,
+  "final_api_release": {
+    "checked_at_utc": "2026-10-01T09:56:34.732500+00:00",
+    "checks": [
+      "deployed_OpenAPI_operation_IDs_unique",
+      "quality_processed_1047",
+      "structured_annotation_count_26"
+    ],
+    "package": {
+      "archive": "artifacts/transport-api-linux.zip",
+      "sha256": "80152386bb45044b5905180c76ea9dc09554680310af75a363186e0def294ed6",
+      "bytes": 3506914,
+      "runtime_image": "ghcr.io/fission/python-env@sha256:446f2cd7c2a8c835deb925586d8f761aed288e0eba4437230996573612bab266",
+      "dependency_lock_sha256": "0d2ebe581bcc4b3e593fff1f1c405d48c43ba0a1b2e4e4235358b3af221823eb"
+    }
+  }
+}

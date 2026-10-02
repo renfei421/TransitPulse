@@ -1,0 +1,68 @@
+{
+  "verified_at": "2026-10-01T17:16:01.713923+00:00",
+  "default_social_model": "jev-1.13.0",
+  "deployment_method": "Fission spec validate/apply; source-controlled cloud renderer persists model and configuration digest",
+  "checks": [
+    {
+      "name": "discovery_default",
+      "status": 200,
+      "model": "jev-1.13.0"
+    },
+    {
+      "name": "default_quality_exact_cohort",
+      "status": 200,
+      "processed_documents": 90576,
+      "models": [
+        {
+          "name": "jev-1.13.0",
+          "count": 90576
+        }
+      ]
+    },
+    {
+      "name": "default_posts_model",
+      "status": 200,
+      "returned": 2
+    },
+    {
+      "name": "default_target_query",
+      "status": 200,
+      "daily_rows": 91
+    },
+    {
+      "name": "explicit_roberta_baseline",
+      "status": 200,
+      "returned": 2,
+      "model": "cardiffnlp/twitter-roberta-base-sentiment-latest"
+    },
+    {
+      "name": "baseline_cannot_claim_target_attitude",
+      "status": 400
+    },
+    {
+      "name": "experiment_complete",
+      "status": 200
+    }
+  ],
+  "local_tests": {
+    "passed": 201,
+    "skipped": 1,
+    "skip_reason": "Legacy pinned RoBERTa weights test was not requested for this Jev/API change"
+  },
+  "offline_declarative_resources_validated": 32,
+  "exact_private_credential_scan_files": 272,
+  "exact_private_credential_matches": 0,
+  "package": {
+    "archive": "C:\\Users\\RENFEI\\Desktop\\cloud cluster\\COMP90024_group_repo\\artifacts\\transport-api-linux.zip",
+    "sha256": "16458b50ee7e4a57dd5786289422d7aa9a9497a3f42793951f24b0f46833f0a7",
+    "bytes": 3527924,
+    "runtime_image": "ghcr.io/fission/python-env@sha256:446f2cd7c2a8c835deb925586d8f761aed288e0eba4437230996573612bab266",
+    "dependency_lock_sha256": "0d2ebe581bcc4b3e593fff1f1c405d48c43ba0a1b2e4e4235358b3af221823eb"
+  },
+  "limitations": [
+    "Research classifier with documented AI-audit semantic issues; no human-gold accuracy claim",
+    "Private tunnel access, not publicly deployed website",
+    "Cloud infrastructure remains running and is billed separately"
+  ],
+  "standard_cloud_api_checks_passed": 15
+}

@@ -1,0 +1,142 @@
+{
+  "checked_at_utc": "2026-10-01T05:51:52.149150+00:00",
+  "provider": "DigitalOcean Kubernetes",
+  "region": "SGP1",
+  "access": "Explicit user-provided kubeconfig; TLS verification enabled; no credentials in this artifact",
+  "cloud_mutations_this_step": false,
+  "nodes": [
+    {
+      "name": "pool-v394x3mp2-3xp5y2",
+      "ready": true,
+      "cpu": "4",
+      "memory": "8138012Ki",
+      "allocatable_cpu": "3890m",
+      "allocatable_memory": "6568220Ki",
+      "kubernetes_version": "v1.34.10",
+      "architecture": "amd64",
+      "instance_type": "s-4vcpu-8gb"
+    },
+    {
+      "name": "pool-v394x3mp2-3xp5yl",
+      "ready": true,
+      "cpu": "4",
+      "memory": "8138020Ki",
+      "allocatable_cpu": "3890m",
+      "allocatable_memory": "6568228Ki",
+      "kubernetes_version": "v1.34.10",
+      "architecture": "amd64",
+      "instance_type": "s-4vcpu-8gb"
+    }
+  ],
+  "storage_classes": [
+    {
+      "name": "do-block-storage",
+      "provisioner": "dobs.csi.digitalocean.com",
+      "reclaim_policy": "Delete",
+      "default": true
+    },
+    {
+      "name": "do-block-storage-retain",
+      "provisioner": "dobs.csi.digitalocean.com",
+      "reclaim_policy": "Retain",
+      "default": false
+    },
+    {
+      "name": "do-block-storage-xfs",
+      "provisioner": "dobs.csi.digitalocean.com",
+      "reclaim_policy": "Delete",
+      "default": false
+    },
+    {
+      "name": "do-block-storage-xfs-retain",
+      "provisioner": "dobs.csi.digitalocean.com",
+      "reclaim_policy": "Retain",
+      "default": false
+    }
+  ],
+  "persistent_volumes": 0,
+  "persistent_volume_claims": 0,
+  "system_pods": [
+    {
+      "name": "cilium-6thsg",
+      "phase": "Running",
+      "restarts": 0
+    },
+    {
+      "name": "cilium-n6gpq",
+      "phase": "Running",
+      "restarts": 0
+    },
+    {
+      "name": "coredns-7c475d69-gtwwx",
+      "phase": "Running",
+      "restarts": 0
+    },
+    {
+      "name": "coredns-7c475d69-xbwlf",
+      "phase": "Running",
+      "restarts": 0
+    },
+    {
+      "name": "csi-do-node-qcdv5",
+      "phase": "Running",
+      "restarts": 0
+    },
+    {
+      "name": "csi-do-node-xdv6w",
+      "phase": "Running",
+      "restarts": 0
+    },
+    {
+      "name": "do-node-agent-mclqq",
+      "phase": "Running",
+      "restarts": 0
+    },
+    {
+      "name": "do-node-agent-qqm4t",
+      "phase": "Running",
+      "restarts": 0
+    },
+    {
+      "name": "doks-telemetry-config-reloader-tvjxl",
+      "phase": "Running",
+      "restarts": 0
+    },
+    {
+      "name": "doks-telemetry-config-reloader-zdnbl",
+      "phase": "Running",
+      "restarts": 0
+    },
+    {
+      "name": "hubble-relay-7c6fd6fd8d-x89kg",
+      "phase": "Running",
+      "restarts": 0
+    },
+    {
+      "name": "hubble-ui-b95c9f464-25k8p",
+      "phase": "Running",
+      "restarts": 0
+    },
+    {
+      "name": "konnectivity-agent-598475884f-2pv77",
+      "phase": "Running",
+      "restarts": 0
+    },
+    {
+      "name": "konnectivity-agent-598475884f-dpwtj",
+      "phase": "Running",
+      "restarts": 0
+    }
+  ],
+  "deployment_create_allowed": true,
+  "metrics_api_registered": false,
+  "ha_control_plane": {
+    "enabled": false,
+    "source": "User confirmed Add high availability was unchecked during cluster creation; not independently verified through the cloud billing API"
+  },
+  "limits": [
+    "Storage classes were enumerated; volume provisioning/read/write not tested",
+    "Business workloads not deployed in this step",
+    "No cloud scale-out or failover test yet"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "verified_at": "2026-10-01T17:03:22.624363+00:00",
+  "scope": "Isolated local read tunnel; cloud jobs and model unchanged",
+  "checks": [
+    {
+      "name": "initial_read",
+      "status": 200
+    },
+    {
+      "name": "terminated_local_tunnel_detected",
+      "passed": true
+    },
+    {
+      "name": "read_after_automatic_reconnect",
+      "status": 200
+    }
+  ],
+  "local_tunnels_created": 2,
+  "unit_tests_passed": 5,
+  "backoff_test": "Injected monotonic clock; production backoff remains 30 seconds"
+}

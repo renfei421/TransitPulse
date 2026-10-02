@@ -1,0 +1,1262 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Transport discourse analytics",
+    "version": "1.0.0",
+    "description": "Observational sample analytics. Sentiment balance=(positive-negative)/classified. Model confidence is not sentiment direction. Topic groups overlap. No causal claims."
+  },
+  "paths": {
+    "/api/v1/social/volume": {
+      "get": {
+        "operationId": "social_volume",
+        "summary": "Social volume",
+        "parameters": [
+          {
+            "name": "from",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Inclusive calendar date in the selected timezone (default Australia/Sydney)."
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Inclusive calendar date in the selected timezone (default Australia/Sydney)."
+          },
+          {
+            "name": "dataset_kind",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "observed",
+              "enum": [
+                "observed",
+                "live",
+                "imported",
+                "synthetic",
+                "all"
+              ]
+            },
+            "description": "Observed excludes synthetic and fixture records. All is an explicit diagnostic opt-in."
+          },
+          {
+            "name": "model",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "source_dataset",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "platform",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ev",
+                "public_transport",
+                "fuel_price",
+                "oil_vehicle"
+              ]
+            }
+          },
+          {
+            "name": "timezone",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "Australia/Sydney",
+                "UTC"
+              ],
+              "default": "Australia/Sydney"
+            }
+          },
+          {
+            "name": "content_kind",
+            "in": "query",
+            "description": "Heuristic candidate type, not verified authorship or personal experience.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "commentary_candidate",
+                "link_post",
+                "other_text",
+                "promotion_candidate"
+              ]
+            }
+          },
+          {
+            "name": "experiment_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON envelope: data, meta, request_id"
+          },
+          "400": {
+            "description": "Invalid filters or dates"
+          },
+          "404": {
+            "description": "No such resource or precomputed result"
+          },
+          "503": {
+            "description": "Dependency unavailable"
+          }
+        }
+      }
+    },
+    "/api/v1/social/sentiment": {
+      "get": {
+        "operationId": "social_sentiment",
+        "summary": "Social sentiment",
+        "parameters": [
+          {
+            "name": "from",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Inclusive calendar date in the selected timezone (default Australia/Sydney)."
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Inclusive calendar date in the selected timezone (default Australia/Sydney)."
+          },
+          {
+            "name": "dataset_kind",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "observed",
+              "enum": [
+                "observed",
+                "live",
+                "imported",
+                "synthetic",
+                "all"
+              ]
+            },
+            "description": "Observed excludes synthetic and fixture records. All is an explicit diagnostic opt-in."
+          },
+          {
+            "name": "model",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "source_dataset",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "platform",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ev",
+                "public_transport",
+                "fuel_price",
+                "oil_vehicle"
+              ]
+            }
+          },
+          {
+            "name": "timezone",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "Australia/Sydney",
+                "UTC"
+              ],
+              "default": "Australia/Sydney"
+            }
+          },
+          {
+            "name": "content_kind",
+            "in": "query",
+            "description": "Heuristic candidate type, not verified authorship or personal experience.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "commentary_candidate",
+                "link_post",
+                "other_text",
+                "promotion_candidate"
+              ]
+            }
+          },
+          {
+            "name": "experiment_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON envelope: data, meta, request_id"
+          },
+          "400": {
+            "description": "Invalid filters or dates"
+          },
+          "404": {
+            "description": "No such resource or precomputed result"
+          },
+          "503": {
+            "description": "Dependency unavailable"
+          }
+        }
+      }
+    },
+    "/api/v1/social/posts": {
+      "get": {
+        "operationId": "social_posts",
+        "summary": "Social posts",
+        "parameters": [
+          {
+            "name": "from",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Inclusive calendar date in the selected timezone (default Australia/Sydney)."
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Inclusive calendar date in the selected timezone (default Australia/Sydney)."
+          },
+          {
+            "name": "dataset_kind",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "observed",
+              "enum": [
+                "observed",
+                "live",
+                "imported",
+                "synthetic",
+                "all"
+              ]
+            },
+            "description": "Observed excludes synthetic and fixture records. All is an explicit diagnostic opt-in."
+          },
+          {
+            "name": "model",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "source_dataset",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "platform",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ev",
+                "public_transport",
+                "fuel_price",
+                "oil_vehicle"
+              ]
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 25
+            }
+          },
+          {
+            "name": "cursor",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 1024
+            },
+            "description": "Opaque next_cursor from the previous page; preserve all other filters"
+          },
+          {
+            "name": "timezone",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "Australia/Sydney",
+                "UTC"
+              ],
+              "default": "Australia/Sydney"
+            }
+          },
+          {
+            "name": "content_kind",
+            "in": "query",
+            "description": "Heuristic candidate type, not verified authorship or personal experience.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "commentary_candidate",
+                "link_post",
+                "other_text",
+                "promotion_candidate"
+              ]
+            }
+          },
+          {
+            "name": "experiment_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON envelope: data, meta, request_id"
+          },
+          "400": {
+            "description": "Invalid filters or dates"
+          },
+          "404": {
+            "description": "No such resource or precomputed result"
+          },
+          "503": {
+            "description": "Dependency unavailable"
+          }
+        }
+      }
+    },
+    "/api/v1/news/volume": {
+      "get": {
+        "operationId": "news_volume",
+        "summary": "News volume",
+        "parameters": [
+          {
+            "name": "from",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Inclusive Australia/Sydney calendar date; maximum window 367 days"
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Inclusive Australia/Sydney calendar date; maximum window 367 days"
+          },
+          {
+            "name": "dataset_kind",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "observed",
+              "enum": [
+                "observed",
+                "live",
+                "imported",
+                "synthetic",
+                "all"
+              ]
+            },
+            "description": "Observed excludes synthetic and fixture records. All is an explicit diagnostic opt-in."
+          },
+          {
+            "name": "source_dataset",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "keyword",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "iran_hormuz"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON envelope: data, meta, request_id"
+          },
+          "400": {
+            "description": "Invalid filters or dates"
+          },
+          "404": {
+            "description": "No such resource or precomputed result"
+          },
+          "503": {
+            "description": "Dependency unavailable"
+          }
+        }
+      }
+    },
+    "/api/v1/news/sentiment": {
+      "get": {
+        "operationId": "news_sentiment",
+        "summary": "News sentiment",
+        "parameters": [
+          {
+            "name": "from",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Inclusive Australia/Sydney calendar date; maximum window 367 days"
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Inclusive Australia/Sydney calendar date; maximum window 367 days"
+          },
+          {
+            "name": "dataset_kind",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "observed",
+              "enum": [
+                "observed",
+                "live",
+                "imported",
+                "synthetic",
+                "all"
+              ]
+            },
+            "description": "Observed excludes synthetic and fixture records. All is an explicit diagnostic opt-in."
+          },
+          {
+            "name": "model",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "source_dataset",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON envelope: data, meta, request_id"
+          },
+          "400": {
+            "description": "Invalid filters or dates"
+          },
+          "404": {
+            "description": "No such resource or precomputed result"
+          },
+          "503": {
+            "description": "Dependency unavailable"
+          }
+        }
+      }
+    },
+    "/api/v1/oil/prices": {
+      "get": {
+        "operationId": "oil_prices",
+        "summary": "Oil prices",
+        "parameters": [
+          {
+            "name": "from",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Inclusive Australia/Sydney calendar date; maximum window 367 days"
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Inclusive Australia/Sydney calendar date; maximum window 367 days"
+          },
+          {
+            "name": "dataset_kind",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "observed",
+              "enum": [
+                "observed",
+                "live",
+                "imported",
+                "synthetic",
+                "all"
+              ]
+            },
+            "description": "Observed excludes synthetic and fixture records. All is an explicit diagnostic opt-in."
+          },
+          {
+            "name": "source_dataset",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON envelope: data, meta, request_id"
+          },
+          "400": {
+            "description": "Invalid filters or dates"
+          },
+          "404": {
+            "description": "No such resource or precomputed result"
+          },
+          "503": {
+            "description": "Dependency unavailable"
+          }
+        }
+      }
+    },
+    "/api/v1/platforms/profiles": {
+      "get": {
+        "operationId": "platforms_profiles",
+        "summary": "Platforms profiles",
+        "parameters": [
+          {
+            "name": "from",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Inclusive calendar date in the selected timezone (default Australia/Sydney)."
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Inclusive calendar date in the selected timezone (default Australia/Sydney)."
+          },
+          {
+            "name": "dataset_kind",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "observed",
+              "enum": [
+                "observed",
+                "live",
+                "imported",
+                "synthetic",
+                "all"
+              ]
+            },
+            "description": "Observed excludes synthetic and fixture records. All is an explicit diagnostic opt-in."
+          },
+          {
+            "name": "model",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "source_dataset",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "platform",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ev",
+                "public_transport",
+                "fuel_price",
+                "oil_vehicle"
+              ]
+            }
+          },
+          {
+            "name": "timezone",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "Australia/Sydney",
+                "UTC"
+              ],
+              "default": "Australia/Sydney"
+            }
+          },
+          {
+            "name": "content_kind",
+            "in": "query",
+            "description": "Heuristic candidate type, not verified authorship or personal experience.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "commentary_candidate",
+                "link_post",
+                "other_text",
+                "promotion_candidate"
+              ]
+            }
+          },
+          {
+            "name": "experiment_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON envelope: data, meta, request_id"
+          },
+          "400": {
+            "description": "Invalid filters or dates"
+          },
+          "404": {
+            "description": "No such resource or precomputed result"
+          },
+          "503": {
+            "description": "Dependency unavailable"
+          }
+        }
+      }
+    },
+    "/api/v1/analyses/oil-sentiment": {
+      "get": {
+        "operationId": "analyses_oil-sentiment",
+        "summary": "Analyses oil-sentiment",
+        "parameters": [
+          {
+            "name": "from",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Inclusive Australia/Sydney calendar date; maximum window 367 days"
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Inclusive Australia/Sydney calendar date; maximum window 367 days"
+          },
+          {
+            "name": "dataset_kind",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "observed",
+              "enum": [
+                "observed",
+                "live",
+                "imported",
+                "synthetic",
+                "all"
+              ]
+            },
+            "description": "Observed excludes synthetic and fixture records. All is an explicit diagnostic opt-in."
+          },
+          {
+            "name": "model",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON envelope: data, meta, request_id"
+          },
+          "400": {
+            "description": "Invalid filters or dates"
+          },
+          "404": {
+            "description": "No such resource or precomputed result"
+          },
+          "503": {
+            "description": "Dependency unavailable"
+          }
+        }
+      }
+    },
+    "/api/v1/quality": {
+      "get": {
+        "operationId": "quality",
+        "summary": "Quality",
+        "parameters": [
+          {
+            "name": "from",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Inclusive calendar date in the selected timezone (default Australia/Sydney)."
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Inclusive calendar date in the selected timezone (default Australia/Sydney)."
+          },
+          {
+            "name": "dataset_kind",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "observed",
+              "enum": [
+                "observed",
+                "live",
+                "imported",
+                "synthetic",
+                "all"
+              ]
+            },
+            "description": "Observed excludes synthetic and fixture records. All is an explicit diagnostic opt-in."
+          },
+          {
+            "name": "model",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "source_dataset",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "platform",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ev",
+                "public_transport",
+                "fuel_price",
+                "oil_vehicle"
+              ]
+            }
+          },
+          {
+            "name": "timezone",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "Australia/Sydney",
+                "UTC"
+              ],
+              "default": "Australia/Sydney"
+            }
+          },
+          {
+            "name": "content_kind",
+            "in": "query",
+            "description": "Heuristic candidate type, not verified authorship or personal experience.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "commentary_candidate",
+                "link_post",
+                "other_text",
+                "promotion_candidate"
+              ]
+            }
+          },
+          {
+            "name": "experiment_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON envelope: data, meta, request_id"
+          },
+          "400": {
+            "description": "Invalid filters or dates"
+          },
+          "404": {
+            "description": "No such resource or precomputed result"
+          },
+          "503": {
+            "description": "Dependency unavailable"
+          }
+        }
+      }
+    },
+    "/api/v1/meta": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "meta"
+          }
+        }
+      }
+    },
+    "/api/v1/health": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "health"
+          }
+        }
+      }
+    },
+    "/api/v1/openapi.json": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "openapi.json"
+          }
+        }
+      }
+    },
+    "/api/v1/social/annotations": {
+      "get": {
+        "operationId": "social_annotations",
+        "summary": "Paginate structured LLM annotations, separately from classifier sentiment aggregates",
+        "parameters": [
+          {
+            "name": "from",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Inclusive calendar date in the selected timezone (default Australia/Sydney)."
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Inclusive calendar date in the selected timezone (default Australia/Sydney)."
+          },
+          {
+            "name": "dataset_kind",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "observed",
+              "enum": [
+                "observed",
+                "live",
+                "imported",
+                "synthetic",
+                "all"
+              ]
+            },
+            "description": "Observed excludes synthetic and fixture records. All is an explicit diagnostic opt-in."
+          },
+          {
+            "name": "model",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "source_dataset",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "platform",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 25
+            }
+          },
+          {
+            "name": "cursor",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 1024
+            },
+            "description": "Opaque next_cursor from the previous page; preserve all other filters"
+          },
+          {
+            "name": "timezone",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "Australia/Sydney",
+                "UTC"
+              ],
+              "default": "Australia/Sydney"
+            }
+          },
+          {
+            "name": "content_type",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "personal_experience",
+                "opinion",
+                "news_or_link",
+                "promotion",
+                "other",
+                "uncertain"
+              ]
+            }
+          },
+          {
+            "name": "relevance",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "related",
+                "adjacent",
+                "unrelated",
+                "uncertain"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON envelope: data, meta, request_id"
+          },
+          "400": {
+            "description": "Invalid filters or dates"
+          },
+          "404": {
+            "description": "No such resource or precomputed result"
+          },
+          "503": {
+            "description": "Dependency unavailable"
+          }
+        }
+      }
+    },
+    "/api/v1/social/target-sentiment": {
+      "get": {
+        "operationId": "getTargetSentiment",
+        "summary": "Accepted Jev target attitudes by day; score is polarity, not confidence",
+        "parameters": [
+          {
+            "name": "from",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Inclusive calendar date in the selected timezone (default Australia/Sydney)."
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Inclusive calendar date in the selected timezone (default Australia/Sydney)."
+          },
+          {
+            "name": "dataset_kind",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "observed",
+              "enum": [
+                "observed",
+                "live",
+                "imported",
+                "synthetic",
+                "all"
+              ]
+            },
+            "description": "Observed excludes synthetic and fixture records. All is an explicit diagnostic opt-in."
+          },
+          {
+            "name": "model",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "source_dataset",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "platform",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ev",
+                "public_transport",
+                "fuel_price",
+                "oil_vehicle"
+              ]
+            }
+          },
+          {
+            "name": "timezone",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "Australia/Sydney",
+                "UTC"
+              ],
+              "default": "Australia/Sydney"
+            }
+          },
+          {
+            "name": "content_kind",
+            "in": "query",
+            "description": "Heuristic candidate type, not verified authorship or personal experience.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "commentary_candidate",
+                "link_post",
+                "other_text",
+                "promotion_candidate"
+              ]
+            }
+          },
+          {
+            "name": "experiment_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "JSON envelope: data, meta, request_id"
+          },
+          "400": {
+            "description": "Invalid filters or dates"
+          },
+          "404": {
+            "description": "No such resource or precomputed result"
+          },
+          "503": {
+            "description": "Dependency unavailable"
+          }
+        }
+      }
+    },
+    "/api/v1/experiments/status": {
+      "get": {
+        "summary": "Durable experiment progress and cost accounting",
+        "parameters": [
+          {
+            "name": "experiment_id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Experiment status"
+          },
+          "404": {
+            "description": "Experiment not found"
+          },
+          "400": {
+            "description": "Invalid experiment identifier"
+          }
+        }
+      }
+    }
+  }
+}

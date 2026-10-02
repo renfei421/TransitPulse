@@ -1,0 +1,32 @@
+{
+  "experiment_id": "iran-20260228-v1",
+  "stopped_at_utc": "2026-10-01T14:22:30.853559+00:00",
+  "processed_at_stop": 31086,
+  "total_attempts": 31091,
+  "accounted_cost_usd_at_stop": 4.0256610660000005,
+  "cumulative_cost_cap_usd": 15,
+  "failed_requests_this_incident": 4,
+  "errors": {
+    "ReadTimeout": 2,
+    "Jev returned HTTP 520; no automatic retry": 2
+  },
+  "retained_native_200_responses_this_incident": 0,
+  "uncertain_reserved_usd_this_incident": 0.002560278,
+  "cumulative_failed_requests": 5,
+  "cumulative_failed_reservations_usd": 0.00320082,
+  "all_prior_jobs_terminal_before_resume": true,
+  "resume_verified": true,
+  "resume_job": "transport-jev-event-dec4e336",
+  "release_sha256": "9b7d9a00dc83fcd17161ee0761f960f8d96d70792f1f720c2a14690bc28de723",
+  "resume_snapshot": {
+    "updated_at": "2026-10-01T14:45:02.458623+00:00",
+    "processed": 31426,
+    "already_processed_skipped": 31086,
+    "succeeded_this_run": 300,
+    "failed_this_run": 0,
+    "accounted_cost_usd": 4.066425005999943,
+    "input_sha256": "467b1612b53efbaf86a0357159d8cfd52ba554142823deb3e183ae7d76b39463",
+    "contract_sha256": "1fd68c77ba3a4febbbb5fc7fae903f643ac69d7cab2e51312edae1027b19d416",
+    "status": "running"
+  }
+}

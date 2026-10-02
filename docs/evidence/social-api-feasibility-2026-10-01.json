@@ -1,0 +1,152 @@
+{
+  "checked_at_utc": "2026-10-01T06:37:38.317903+00:00",
+  "results": [
+    {
+      "platform": "mastodon",
+      "host": "mastodon.social",
+      "checks": [
+        {
+          "url": "https://mastodon.social/api/v1/timelines/tag/petrol",
+          "http_status": 200,
+          "returned": 40,
+          "oldest": "2026-08-18T02:19:33.626Z",
+          "newest": "2026-10-01T02:45:27.609Z"
+        },
+        {
+          "url": "https://mastodon.social/api/v1/timelines/tag/publictransport",
+          "http_status": 200,
+          "returned": 40,
+          "oldest": "2026-09-26T11:20:06.000Z",
+          "newest": "2026-10-01T04:15:13.000Z"
+        },
+        {
+          "url": "https://mastodon.social/api/v1/timelines/tag/electricvehicles",
+          "http_status": 200,
+          "returned": 40,
+          "oldest": "2026-09-29T02:10:47.804Z",
+          "newest": "2026-10-01T04:20:10.000Z"
+        },
+        {
+          "url": "https://mastodon.social/api/v1/timelines/tag/australia",
+          "http_status": 200,
+          "returned": 40,
+          "oldest": "2026-09-30T22:10:39.000Z",
+          "newest": "2026-10-01T06:33:51.000Z"
+        }
+      ],
+      "unique_sampled": 160,
+      "strict_topic_candidates": 58,
+      "topic_and_australian_text_marker": 6
+    },
+    {
+      "platform": "mastodon",
+      "host": "mastodon.au",
+      "checks": [
+        {
+          "url": "https://mastodon.au/api/v1/timelines/tag/petrol",
+          "http_status": 200,
+          "returned": 40,
+          "oldest": "2026-08-14T15:38:44.000Z",
+          "newest": "2026-09-30T18:50:16.000Z"
+        },
+        {
+          "url": "https://mastodon.au/api/v1/timelines/tag/publictransport",
+          "http_status": 200,
+          "returned": 40,
+          "oldest": "2026-09-21T15:40:40.000Z",
+          "newest": "2026-09-30T19:05:08.000Z"
+        },
+        {
+          "url": "https://mastodon.au/api/v1/timelines/tag/electricvehicles",
+          "http_status": 200,
+          "returned": 40,
+          "oldest": "2026-09-30T14:16:11.000Z",
+          "newest": "2026-10-01T06:18:03.000Z"
+        },
+        {
+          "url": "https://mastodon.au/api/v1/timelines/tag/australia",
+          "http_status": 200,
+          "returned": 40,
+          "oldest": "2026-09-30T23:27:08.000Z",
+          "newest": "2026-10-01T06:33:51.000Z"
+        }
+      ],
+      "unique_sampled": 160,
+      "strict_topic_candidates": 58,
+      "topic_and_australian_text_marker": 1
+    },
+    {
+      "platform": "mastodon",
+      "host": "aus.social",
+      "checks": [
+        {
+          "url": "https://aus.social/api/v1/timelines/tag/petrol",
+          "http_status": 200,
+          "returned": 40,
+          "oldest": "2026-07-21T09:44:23.000Z",
+          "newest": "2026-09-29T15:06:04.000Z"
+        },
+        {
+          "url": "https://aus.social/api/v1/timelines/tag/publictransport",
+          "http_status": 200,
+          "returned": 40,
+          "oldest": "2026-09-24T12:40:02.000Z",
+          "newest": "2026-09-30T19:05:08.000Z"
+        },
+        {
+          "url": "https://aus.social/api/v1/timelines/tag/electricvehicles",
+          "http_status": 200,
+          "returned": 40,
+          "oldest": "2026-09-30T14:16:11.000Z",
+          "newest": "2026-10-01T06:18:03.000Z"
+        },
+        {
+          "url": "https://aus.social/api/v1/timelines/tag/australia",
+          "http_status": 200,
+          "returned": 40,
+          "oldest": "2026-10-01T05:00:21.000Z",
+          "newest": "2026-10-01T06:33:51.312Z"
+        }
+      ],
+      "unique_sampled": 160,
+      "strict_topic_candidates": 56,
+      "topic_and_australian_text_marker": 8
+    },
+    {
+      "platform": "bluesky_search",
+      "checks": [
+        {
+          "query": "petrol Australia",
+          "http_status": 403
+        },
+        {
+          "query": "public transport Melbourne",
+          "http_status": 403
+        },
+        {
+          "query": "electric vehicle Australia",
+          "http_status": 403
+        }
+      ]
+    },
+    {
+      "platform": "bluesky_jetstream_legacy_v1",
+      "url": "wss://jetstream1.us-east.bsky.network/subscribe?wantedCollections=app.bsky.feed.post",
+      "budget_seconds": 60,
+      "events": 1827,
+      "bytes": 1527494,
+      "unique_posts": 1600,
+      "broad_topic_candidates": 15,
+      "strict_topic_candidates": 2,
+      "strict_topic_with_australian_text_marker": 0,
+      "connected": true,
+      "wall_seconds": 61.5
+    }
+  ],
+  "limits": [
+    "Small convenience samples, not total platform volumes or relevance precision estimates",
+    "Text markers are not verified residence; candidate posts require relevance auditing",
+    "Different APIs and sampling windows cannot be compared as equivalent per-day rates",
+    "No Reddit approval, YouTube API key, Threads token or X paid access supplied"
+  ]
+}

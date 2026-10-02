@@ -1,0 +1,48 @@
+# API acceptance profile; application resources are applied with Fission specs.
+serviceType: ClusterIP
+routerServiceType: ClusterIP
+defaultNamespace: default
+functionNamespace: ''
+builderNamespace: ''
+analytics: false
+analyticsNonHelmInstall: false
+mqt_keda:
+  enabled: false
+persistence:
+  enabled: true
+  existingClaim: transport-fission-packages
+storagesvc:
+  deploymentStrategy:
+    type: Recreate
+  resources:
+    requests: {cpu: 100m, memory: 128Mi}
+    limits: {cpu: '1', memory: 256Mi}
+router:
+  displayAccessLog: true
+  resources:
+    requests: {cpu: 100m, memory: 128Mi}
+    limits: {cpu: '1', memory: 512Mi}
+executor:
+  resources:
+    requests: {cpu: 100m, memory: 128Mi}
+    limits: {cpu: '1', memory: 512Mi}
+buildermgr:
+  resources:
+    requests: {cpu: 50m, memory: 64Mi}
+    limits: {cpu: 500m, memory: 256Mi}
+webhook:
+  resources:
+    requests: {cpu: 50m, memory: 64Mi}
+    limits: {cpu: 500m, memory: 256Mi}
+timer:
+  resources:
+    requests: {cpu: 50m, memory: 64Mi}
+    limits: {cpu: 500m, memory: 128Mi}
+kubewatcher:
+  resources:
+    requests: {cpu: 50m, memory: 64Mi}
+    limits: {cpu: 500m, memory: 128Mi}
+internalAuth:
+  enabled: true
+networkPolicy:
+  enabled: true

@@ -1,0 +1,6842 @@
+{
+  "captured_at": "2026-10-01T17:41:27.256252+00:00",
+  "configuration": {
+    "experiment_id": "iran-20260228-v1",
+    "from": "2026-01-28",
+    "to": "2026-04-28",
+    "event_date": "2026-02-28",
+    "model": "jev-1.13.0",
+    "timezone": "UTC",
+    "raw_records": 124491,
+    "eligible_records": 90576,
+    "eligible_by_platform": {
+      "bluesky": 89280,
+      "mastodon": 1296
+    },
+    "daily_raw": [
+      {
+        "platform": "bluesky",
+        "date": "2026-01-28",
+        "count": 422
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-01-28",
+        "count": 18
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-01-29",
+        "count": 462
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-01-29",
+        "count": 25
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-01-30",
+        "count": 312
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-01-30",
+        "count": 30
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-01-31",
+        "count": 273
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-01-31",
+        "count": 19
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-01",
+        "count": 234
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-01",
+        "count": 18
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-02",
+        "count": 297
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-02",
+        "count": 16
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-03",
+        "count": 355
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-03",
+        "count": 28
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-04",
+        "count": 413
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-04",
+        "count": 21
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-05",
+        "count": 431
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-05",
+        "count": 26
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-06",
+        "count": 359
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-06",
+        "count": 12
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-07",
+        "count": 418
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-07",
+        "count": 17
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-08",
+        "count": 326
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-08",
+        "count": 11
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-09",
+        "count": 315
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-09",
+        "count": 15
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-10",
+        "count": 323
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-10",
+        "count": 38
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-11",
+        "count": 364
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-11",
+        "count": 25
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-12",
+        "count": 334
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-12",
+        "count": 20
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-13",
+        "count": 364
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-13",
+        "count": 25
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-14",
+        "count": 243
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-14",
+        "count": 18
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-15",
+        "count": 276
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-15",
+        "count": 11
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-16",
+        "count": 357
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-16",
+        "count": 28
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-17",
+        "count": 343
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-17",
+        "count": 15
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-18",
+        "count": 430
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-18",
+        "count": 35
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-19",
+        "count": 333
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-19",
+        "count": 15
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-20",
+        "count": 404
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-20",
+        "count": 19
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-21",
+        "count": 267
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-21",
+        "count": 15
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-22",
+        "count": 205
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-22",
+        "count": 8
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-23",
+        "count": 436
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-23",
+        "count": 17
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-24",
+        "count": 419
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-24",
+        "count": 32
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-25",
+        "count": 788
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-25",
+        "count": 17
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-26",
+        "count": 426
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-26",
+        "count": 13
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-27",
+        "count": 358
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-27",
+        "count": 15
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-02-28",
+        "count": 776
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-02-28",
+        "count": 8
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-01",
+        "count": 953
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-01",
+        "count": 9
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-02",
+        "count": 1884
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-02",
+        "count": 32
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-03",
+        "count": 2219
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-03",
+        "count": 25
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-04",
+        "count": 1397
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-04",
+        "count": 36
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-05",
+        "count": 1757
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-05",
+        "count": 32
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-06",
+        "count": 3239
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-06",
+        "count": 43
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-07",
+        "count": 2279
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-07",
+        "count": 33
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-08",
+        "count": 2540
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-08",
+        "count": 19
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-09",
+        "count": 3718
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-09",
+        "count": 41
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-10",
+        "count": 2896
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-10",
+        "count": 42
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-11",
+        "count": 2898
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-11",
+        "count": 32
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-12",
+        "count": 3087
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-12",
+        "count": 44
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-13",
+        "count": 2823
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-13",
+        "count": 45
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-14",
+        "count": 1868
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-14",
+        "count": 40
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-15",
+        "count": 1837
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-15",
+        "count": 24
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-16",
+        "count": 1988
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-16",
+        "count": 43
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-17",
+        "count": 1945
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-17",
+        "count": 30
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-18",
+        "count": 2887
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-18",
+        "count": 54
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-19",
+        "count": 3405
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-19",
+        "count": 55
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-20",
+        "count": 2923
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-20",
+        "count": 41
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-21",
+        "count": 2134
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-21",
+        "count": 37
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-22",
+        "count": 2040
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-22",
+        "count": 30
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-23",
+        "count": 2132
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-23",
+        "count": 53
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-24",
+        "count": 1968
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-24",
+        "count": 41
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-25",
+        "count": 1692
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-25",
+        "count": 47
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-26",
+        "count": 1763
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-26",
+        "count": 37
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-27",
+        "count": 1777
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-27",
+        "count": 30
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-28",
+        "count": 1202
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-28",
+        "count": 26
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-29",
+        "count": 1458
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-29",
+        "count": 29
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-30",
+        "count": 1661
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-30",
+        "count": 30
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-03-31",
+        "count": 2815
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-03-31",
+        "count": 54
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-01",
+        "count": 2192
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-01",
+        "count": 41
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-02",
+        "count": 2218
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-02",
+        "count": 61
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-03",
+        "count": 1544
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-03",
+        "count": 56
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-04",
+        "count": 1390
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-04",
+        "count": 25
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-05",
+        "count": 1031
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-05",
+        "count": 28
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-06",
+        "count": 1349
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-06",
+        "count": 40
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-07",
+        "count": 1800
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-07",
+        "count": 34
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-08",
+        "count": 1896
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-08",
+        "count": 39
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-09",
+        "count": 1547
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-09",
+        "count": 36
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-10",
+        "count": 1754
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-10",
+        "count": 52
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-11",
+        "count": 1227
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-11",
+        "count": 42
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-12",
+        "count": 1610
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-12",
+        "count": 25
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-13",
+        "count": 1600
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-13",
+        "count": 36
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-14",
+        "count": 1738
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-14",
+        "count": 28
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-15",
+        "count": 1711
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-15",
+        "count": 39
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-16",
+        "count": 1318
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-16",
+        "count": 38
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-17",
+        "count": 1649
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-17",
+        "count": 31
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-18",
+        "count": 1011
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-18",
+        "count": 31
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-19",
+        "count": 1076
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-19",
+        "count": 33
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-20",
+        "count": 1595
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-20",
+        "count": 31
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-21",
+        "count": 1262
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-21",
+        "count": 33
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-22",
+        "count": 1425
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-22",
+        "count": 24
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-23",
+        "count": 1160
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-23",
+        "count": 26
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-24",
+        "count": 1070
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-24",
+        "count": 40
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-25",
+        "count": 947
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-25",
+        "count": 23
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-26",
+        "count": 743
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-26",
+        "count": 22
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-27",
+        "count": 890
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-27",
+        "count": 37
+      },
+      {
+        "platform": "bluesky",
+        "date": "2026-04-28",
+        "count": 1743
+      },
+      {
+        "platform": "mastodon",
+        "date": "2026-04-28",
+        "count": 32
+      }
+    ],
+    "cost_cap_usd": 15.0,
+    "minimum_daily_scores": 5,
+    "collection_gaps": [
+      {
+        "platform": "bluesky",
+        "query": "\"gas prices\"",
+        "day": "2026-03-09",
+        "host": null,
+        "pages": 30,
+        "status": "capped"
+      },
+      {
+        "platform": "mastodon",
+        "query": "electriccars",
+        "day": null,
+        "host": "aus.social",
+        "pages": 100,
+        "status": "capped"
+      },
+      {
+        "platform": "mastodon",
+        "query": "electricvehicles",
+        "day": null,
+        "host": "aus.social",
+        "pages": 100,
+        "status": "capped"
+      },
+      {
+        "platform": "mastodon",
+        "query": "electriccars",
+        "day": null,
+        "host": "mastodon.au",
+        "pages": 100,
+        "status": "capped"
+      },
+      {
+        "platform": "mastodon",
+        "query": "electricvehicles",
+        "day": null,
+        "host": "mastodon.au",
+        "pages": 100,
+        "status": "capped"
+      }
+    ],
+    "mode": "snapshot"
+  },
+  "description": "Frozen aggregate responses from the completed cloud experiment; no posts or provider credentials",
+  "responses": {
+    "experiments/status|": {
+      "data": {
+        "experiment_id": "iran-20260228-v1",
+        "status": "complete",
+        "updated_at": "2026-10-01T17:03:06.375255+00:00",
+        "model_name": "jev-1.13.0",
+        "report": {
+          "experiment_id": "iran-20260228-v1",
+          "model": "jev-1.13.0",
+          "contract_sha256": "1fd68c77ba3a4febbbb5fc7fae903f643ac69d7cab2e51312edae1027b19d416",
+          "input_sha256": "467b1612b53efbaf86a0357159d8cfd52ba554142823deb3e183ae7d76b39463",
+          "total_records": 90576,
+          "already_processed": 38114,
+          "succeeded_this_run": 52462,
+          "failed_this_run": 0,
+          "new_api_calls": 52465,
+          "cache_hits": 0,
+          "errors": [],
+          "cost_cap_usd": 15.0,
+          "original_plan_cost_cap_usd": 10.0,
+          "accounted_cost_usd": 11.732167902001628,
+          "workers": 4,
+          "requests_per_second_limit": 8.0,
+          "started_at": "2026-10-01T15:08:22.796329+00:00",
+          "status": "complete",
+          "retry_policy": "transient-3-total-v1",
+          "transient_request_failures_this_run": 3,
+          "elapsed_seconds": 6883.58,
+          "updated_at": "2026-10-01T17:03:06.375215+00:00",
+          "unattempted": 0
+        }
+      },
+      "meta": {}
+    },
+    "quality|": {
+      "data": {
+        "raw_documents": 124491,
+        "processed_documents": 90576,
+        "selected_processed_documents": 90576,
+        "processing_coverage": 0.7275706677591152,
+        "coverage_scope": "Source/date/platform cohort before topic/content_kind filtering; optional model filter applies to processed records only",
+        "unique_authors_approx": 47643,
+        "unique_threads_approx": 77044,
+        "unassigned_topics": 0,
+        "missing_parent_context": 38552,
+        "models": [
+          {
+            "name": "jev-1.13.0",
+            "count": 90576
+          }
+        ],
+        "latest_fetched_at": "2026-10-01T12:45:20.658Z",
+        "latest_processed_at": "2026-10-01T17:03:06.348Z",
+        "interpretation": "Observed sample; topic groups overlap; counts do not estimate population opinion."
+      },
+      "meta": {
+        "from": "2026-01-28",
+        "to": "2026-04-28",
+        "dataset_kind": "live",
+        "sentiment_definition": "(positive-negative)/classified_count",
+        "timezone": "UTC",
+        "model": "jev-1.13.0",
+        "topic_counts_overlap": true
+      }
+    },
+    "oil/prices|": {
+      "data": [
+        {
+          "date": "2026-01-28",
+          "avg_price": 70.9,
+          "daily_return_pct": 0.882186
+        },
+        {
+          "date": "2026-01-29",
+          "avg_price": 71.0,
+          "daily_return_pct": 0.141044
+        },
+        {
+          "date": "2026-01-30",
+          "avg_price": 72.25,
+          "daily_return_pct": 1.760563
+        },
+        {
+          "date": "2026-02-02",
+          "avg_price": 67.72,
+          "daily_return_pct": -6.269896
+        },
+        {
+          "date": "2026-02-03",
+          "avg_price": 70.01,
+          "daily_return_pct": 3.381571
+        },
+        {
+          "date": "2026-02-04",
+          "avg_price": 71.15,
+          "daily_return_pct": 1.628339
+        },
+        {
+          "date": "2026-02-05",
+          "avg_price": 69.87,
+          "daily_return_pct": -1.799016
+        },
+        {
+          "date": "2026-02-06",
+          "avg_price": 70.45,
+          "daily_return_pct": 0.830113
+        },
+        {
+          "date": "2026-02-09",
+          "avg_price": 71.19,
+          "daily_return_pct": 1.05039
+        },
+        {
+          "date": "2026-02-10",
+          "avg_price": 71.01,
+          "daily_return_pct": -0.252845
+        },
+        {
+          "date": "2026-02-11",
+          "avg_price": 71.52,
+          "daily_return_pct": 0.718209
+        },
+        {
+          "date": "2026-02-12",
+          "avg_price": 69.8,
+          "daily_return_pct": -2.404922
+        },
+        {
+          "date": "2026-02-13",
+          "avg_price": 69.96,
+          "daily_return_pct": 0.229226
+        },
+        {
+          "date": "2026-02-16",
+          "avg_price": 70.81,
+          "daily_return_pct": 1.21498
+        },
+        {
+          "date": "2026-02-17",
+          "avg_price": 69.77,
+          "daily_return_pct": -1.468719
+        },
+        {
+          "date": "2026-02-18",
+          "avg_price": 71.78,
+          "daily_return_pct": 2.880894
+        },
+        {
+          "date": "2026-02-19",
+          "avg_price": 73.17,
+          "daily_return_pct": 1.936473
+        },
+        {
+          "date": "2026-02-20",
+          "avg_price": 72.75,
+          "daily_return_pct": -0.574006
+        },
+        {
+          "date": "2026-02-23",
+          "avg_price": 71.9,
+          "daily_return_pct": -1.168385
+        },
+        {
+          "date": "2026-02-24",
+          "avg_price": 71.21,
+          "daily_return_pct": -0.959666
+        },
+        {
+          "date": "2026-02-25",
+          "avg_price": 70.69,
+          "daily_return_pct": -0.730235
+        },
+        {
+          "date": "2026-02-26",
+          "avg_price": 71.66,
+          "daily_return_pct": 1.372188
+        },
+        {
+          "date": "2026-02-27",
+          "avg_price": 71.32,
+          "daily_return_pct": -0.474463
+        },
+        {
+          "date": "2026-03-02",
+          "avg_price": 77.24,
+          "daily_return_pct": 8.300617
+        },
+        {
+          "date": "2026-03-03",
+          "avg_price": 83.28,
+          "daily_return_pct": 7.819782
+        },
+        {
+          "date": "2026-03-04",
+          "avg_price": 81.56,
+          "daily_return_pct": -2.065322
+        },
+        {
+          "date": "2026-03-05",
+          "avg_price": 88.59,
+          "daily_return_pct": 8.619421
+        },
+        {
+          "date": "2026-03-06",
+          "avg_price": 95.74,
+          "daily_return_pct": 8.070888
+        },
+        {
+          "date": "2026-03-09",
+          "avg_price": 94.35,
+          "daily_return_pct": -1.451849
+        },
+        {
+          "date": "2026-03-10",
+          "avg_price": 89.84,
+          "daily_return_pct": -4.780074
+        },
+        {
+          "date": "2026-03-11",
+          "avg_price": 90.98,
+          "daily_return_pct": 1.268923
+        },
+        {
+          "date": "2026-03-12",
+          "avg_price": 102.38,
+          "daily_return_pct": 12.530226
+        },
+        {
+          "date": "2026-03-13",
+          "avg_price": 103.23,
+          "daily_return_pct": 0.83024
+        },
+        {
+          "date": "2026-03-16",
+          "avg_price": 101.04,
+          "daily_return_pct": -2.121476
+        },
+        {
+          "date": "2026-03-17",
+          "avg_price": 108.39,
+          "daily_return_pct": 7.274347
+        },
+        {
+          "date": "2026-03-18",
+          "avg_price": 118.09,
+          "daily_return_pct": 8.949165
+        },
+        {
+          "date": "2026-03-19",
+          "avg_price": 111.05,
+          "daily_return_pct": -5.961555
+        },
+        {
+          "date": "2026-03-20",
+          "avg_price": 118.42,
+          "daily_return_pct": 6.63665
+        },
+        {
+          "date": "2026-03-23",
+          "avg_price": 103.79,
+          "daily_return_pct": -12.354332
+        },
+        {
+          "date": "2026-03-24",
+          "avg_price": 108.42,
+          "daily_return_pct": 4.460931
+        },
+        {
+          "date": "2026-03-25",
+          "avg_price": 109.14,
+          "daily_return_pct": 0.664084
+        },
+        {
+          "date": "2026-03-26",
+          "avg_price": 113.39,
+          "daily_return_pct": 3.894081
+        },
+        {
+          "date": "2026-03-27",
+          "avg_price": 121.47,
+          "daily_return_pct": 7.125849
+        },
+        {
+          "date": "2026-03-30",
+          "avg_price": 121.88,
+          "daily_return_pct": 0.337532
+        },
+        {
+          "date": "2026-03-31",
+          "avg_price": 126.69,
+          "daily_return_pct": 3.946505
+        },
+        {
+          "date": "2026-04-01",
+          "avg_price": 119.56,
+          "daily_return_pct": -5.627911
+        },
+        {
+          "date": "2026-04-02",
+          "avg_price": 127.61,
+          "daily_return_pct": 6.733021
+        },
+        {
+          "date": "2026-04-07",
+          "avg_price": 138.21,
+          "daily_return_pct": 8.306559
+        },
+        {
+          "date": "2026-04-08",
+          "avg_price": 122.11,
+          "daily_return_pct": -11.64894
+        },
+        {
+          "date": "2026-04-09",
+          "avg_price": 119.03,
+          "daily_return_pct": -2.522316
+        },
+        {
+          "date": "2026-04-10",
+          "avg_price": 119.07,
+          "daily_return_pct": 0.033605
+        },
+        {
+          "date": "2026-04-13",
+          "avg_price": 123.28,
+          "daily_return_pct": 3.535735
+        },
+        {
+          "date": "2026-04-14",
+          "avg_price": 118.69,
+          "daily_return_pct": -3.723232
+        },
+        {
+          "date": "2026-04-15",
+          "avg_price": 114.93,
+          "daily_return_pct": -3.167916
+        },
+        {
+          "date": "2026-04-16",
+          "avg_price": 116.63,
+          "daily_return_pct": 1.479161
+        },
+        {
+          "date": "2026-04-17",
+          "avg_price": 98.63,
+          "daily_return_pct": -15.433422
+        },
+        {
+          "date": "2026-04-20",
+          "avg_price": 103.4,
+          "daily_return_pct": 4.836257
+        },
+        {
+          "date": "2026-04-21",
+          "avg_price": 106.14,
+          "daily_return_pct": 2.649903
+        },
+        {
+          "date": "2026-04-22",
+          "avg_price": 113.44,
+          "daily_return_pct": 6.877709
+        },
+        {
+          "date": "2026-04-23",
+          "avg_price": 113.25,
+          "daily_return_pct": -0.167489
+        },
+        {
+          "date": "2026-04-24",
+          "avg_price": 111.86,
+          "daily_return_pct": -1.227373
+        },
+        {
+          "date": "2026-04-27",
+          "avg_price": 113.89,
+          "daily_return_pct": 1.814768
+        },
+        {
+          "date": "2026-04-28",
+          "avg_price": 117.62,
+          "daily_return_pct": 3.27509
+        }
+      ],
+      "meta": {
+        "from": "2026-01-28",
+        "to": "2026-04-28",
+        "dataset_kind": "live",
+        "sentiment_definition": "(positive-negative)/classified_count",
+        "timezone": "Australia/Sydney",
+        "model": null,
+        "topic_counts_overlap": true
+      }
+    },
+    "social/target-sentiment|platform=bluesky&topic=fuel_price": {
+      "data": [
+        {
+          "date": "2026-01-28",
+          "topic": "fuel_price",
+          "accepted_count": 12,
+          "processed_posts_on_day": 336,
+          "mean_target_polarity": -0.7341666699697574,
+          "labels": {
+            "negative": 10,
+            "neutral": 1,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-01-29",
+          "topic": "fuel_price",
+          "accepted_count": 6,
+          "processed_posts_on_day": 346,
+          "mean_target_polarity": -0.3200000027815501,
+          "labels": {
+            "negative": 4,
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-01-30",
+          "topic": "fuel_price",
+          "accepted_count": 6,
+          "processed_posts_on_day": 271,
+          "mean_target_polarity": -0.6366666654745737,
+          "labels": {
+            "negative": 5,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-01-31",
+          "topic": "fuel_price",
+          "accepted_count": 3,
+          "processed_posts_on_day": 220,
+          "mean_target_polarity": -0.9566666682561239,
+          "labels": {
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-01",
+          "topic": "fuel_price",
+          "accepted_count": 3,
+          "processed_posts_on_day": 192,
+          "mean_target_polarity": -0.9900000095367432,
+          "labels": {
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-02",
+          "topic": "fuel_price",
+          "accepted_count": 2,
+          "processed_posts_on_day": 248,
+          "mean_target_polarity": -0.9650000035762787,
+          "labels": {
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-03",
+          "topic": "fuel_price",
+          "accepted_count": 3,
+          "processed_posts_on_day": 266,
+          "mean_target_polarity": 0.2700000007947286,
+          "labels": {
+            "positive": 2,
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-04",
+          "topic": "fuel_price",
+          "accepted_count": 1,
+          "processed_posts_on_day": 283,
+          "mean_target_polarity": -0.9700000286102295,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-05",
+          "topic": "fuel_price",
+          "accepted_count": 2,
+          "processed_posts_on_day": 342,
+          "mean_target_polarity": 0.875,
+          "labels": {
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-06",
+          "topic": "fuel_price",
+          "accepted_count": 3,
+          "processed_posts_on_day": 289,
+          "mean_target_polarity": -0.9833333293596903,
+          "labels": {
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-07",
+          "topic": "fuel_price",
+          "accepted_count": 3,
+          "processed_posts_on_day": 279,
+          "mean_target_polarity": -0.24333331982294717,
+          "labels": {
+            "negative": 2,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-08",
+          "topic": "fuel_price",
+          "accepted_count": 3,
+          "processed_posts_on_day": 227,
+          "mean_target_polarity": -0.953333338101705,
+          "labels": {
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-09",
+          "topic": "fuel_price",
+          "accepted_count": 2,
+          "processed_posts_on_day": 232,
+          "mean_target_polarity": -0.12999999523162842,
+          "labels": {
+            "negative": 1,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-10",
+          "topic": "fuel_price",
+          "accepted_count": 5,
+          "processed_posts_on_day": 255,
+          "mean_target_polarity": -0.9760000109672546,
+          "labels": {
+            "negative": 5
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-11",
+          "topic": "fuel_price",
+          "accepted_count": 7,
+          "processed_posts_on_day": 281,
+          "mean_target_polarity": -0.7028571452413287,
+          "labels": {
+            "negative": 6,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-12",
+          "topic": "fuel_price",
+          "accepted_count": 4,
+          "processed_posts_on_day": 293,
+          "mean_target_polarity": -0.8799999952316284,
+          "labels": {
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-13",
+          "topic": "fuel_price",
+          "accepted_count": 15,
+          "processed_posts_on_day": 298,
+          "mean_target_polarity": -0.809333336353302,
+          "labels": {
+            "negative": 14,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-14",
+          "topic": "fuel_price",
+          "accepted_count": 3,
+          "processed_posts_on_day": 188,
+          "mean_target_polarity": -0.9833333293596903,
+          "labels": {
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-15",
+          "topic": "fuel_price",
+          "accepted_count": 5,
+          "processed_posts_on_day": 228,
+          "mean_target_polarity": -0.6200000047683716,
+          "labels": {
+            "negative": 4,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-16",
+          "topic": "fuel_price",
+          "accepted_count": 5,
+          "processed_posts_on_day": 278,
+          "mean_target_polarity": -0.5079999923706054,
+          "labels": {
+            "negative": 4,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-17",
+          "topic": "fuel_price",
+          "accepted_count": 3,
+          "processed_posts_on_day": 271,
+          "mean_target_polarity": -0.9300000071525574,
+          "labels": {
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-18",
+          "topic": "fuel_price",
+          "accepted_count": 10,
+          "processed_posts_on_day": 344,
+          "mean_target_polarity": -0.581000006198883,
+          "labels": {
+            "negative": 8,
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-19",
+          "topic": "fuel_price",
+          "accepted_count": 11,
+          "processed_posts_on_day": 279,
+          "mean_target_polarity": -0.5927272655747153,
+          "labels": {
+            "negative": 9,
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-20",
+          "topic": "fuel_price",
+          "accepted_count": 14,
+          "processed_posts_on_day": 355,
+          "mean_target_polarity": -0.8099999981267112,
+          "labels": {
+            "negative": 13,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-21",
+          "topic": "fuel_price",
+          "accepted_count": 10,
+          "processed_posts_on_day": 233,
+          "mean_target_polarity": -0.9409999966621398,
+          "labels": {
+            "negative": 10
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-22",
+          "topic": "fuel_price",
+          "accepted_count": 5,
+          "processed_posts_on_day": 178,
+          "mean_target_polarity": -0.5620000004768372,
+          "labels": {
+            "negative": 4,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-23",
+          "topic": "fuel_price",
+          "accepted_count": 4,
+          "processed_posts_on_day": 378,
+          "mean_target_polarity": -0.9725000113248825,
+          "labels": {
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-24",
+          "topic": "fuel_price",
+          "accepted_count": 14,
+          "processed_posts_on_day": 341,
+          "mean_target_polarity": -0.8707142860761711,
+          "labels": {
+            "negative": 13,
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-25",
+          "topic": "fuel_price",
+          "accepted_count": 49,
+          "processed_posts_on_day": 546,
+          "mean_target_polarity": -0.733061228289592,
+          "labels": {
+            "negative": 43,
+            "positive": 5,
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-26",
+          "topic": "fuel_price",
+          "accepted_count": 11,
+          "processed_posts_on_day": 343,
+          "mean_target_polarity": -0.7918181798674844,
+          "labels": {
+            "negative": 10,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-27",
+          "topic": "fuel_price",
+          "accepted_count": 3,
+          "processed_posts_on_day": 302,
+          "mean_target_polarity": 0.27666666110356647,
+          "labels": {
+            "positive": 2,
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-28",
+          "topic": "fuel_price",
+          "accepted_count": 134,
+          "processed_posts_on_day": 691,
+          "mean_target_polarity": -0.871492541325626,
+          "labels": {
+            "negative": 129,
+            "positive": 4,
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-01",
+          "topic": "fuel_price",
+          "accepted_count": 147,
+          "processed_posts_on_day": 837,
+          "mean_target_polarity": -0.9014285771670391,
+          "labels": {
+            "negative": 143,
+            "positive": 3,
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-02",
+          "topic": "fuel_price",
+          "accepted_count": 234,
+          "processed_posts_on_day": 1429,
+          "mean_target_polarity": -0.9348717988428906,
+          "labels": {
+            "negative": 232,
+            "neutral": 1,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-03",
+          "topic": "fuel_price",
+          "accepted_count": 242,
+          "processed_posts_on_day": 1633,
+          "mean_target_polarity": -0.87326446501923,
+          "labels": {
+            "negative": 231,
+            "positive": 9,
+            "neutral": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-04",
+          "topic": "fuel_price",
+          "accepted_count": 169,
+          "processed_posts_on_day": 1076,
+          "mean_target_polarity": -0.890532549316361,
+          "labels": {
+            "negative": 163,
+            "positive": 6
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-05",
+          "topic": "fuel_price",
+          "accepted_count": 210,
+          "processed_posts_on_day": 1292,
+          "mean_target_polarity": -0.9116666691643851,
+          "labels": {
+            "negative": 205,
+            "positive": 5
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-06",
+          "topic": "fuel_price",
+          "accepted_count": 388,
+          "processed_posts_on_day": 2494,
+          "mean_target_polarity": -0.9088402102058081,
+          "labels": {
+            "negative": 379,
+            "positive": 8,
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-07",
+          "topic": "fuel_price",
+          "accepted_count": 276,
+          "processed_posts_on_day": 1692,
+          "mean_target_polarity": -0.9115942070881525,
+          "labels": {
+            "negative": 269,
+            "positive": 6,
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-08",
+          "topic": "fuel_price",
+          "accepted_count": 359,
+          "processed_posts_on_day": 1995,
+          "mean_target_polarity": -0.9155710357394391,
+          "labels": {
+            "negative": 351,
+            "positive": 6,
+            "neutral": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-09",
+          "topic": "fuel_price",
+          "accepted_count": 541,
+          "processed_posts_on_day": 2860,
+          "mean_target_polarity": -0.9194454755668499,
+          "labels": {
+            "negative": 531,
+            "positive": 10
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-10",
+          "topic": "fuel_price",
+          "accepted_count": 314,
+          "processed_posts_on_day": 1959,
+          "mean_target_polarity": -0.9278980941826086,
+          "labels": {
+            "negative": 309,
+            "positive": 4,
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-11",
+          "topic": "fuel_price",
+          "accepted_count": 321,
+          "processed_posts_on_day": 2072,
+          "mean_target_polarity": -0.8859501579468867,
+          "labels": {
+            "negative": 310,
+            "positive": 11
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-12",
+          "topic": "fuel_price",
+          "accepted_count": 354,
+          "processed_posts_on_day": 2248,
+          "mean_target_polarity": -0.9138700601323849,
+          "labels": {
+            "negative": 345,
+            "positive": 8,
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-13",
+          "topic": "fuel_price",
+          "accepted_count": 316,
+          "processed_posts_on_day": 1913,
+          "mean_target_polarity": -0.9276265862244594,
+          "labels": {
+            "negative": 310,
+            "positive": 6
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-14",
+          "topic": "fuel_price",
+          "accepted_count": 211,
+          "processed_posts_on_day": 1294,
+          "mean_target_polarity": -0.8932701465077875,
+          "labels": {
+            "negative": 204,
+            "positive": 7
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-15",
+          "topic": "fuel_price",
+          "accepted_count": 204,
+          "processed_posts_on_day": 1226,
+          "mean_target_polarity": -0.9149509856440857,
+          "labels": {
+            "negative": 199,
+            "positive": 4,
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-16",
+          "topic": "fuel_price",
+          "accepted_count": 222,
+          "processed_posts_on_day": 1388,
+          "mean_target_polarity": -0.9128828867179182,
+          "labels": {
+            "negative": 216,
+            "positive": 5,
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-17",
+          "topic": "fuel_price",
+          "accepted_count": 196,
+          "processed_posts_on_day": 1383,
+          "mean_target_polarity": -0.8914795952792071,
+          "labels": {
+            "negative": 189,
+            "positive": 7
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-18",
+          "topic": "fuel_price",
+          "accepted_count": 326,
+          "processed_posts_on_day": 2079,
+          "mean_target_polarity": -0.9222085918614104,
+          "labels": {
+            "negative": 321,
+            "positive": 4,
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-19",
+          "topic": "fuel_price",
+          "accepted_count": 319,
+          "processed_posts_on_day": 2337,
+          "mean_target_polarity": -0.9076489079334893,
+          "labels": {
+            "negative": 311,
+            "positive": 7,
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-20",
+          "topic": "fuel_price",
+          "accepted_count": 341,
+          "processed_posts_on_day": 2066,
+          "mean_target_polarity": -0.9025219978431452,
+          "labels": {
+            "negative": 330,
+            "positive": 9,
+            "neutral": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-21",
+          "topic": "fuel_price",
+          "accepted_count": 227,
+          "processed_posts_on_day": 1552,
+          "mean_target_polarity": -0.8753303995741621,
+          "labels": {
+            "negative": 218,
+            "positive": 9
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-22",
+          "topic": "fuel_price",
+          "accepted_count": 239,
+          "processed_posts_on_day": 1457,
+          "mean_target_polarity": -0.8853556518774153,
+          "labels": {
+            "negative": 229,
+            "positive": 10
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-23",
+          "topic": "fuel_price",
+          "accepted_count": 233,
+          "processed_posts_on_day": 1618,
+          "mean_target_polarity": -0.9363090183601871,
+          "labels": {
+            "negative": 230,
+            "positive": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-24",
+          "topic": "fuel_price",
+          "accepted_count": 210,
+          "processed_posts_on_day": 1398,
+          "mean_target_polarity": -0.9119047664638077,
+          "labels": {
+            "negative": 204,
+            "positive": 4,
+            "neutral": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-25",
+          "topic": "fuel_price",
+          "accepted_count": 154,
+          "processed_posts_on_day": 1241,
+          "mean_target_polarity": -0.8645454598711683,
+          "labels": {
+            "negative": 147,
+            "positive": 7
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-26",
+          "topic": "fuel_price",
+          "accepted_count": 171,
+          "processed_posts_on_day": 1269,
+          "mean_target_polarity": -0.8973099449050357,
+          "labels": {
+            "negative": 165,
+            "positive": 5,
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-27",
+          "topic": "fuel_price",
+          "accepted_count": 150,
+          "processed_posts_on_day": 1212,
+          "mean_target_polarity": -0.9220666722456614,
+          "labels": {
+            "negative": 148,
+            "neutral": 1,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-28",
+          "topic": "fuel_price",
+          "accepted_count": 85,
+          "processed_posts_on_day": 880,
+          "mean_target_polarity": -0.9240000030573676,
+          "labels": {
+            "negative": 84,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-29",
+          "topic": "fuel_price",
+          "accepted_count": 110,
+          "processed_posts_on_day": 1052,
+          "mean_target_polarity": -0.7469090943986719,
+          "labels": {
+            "negative": 97,
+            "positive": 13
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-30",
+          "topic": "fuel_price",
+          "accepted_count": 132,
+          "processed_posts_on_day": 1279,
+          "mean_target_polarity": -0.8901515174092669,
+          "labels": {
+            "negative": 128,
+            "positive": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-31",
+          "topic": "fuel_price",
+          "accepted_count": 303,
+          "processed_posts_on_day": 1871,
+          "mean_target_polarity": -0.9114521480236116,
+          "labels": {
+            "negative": 295,
+            "positive": 8
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-01",
+          "topic": "fuel_price",
+          "accepted_count": 203,
+          "processed_posts_on_day": 1537,
+          "mean_target_polarity": -0.9093103502771537,
+          "labels": {
+            "negative": 197,
+            "positive": 5,
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-02",
+          "topic": "fuel_price",
+          "accepted_count": 259,
+          "processed_posts_on_day": 1704,
+          "mean_target_polarity": -0.9373745209461933,
+          "labels": {
+            "negative": 256,
+            "positive": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-03",
+          "topic": "fuel_price",
+          "accepted_count": 167,
+          "processed_posts_on_day": 1097,
+          "mean_target_polarity": -0.8906586866178913,
+          "labels": {
+            "negative": 161,
+            "positive": 6
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-04",
+          "topic": "fuel_price",
+          "accepted_count": 121,
+          "processed_posts_on_day": 957,
+          "mean_target_polarity": -0.9126446301286871,
+          "labels": {
+            "negative": 119,
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-05",
+          "topic": "fuel_price",
+          "accepted_count": 89,
+          "processed_posts_on_day": 794,
+          "mean_target_polarity": -0.8957303400789753,
+          "labels": {
+            "negative": 87,
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-06",
+          "topic": "fuel_price",
+          "accepted_count": 122,
+          "processed_posts_on_day": 989,
+          "mean_target_polarity": -0.8857377093346392,
+          "labels": {
+            "negative": 118,
+            "positive": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-07",
+          "topic": "fuel_price",
+          "accepted_count": 158,
+          "processed_posts_on_day": 1329,
+          "mean_target_polarity": -0.9075949395759196,
+          "labels": {
+            "negative": 155,
+            "positive": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-08",
+          "topic": "fuel_price",
+          "accepted_count": 275,
+          "processed_posts_on_day": 1478,
+          "mean_target_polarity": -0.9138181874968789,
+          "labels": {
+            "negative": 268,
+            "positive": 6,
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-09",
+          "topic": "fuel_price",
+          "accepted_count": 168,
+          "processed_posts_on_day": 1175,
+          "mean_target_polarity": -0.8815476241565886,
+          "labels": {
+            "negative": 162,
+            "positive": 6
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-10",
+          "topic": "fuel_price",
+          "accepted_count": 166,
+          "processed_posts_on_day": 1207,
+          "mean_target_polarity": -0.9118674734091184,
+          "labels": {
+            "negative": 162,
+            "positive": 3,
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-11",
+          "topic": "fuel_price",
+          "accepted_count": 133,
+          "processed_posts_on_day": 894,
+          "mean_target_polarity": -0.9160150410537433,
+          "labels": {
+            "negative": 130,
+            "positive": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-12",
+          "topic": "fuel_price",
+          "accepted_count": 163,
+          "processed_posts_on_day": 1158,
+          "mean_target_polarity": -0.8988343590607673,
+          "labels": {
+            "negative": 158,
+            "positive": 5
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-13",
+          "topic": "fuel_price",
+          "accepted_count": 158,
+          "processed_posts_on_day": 1170,
+          "mean_target_polarity": -0.9432278516926343,
+          "labels": {
+            "negative": 157,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-14",
+          "topic": "fuel_price",
+          "accepted_count": 188,
+          "processed_posts_on_day": 1310,
+          "mean_target_polarity": -0.9096276630112465,
+          "labels": {
+            "negative": 184,
+            "positive": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-15",
+          "topic": "fuel_price",
+          "accepted_count": 173,
+          "processed_posts_on_day": 1242,
+          "mean_target_polarity": -0.903988442669025,
+          "labels": {
+            "negative": 169,
+            "positive": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-16",
+          "topic": "fuel_price",
+          "accepted_count": 118,
+          "processed_posts_on_day": 908,
+          "mean_target_polarity": -0.8882203450647451,
+          "labels": {
+            "negative": 113,
+            "positive": 5
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-17",
+          "topic": "fuel_price",
+          "accepted_count": 144,
+          "processed_posts_on_day": 1260,
+          "mean_target_polarity": -0.9150000032451417,
+          "labels": {
+            "negative": 141,
+            "positive": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-18",
+          "topic": "fuel_price",
+          "accepted_count": 83,
+          "processed_posts_on_day": 701,
+          "mean_target_polarity": -0.9480722963091839,
+          "labels": {
+            "negative": 83
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-19",
+          "topic": "fuel_price",
+          "accepted_count": 101,
+          "processed_posts_on_day": 786,
+          "mean_target_polarity": -0.9352475282284293,
+          "labels": {
+            "negative": 100,
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-20",
+          "topic": "fuel_price",
+          "accepted_count": 128,
+          "processed_posts_on_day": 1089,
+          "mean_target_polarity": -0.8958593793213367,
+          "labels": {
+            "negative": 124,
+            "positive": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-21",
+          "topic": "fuel_price",
+          "accepted_count": 81,
+          "processed_posts_on_day": 894,
+          "mean_target_polarity": -0.937654325991501,
+          "labels": {
+            "negative": 80,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-22",
+          "topic": "fuel_price",
+          "accepted_count": 91,
+          "processed_posts_on_day": 960,
+          "mean_target_polarity": -0.8605494545056269,
+          "labels": {
+            "negative": 87,
+            "positive": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-23",
+          "topic": "fuel_price",
+          "accepted_count": 94,
+          "processed_posts_on_day": 866,
+          "mean_target_polarity": -0.9374468136341014,
+          "labels": {
+            "negative": 93,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-24",
+          "topic": "fuel_price",
+          "accepted_count": 92,
+          "processed_posts_on_day": 821,
+          "mean_target_polarity": -0.9201086992802827,
+          "labels": {
+            "negative": 90,
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-25",
+          "topic": "fuel_price",
+          "accepted_count": 62,
+          "processed_posts_on_day": 701,
+          "mean_target_polarity": -0.9146774238155734,
+          "labels": {
+            "negative": 61,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-26",
+          "topic": "fuel_price",
+          "accepted_count": 48,
+          "processed_posts_on_day": 594,
+          "mean_target_polarity": -0.9585416714350382,
+          "labels": {
+            "negative": 48
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-27",
+          "topic": "fuel_price",
+          "accepted_count": 78,
+          "processed_posts_on_day": 748,
+          "mean_target_polarity": -0.9032051313955051,
+          "labels": {
+            "negative": 75,
+            "positive": 2,
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-28",
+          "topic": "fuel_price",
+          "accepted_count": 167,
+          "processed_posts_on_day": 1196,
+          "mean_target_polarity": -0.8939520984352706,
+          "labels": {
+            "negative": 161,
+            "positive": 6
+          },
+          "sentiment_scope": "poster_target_attitude"
+        }
+      ],
+      "meta": {
+        "from": "2026-01-28",
+        "to": "2026-04-28",
+        "dataset_kind": "live",
+        "sentiment_definition": "mean P(positive)-P(negative) among accepted poster-target attitudes",
+        "timezone": "UTC",
+        "model": "jev-1.13.0",
+        "topic_counts_overlap": true
+      }
+    },
+    "social/target-sentiment|platform=bluesky&topic=public_transport": {
+      "data": [
+        {
+          "date": "2026-01-28",
+          "topic": "public_transport",
+          "accepted_count": 39,
+          "processed_posts_on_day": 336,
+          "mean_target_polarity": -0.08384615794206277,
+          "labels": {
+            "negative": 21,
+            "positive": 18
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-01-29",
+          "topic": "public_transport",
+          "accepted_count": 47,
+          "processed_posts_on_day": 346,
+          "mean_target_polarity": 0.028936167980762238,
+          "labels": {
+            "positive": 24,
+            "negative": 23
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-01-30",
+          "topic": "public_transport",
+          "accepted_count": 34,
+          "processed_posts_on_day": 271,
+          "mean_target_polarity": 0.37029411862878236,
+          "labels": {
+            "positive": 24,
+            "negative": 10
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-01-31",
+          "topic": "public_transport",
+          "accepted_count": 31,
+          "processed_posts_on_day": 220,
+          "mean_target_polarity": -0.10096774370439592,
+          "labels": {
+            "negative": 17,
+            "positive": 14
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-01",
+          "topic": "public_transport",
+          "accepted_count": 34,
+          "processed_posts_on_day": 192,
+          "mean_target_polarity": 0.35852941169458274,
+          "labels": {
+            "positive": 24,
+            "negative": 10
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-02",
+          "topic": "public_transport",
+          "accepted_count": 38,
+          "processed_posts_on_day": 248,
+          "mean_target_polarity": -0.15184210789831062,
+          "labels": {
+            "negative": 22,
+            "positive": 16
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-03",
+          "topic": "public_transport",
+          "accepted_count": 32,
+          "processed_posts_on_day": 266,
+          "mean_target_polarity": 0.11250000074505806,
+          "labels": {
+            "positive": 18,
+            "negative": 14
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-04",
+          "topic": "public_transport",
+          "accepted_count": 53,
+          "processed_posts_on_day": 283,
+          "mean_target_polarity": 0.18358490714487039,
+          "labels": {
+            "positive": 32,
+            "negative": 21
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-05",
+          "topic": "public_transport",
+          "accepted_count": 66,
+          "processed_posts_on_day": 342,
+          "mean_target_polarity": 0.18560606241226196,
+          "labels": {
+            "positive": 40,
+            "negative": 26
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-06",
+          "topic": "public_transport",
+          "accepted_count": 38,
+          "processed_posts_on_day": 289,
+          "mean_target_polarity": 0.06105262982217889,
+          "labels": {
+            "positive": 21,
+            "negative": 17
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-07",
+          "topic": "public_transport",
+          "accepted_count": 48,
+          "processed_posts_on_day": 279,
+          "mean_target_polarity": 0.04749999940395355,
+          "labels": {
+            "positive": 26,
+            "negative": 22
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-08",
+          "topic": "public_transport",
+          "accepted_count": 39,
+          "processed_posts_on_day": 227,
+          "mean_target_polarity": -0.31794872192236096,
+          "labels": {
+            "negative": 26,
+            "positive": 13
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-09",
+          "topic": "public_transport",
+          "accepted_count": 24,
+          "processed_posts_on_day": 232,
+          "mean_target_polarity": 0.15291666984558105,
+          "labels": {
+            "positive": 14,
+            "negative": 10
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-10",
+          "topic": "public_transport",
+          "accepted_count": 31,
+          "processed_posts_on_day": 255,
+          "mean_target_polarity": 0.07258064323855985,
+          "labels": {
+            "positive": 17,
+            "negative": 14
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-11",
+          "topic": "public_transport",
+          "accepted_count": 44,
+          "processed_posts_on_day": 281,
+          "mean_target_polarity": -0.12977272813970392,
+          "labels": {
+            "negative": 25,
+            "positive": 19
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-12",
+          "topic": "public_transport",
+          "accepted_count": 34,
+          "processed_posts_on_day": 293,
+          "mean_target_polarity": 0.00029412262579974006,
+          "labels": {
+            "negative": 17,
+            "positive": 17
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-13",
+          "topic": "public_transport",
+          "accepted_count": 43,
+          "processed_posts_on_day": 298,
+          "mean_target_polarity": 0.13186046966286594,
+          "labels": {
+            "positive": 25,
+            "negative": 18
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-14",
+          "topic": "public_transport",
+          "accepted_count": 20,
+          "processed_posts_on_day": 188,
+          "mean_target_polarity": 0.6425000011920929,
+          "labels": {
+            "positive": 17,
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-15",
+          "topic": "public_transport",
+          "accepted_count": 29,
+          "processed_posts_on_day": 228,
+          "mean_target_polarity": 0.42482758801558923,
+          "labels": {
+            "positive": 21,
+            "negative": 8
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-16",
+          "topic": "public_transport",
+          "accepted_count": 42,
+          "processed_posts_on_day": 278,
+          "mean_target_polarity": 0.2109523784546625,
+          "labels": {
+            "positive": 26,
+            "negative": 16
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-17",
+          "topic": "public_transport",
+          "accepted_count": 35,
+          "processed_posts_on_day": 271,
+          "mean_target_polarity": 0.21199999850775514,
+          "labels": {
+            "positive": 21,
+            "negative": 13,
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-18",
+          "topic": "public_transport",
+          "accepted_count": 43,
+          "processed_posts_on_day": 344,
+          "mean_target_polarity": 0.21627907004467276,
+          "labels": {
+            "positive": 27,
+            "negative": 16
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-19",
+          "topic": "public_transport",
+          "accepted_count": 31,
+          "processed_posts_on_day": 279,
+          "mean_target_polarity": 0.14645161359540879,
+          "labels": {
+            "positive": 18,
+            "negative": 13
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-20",
+          "topic": "public_transport",
+          "accepted_count": 53,
+          "processed_posts_on_day": 355,
+          "mean_target_polarity": 0.2577358506760507,
+          "labels": {
+            "positive": 33,
+            "negative": 19,
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-21",
+          "topic": "public_transport",
+          "accepted_count": 41,
+          "processed_posts_on_day": 233,
+          "mean_target_polarity": 0.2987804907124217,
+          "labels": {
+            "positive": 27,
+            "negative": 14
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-22",
+          "topic": "public_transport",
+          "accepted_count": 20,
+          "processed_posts_on_day": 178,
+          "mean_target_polarity": 0.19700000286102295,
+          "labels": {
+            "positive": 12,
+            "negative": 8
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-23",
+          "topic": "public_transport",
+          "accepted_count": 40,
+          "processed_posts_on_day": 378,
+          "mean_target_polarity": -0.05250000506639481,
+          "labels": {
+            "negative": 21,
+            "positive": 19
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-24",
+          "topic": "public_transport",
+          "accepted_count": 50,
+          "processed_posts_on_day": 341,
+          "mean_target_polarity": -0.08600000023841858,
+          "labels": {
+            "negative": 27,
+            "positive": 23
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-25",
+          "topic": "public_transport",
+          "accepted_count": 43,
+          "processed_posts_on_day": 546,
+          "mean_target_polarity": 0.10186046777769577,
+          "labels": {
+            "positive": 24,
+            "negative": 19
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-26",
+          "topic": "public_transport",
+          "accepted_count": 46,
+          "processed_posts_on_day": 343,
+          "mean_target_polarity": -0.08195652262024257,
+          "labels": {
+            "negative": 25,
+            "positive": 21
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-27",
+          "topic": "public_transport",
+          "accepted_count": 42,
+          "processed_posts_on_day": 302,
+          "mean_target_polarity": -0.01214285549663362,
+          "labels": {
+            "negative": 21,
+            "positive": 21
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-28",
+          "topic": "public_transport",
+          "accepted_count": 25,
+          "processed_posts_on_day": 691,
+          "mean_target_polarity": 0.11600000143051148,
+          "labels": {
+            "positive": 14,
+            "negative": 11
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-01",
+          "topic": "public_transport",
+          "accepted_count": 17,
+          "processed_posts_on_day": 837,
+          "mean_target_polarity": 0.252352938932531,
+          "labels": {
+            "positive": 11,
+            "negative": 6
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-02",
+          "topic": "public_transport",
+          "accepted_count": 32,
+          "processed_posts_on_day": 1429,
+          "mean_target_polarity": -0.06812499836087227,
+          "labels": {
+            "negative": 17,
+            "positive": 15
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-03",
+          "topic": "public_transport",
+          "accepted_count": 30,
+          "processed_posts_on_day": 1633,
+          "mean_target_polarity": 0.06266667048136393,
+          "labels": {
+            "positive": 16,
+            "negative": 14
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-04",
+          "topic": "public_transport",
+          "accepted_count": 34,
+          "processed_posts_on_day": 1076,
+          "mean_target_polarity": -0.00264706155833076,
+          "labels": {
+            "negative": 17,
+            "positive": 17
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-05",
+          "topic": "public_transport",
+          "accepted_count": 36,
+          "processed_posts_on_day": 1292,
+          "mean_target_polarity": 0.04527777598963843,
+          "labels": {
+            "positive": 19,
+            "negative": 17
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-06",
+          "topic": "public_transport",
+          "accepted_count": 65,
+          "processed_posts_on_day": 2494,
+          "mean_target_polarity": 0.10430769186753493,
+          "labels": {
+            "positive": 36,
+            "negative": 29
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-07",
+          "topic": "public_transport",
+          "accepted_count": 42,
+          "processed_posts_on_day": 1692,
+          "mean_target_polarity": 0.21476190430777414,
+          "labels": {
+            "positive": 26,
+            "negative": 16
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-08",
+          "topic": "public_transport",
+          "accepted_count": 51,
+          "processed_posts_on_day": 1995,
+          "mean_target_polarity": 0.017254901867286832,
+          "labels": {
+            "positive": 26,
+            "negative": 25
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-09",
+          "topic": "public_transport",
+          "accepted_count": 118,
+          "processed_posts_on_day": 2860,
+          "mean_target_polarity": 0.11135593018794464,
+          "labels": {
+            "positive": 66,
+            "negative": 51,
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-10",
+          "topic": "public_transport",
+          "accepted_count": 77,
+          "processed_posts_on_day": 1959,
+          "mean_target_polarity": 0.172337662864041,
+          "labels": {
+            "positive": 46,
+            "negative": 31
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-11",
+          "topic": "public_transport",
+          "accepted_count": 50,
+          "processed_posts_on_day": 2072,
+          "mean_target_polarity": 0.3000000059604645,
+          "labels": {
+            "positive": 33,
+            "negative": 17
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-12",
+          "topic": "public_transport",
+          "accepted_count": 81,
+          "processed_posts_on_day": 2248,
+          "mean_target_polarity": 0.024567902088165283,
+          "labels": {
+            "positive": 42,
+            "negative": 39
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-13",
+          "topic": "public_transport",
+          "accepted_count": 61,
+          "processed_posts_on_day": 1913,
+          "mean_target_polarity": 0.12360655675168897,
+          "labels": {
+            "positive": 35,
+            "negative": 26
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-14",
+          "topic": "public_transport",
+          "accepted_count": 48,
+          "processed_posts_on_day": 1294,
+          "mean_target_polarity": 0.23666666944821677,
+          "labels": {
+            "positive": 30,
+            "negative": 18
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-15",
+          "topic": "public_transport",
+          "accepted_count": 41,
+          "processed_posts_on_day": 1226,
+          "mean_target_polarity": -0.0314634151575042,
+          "labels": {
+            "negative": 21,
+            "positive": 20
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-16",
+          "topic": "public_transport",
+          "accepted_count": 75,
+          "processed_posts_on_day": 1388,
+          "mean_target_polarity": 0.23306666771570841,
+          "labels": {
+            "positive": 47,
+            "negative": 28
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-17",
+          "topic": "public_transport",
+          "accepted_count": 53,
+          "processed_posts_on_day": 1383,
+          "mean_target_polarity": 0.12622641504935497,
+          "labels": {
+            "positive": 30,
+            "negative": 23
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-18",
+          "topic": "public_transport",
+          "accepted_count": 71,
+          "processed_posts_on_day": 2079,
+          "mean_target_polarity": 0.1784507027814086,
+          "labels": {
+            "positive": 43,
+            "negative": 28
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-19",
+          "topic": "public_transport",
+          "accepted_count": 70,
+          "processed_posts_on_day": 2337,
+          "mean_target_polarity": 0.3347142849649702,
+          "labels": {
+            "positive": 48,
+            "negative": 22
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-20",
+          "topic": "public_transport",
+          "accepted_count": 75,
+          "processed_posts_on_day": 2066,
+          "mean_target_polarity": 0.18133333365122478,
+          "labels": {
+            "positive": 45,
+            "negative": 30
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-21",
+          "topic": "public_transport",
+          "accepted_count": 52,
+          "processed_posts_on_day": 1552,
+          "mean_target_polarity": 0.18596153763624337,
+          "labels": {
+            "positive": 32,
+            "negative": 20
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-22",
+          "topic": "public_transport",
+          "accepted_count": 59,
+          "processed_posts_on_day": 1457,
+          "mean_target_polarity": 0.318135594917556,
+          "labels": {
+            "positive": 40,
+            "negative": 19
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-23",
+          "topic": "public_transport",
+          "accepted_count": 86,
+          "processed_posts_on_day": 1618,
+          "mean_target_polarity": 0.36279069961503496,
+          "labels": {
+            "positive": 60,
+            "negative": 26
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-24",
+          "topic": "public_transport",
+          "accepted_count": 71,
+          "processed_posts_on_day": 1398,
+          "mean_target_polarity": 0.260985920127009,
+          "labels": {
+            "positive": 46,
+            "negative": 25
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-25",
+          "topic": "public_transport",
+          "accepted_count": 50,
+          "processed_posts_on_day": 1241,
+          "mean_target_polarity": 0.43820000290870664,
+          "labels": {
+            "positive": 37,
+            "negative": 13
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-26",
+          "topic": "public_transport",
+          "accepted_count": 55,
+          "processed_posts_on_day": 1269,
+          "mean_target_polarity": 0.24509091160514138,
+          "labels": {
+            "positive": 35,
+            "negative": 20
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-27",
+          "topic": "public_transport",
+          "accepted_count": 71,
+          "processed_posts_on_day": 1212,
+          "mean_target_polarity": 0.4954929595262232,
+          "labels": {
+            "positive": 54,
+            "negative": 17
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-28",
+          "topic": "public_transport",
+          "accepted_count": 57,
+          "processed_posts_on_day": 880,
+          "mean_target_polarity": 0.12315789544791506,
+          "labels": {
+            "positive": 33,
+            "negative": 24
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-29",
+          "topic": "public_transport",
+          "accepted_count": 96,
+          "processed_posts_on_day": 1052,
+          "mean_target_polarity": 0.3829166665673256,
+          "labels": {
+            "positive": 69,
+            "negative": 27
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-30",
+          "topic": "public_transport",
+          "accepted_count": 117,
+          "processed_posts_on_day": 1279,
+          "mean_target_polarity": 0.2658974385669089,
+          "labels": {
+            "positive": 76,
+            "negative": 41
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-31",
+          "topic": "public_transport",
+          "accepted_count": 78,
+          "processed_posts_on_day": 1871,
+          "mean_target_polarity": 0.1691025625436734,
+          "labels": {
+            "positive": 47,
+            "negative": 31
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-01",
+          "topic": "public_transport",
+          "accepted_count": 77,
+          "processed_posts_on_day": 1537,
+          "mean_target_polarity": 0.2476623398917062,
+          "labels": {
+            "positive": 49,
+            "negative": 28
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-02",
+          "topic": "public_transport",
+          "accepted_count": 96,
+          "processed_posts_on_day": 1704,
+          "mean_target_polarity": 0.37937500203649205,
+          "labels": {
+            "positive": 68,
+            "negative": 28
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-03",
+          "topic": "public_transport",
+          "accepted_count": 64,
+          "processed_posts_on_day": 1097,
+          "mean_target_polarity": 0.41406250186264515,
+          "labels": {
+            "positive": 46,
+            "negative": 18
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-04",
+          "topic": "public_transport",
+          "accepted_count": 83,
+          "processed_posts_on_day": 957,
+          "mean_target_polarity": 0.32349397906337873,
+          "labels": {
+            "positive": 56,
+            "negative": 27
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-05",
+          "topic": "public_transport",
+          "accepted_count": 60,
+          "processed_posts_on_day": 794,
+          "mean_target_polarity": 0.20866666734218597,
+          "labels": {
+            "positive": 37,
+            "negative": 23
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-06",
+          "topic": "public_transport",
+          "accepted_count": 49,
+          "processed_posts_on_day": 989,
+          "mean_target_polarity": 0.290000001994931,
+          "labels": {
+            "positive": 32,
+            "negative": 17
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-07",
+          "topic": "public_transport",
+          "accepted_count": 54,
+          "processed_posts_on_day": 1329,
+          "mean_target_polarity": 0.13351851591357478,
+          "labels": {
+            "positive": 31,
+            "negative": 23
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-08",
+          "topic": "public_transport",
+          "accepted_count": 60,
+          "processed_posts_on_day": 1478,
+          "mean_target_polarity": -0.07933333317438761,
+          "labels": {
+            "negative": 32,
+            "positive": 28
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-09",
+          "topic": "public_transport",
+          "accepted_count": 84,
+          "processed_posts_on_day": 1175,
+          "mean_target_polarity": 0.2161904779218492,
+          "labels": {
+            "positive": 52,
+            "negative": 32
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-10",
+          "topic": "public_transport",
+          "accepted_count": 54,
+          "processed_posts_on_day": 1207,
+          "mean_target_polarity": 0.18629629854802732,
+          "labels": {
+            "positive": 33,
+            "negative": 21
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-11",
+          "topic": "public_transport",
+          "accepted_count": 51,
+          "processed_posts_on_day": 894,
+          "mean_target_polarity": 0.2296078450539533,
+          "labels": {
+            "positive": 32,
+            "negative": 19
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-12",
+          "topic": "public_transport",
+          "accepted_count": 48,
+          "processed_posts_on_day": 1158,
+          "mean_target_polarity": 0.03520833452542623,
+          "labels": {
+            "positive": 25,
+            "negative": 23
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-13",
+          "topic": "public_transport",
+          "accepted_count": 60,
+          "processed_posts_on_day": 1170,
+          "mean_target_polarity": 0.27100000381469724,
+          "labels": {
+            "positive": 39,
+            "negative": 21
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-14",
+          "topic": "public_transport",
+          "accepted_count": 71,
+          "processed_posts_on_day": 1310,
+          "mean_target_polarity": 0.2681690143867278,
+          "labels": {
+            "positive": 47,
+            "negative": 24
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-15",
+          "topic": "public_transport",
+          "accepted_count": 68,
+          "processed_posts_on_day": 1242,
+          "mean_target_polarity": 0.1776470638373319,
+          "labels": {
+            "positive": 41,
+            "negative": 27
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-16",
+          "topic": "public_transport",
+          "accepted_count": 33,
+          "processed_posts_on_day": 908,
+          "mean_target_polarity": -0.1360606009309942,
+          "labels": {
+            "negative": 19,
+            "positive": 14
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-17",
+          "topic": "public_transport",
+          "accepted_count": 73,
+          "processed_posts_on_day": 1260,
+          "mean_target_polarity": 0.20328767087361585,
+          "labels": {
+            "positive": 45,
+            "negative": 28
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-18",
+          "topic": "public_transport",
+          "accepted_count": 47,
+          "processed_posts_on_day": 701,
+          "mean_target_polarity": 0.21999999817381513,
+          "labels": {
+            "positive": 29,
+            "negative": 18
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-19",
+          "topic": "public_transport",
+          "accepted_count": 38,
+          "processed_posts_on_day": 786,
+          "mean_target_polarity": 0.22578947481356168,
+          "labels": {
+            "positive": 24,
+            "negative": 14
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-20",
+          "topic": "public_transport",
+          "accepted_count": 54,
+          "processed_posts_on_day": 1089,
+          "mean_target_polarity": 0.33296296441996537,
+          "labels": {
+            "positive": 37,
+            "negative": 17
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-21",
+          "topic": "public_transport",
+          "accepted_count": 55,
+          "processed_posts_on_day": 894,
+          "mean_target_polarity": 0.180363637750799,
+          "labels": {
+            "positive": 33,
+            "negative": 22
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-22",
+          "topic": "public_transport",
+          "accepted_count": 57,
+          "processed_posts_on_day": 960,
+          "mean_target_polarity": 0.3524561430278577,
+          "labels": {
+            "positive": 39,
+            "negative": 18
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-23",
+          "topic": "public_transport",
+          "accepted_count": 63,
+          "processed_posts_on_day": 866,
+          "mean_target_polarity": 0.2733333347335694,
+          "labels": {
+            "positive": 41,
+            "negative": 22
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-24",
+          "topic": "public_transport",
+          "accepted_count": 52,
+          "processed_posts_on_day": 821,
+          "mean_target_polarity": 0.16442307829856873,
+          "labels": {
+            "positive": 31,
+            "negative": 21
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-25",
+          "topic": "public_transport",
+          "accepted_count": 65,
+          "processed_posts_on_day": 701,
+          "mean_target_polarity": 0.2744615405797958,
+          "labels": {
+            "positive": 42,
+            "negative": 22,
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-26",
+          "topic": "public_transport",
+          "accepted_count": 42,
+          "processed_posts_on_day": 594,
+          "mean_target_polarity": 0.3361904734656924,
+          "labels": {
+            "positive": 29,
+            "negative": 13
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-27",
+          "topic": "public_transport",
+          "accepted_count": 55,
+          "processed_posts_on_day": 748,
+          "mean_target_polarity": 0.31218182173642245,
+          "labels": {
+            "positive": 37,
+            "negative": 18
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-28",
+          "topic": "public_transport",
+          "accepted_count": 57,
+          "processed_posts_on_day": 1196,
+          "mean_target_polarity": 0.58298245961206,
+          "labels": {
+            "positive": 46,
+            "negative": 11
+          },
+          "sentiment_scope": "poster_target_attitude"
+        }
+      ],
+      "meta": {
+        "from": "2026-01-28",
+        "to": "2026-04-28",
+        "dataset_kind": "live",
+        "sentiment_definition": "mean P(positive)-P(negative) among accepted poster-target attitudes",
+        "timezone": "UTC",
+        "model": "jev-1.13.0",
+        "topic_counts_overlap": true
+      }
+    },
+    "social/target-sentiment|platform=bluesky&topic=ev": {
+      "data": [
+        {
+          "date": "2026-01-28",
+          "topic": "ev",
+          "accepted_count": 5,
+          "processed_posts_on_day": 336,
+          "mean_target_polarity": -0.18800001144409179,
+          "labels": {
+            "negative": 3,
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-01-29",
+          "topic": "ev",
+          "accepted_count": 3,
+          "processed_posts_on_day": 346,
+          "mean_target_polarity": 0.3233333428700765,
+          "labels": {
+            "positive": 2,
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-01-30",
+          "topic": "ev",
+          "accepted_count": 2,
+          "processed_posts_on_day": 271,
+          "mean_target_polarity": -0.004999995231628418,
+          "labels": {
+            "negative": 1,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-01-31",
+          "topic": "ev",
+          "accepted_count": 6,
+          "processed_posts_on_day": 220,
+          "mean_target_polarity": 0.6383333404858907,
+          "labels": {
+            "positive": 5,
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-01",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 192,
+          "mean_target_polarity": -0.949999988079071,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-02",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 248,
+          "mean_target_polarity": 0.7799999713897705,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-03",
+          "topic": "ev",
+          "accepted_count": 4,
+          "processed_posts_on_day": 266,
+          "mean_target_polarity": -0.4599999934434891,
+          "labels": {
+            "negative": 3,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-04",
+          "topic": "ev",
+          "accepted_count": 4,
+          "processed_posts_on_day": 283,
+          "mean_target_polarity": 0.005000010132789612,
+          "labels": {
+            "negative": 2,
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-05",
+          "topic": "ev",
+          "accepted_count": 6,
+          "processed_posts_on_day": 342,
+          "mean_target_polarity": -0.6366666654745737,
+          "labels": {
+            "negative": 5,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-06",
+          "topic": "ev",
+          "accepted_count": 3,
+          "processed_posts_on_day": 289,
+          "mean_target_polarity": -0.3266666730244954,
+          "labels": {
+            "negative": 2,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-07",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 279,
+          "mean_target_polarity": -1.0,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-08",
+          "topic": "ev",
+          "accepted_count": 2,
+          "processed_posts_on_day": 227,
+          "mean_target_polarity": -0.925000011920929,
+          "labels": {
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-09",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 232,
+          "mean_target_polarity": -1.0,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-10",
+          "topic": "ev",
+          "accepted_count": 3,
+          "processed_posts_on_day": 255,
+          "mean_target_polarity": 0.38333334525426227,
+          "labels": {
+            "positive": 2,
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-11",
+          "topic": "ev",
+          "accepted_count": 3,
+          "processed_posts_on_day": 281,
+          "mean_target_polarity": 0.9866666793823242,
+          "labels": {
+            "positive": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-12",
+          "topic": "ev",
+          "accepted_count": 6,
+          "processed_posts_on_day": 293,
+          "mean_target_polarity": 0.5933333436648051,
+          "labels": {
+            "positive": 5,
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-13",
+          "topic": "ev",
+          "accepted_count": 2,
+          "processed_posts_on_day": 298,
+          "mean_target_polarity": -0.009999990463256836,
+          "labels": {
+            "negative": 1,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-14",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 188,
+          "mean_target_polarity": -0.9900000095367432,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-15",
+          "topic": "ev",
+          "accepted_count": 4,
+          "processed_posts_on_day": 228,
+          "mean_target_polarity": 0.947500005364418,
+          "labels": {
+            "positive": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-16",
+          "topic": "ev",
+          "accepted_count": 2,
+          "processed_posts_on_day": 278,
+          "mean_target_polarity": -0.9749999940395355,
+          "labels": {
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-17",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 271,
+          "mean_target_polarity": -1.0,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-18",
+          "topic": "ev",
+          "accepted_count": 5,
+          "processed_posts_on_day": 344,
+          "mean_target_polarity": 0.9740000128746032,
+          "labels": {
+            "positive": 5
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-19",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 279,
+          "mean_target_polarity": -1.0,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-20",
+          "topic": "ev",
+          "accepted_count": 3,
+          "processed_posts_on_day": 355,
+          "mean_target_polarity": -0.33000000317891437,
+          "labels": {
+            "negative": 2,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-21",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 233,
+          "mean_target_polarity": 0.9700000286102295,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-22",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 178,
+          "mean_target_polarity": -0.9599999785423279,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-23",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 378,
+          "mean_target_polarity": 0.9599999785423279,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-24",
+          "topic": "ev",
+          "accepted_count": 7,
+          "processed_posts_on_day": 341,
+          "mean_target_polarity": 0.41285713229860577,
+          "labels": {
+            "positive": 5,
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-25",
+          "topic": "ev",
+          "accepted_count": 5,
+          "processed_posts_on_day": 546,
+          "mean_target_polarity": 0.5019999980926514,
+          "labels": {
+            "positive": 4,
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-26",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 343,
+          "mean_target_polarity": -0.8199999928474426,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-27",
+          "topic": "ev",
+          "accepted_count": 5,
+          "processed_posts_on_day": 302,
+          "mean_target_polarity": -0.24200000762939453,
+          "labels": {
+            "negative": 3,
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-28",
+          "topic": "ev",
+          "accepted_count": 5,
+          "processed_posts_on_day": 691,
+          "mean_target_polarity": 0.5860000014305115,
+          "labels": {
+            "positive": 4,
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-01",
+          "topic": "ev",
+          "accepted_count": 7,
+          "processed_posts_on_day": 837,
+          "mean_target_polarity": 0.6557142819677081,
+          "labels": {
+            "positive": 6,
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-02",
+          "topic": "ev",
+          "accepted_count": 19,
+          "processed_posts_on_day": 1429,
+          "mean_target_polarity": 0.9489473731894242,
+          "labels": {
+            "positive": 19
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-03",
+          "topic": "ev",
+          "accepted_count": 19,
+          "processed_posts_on_day": 1633,
+          "mean_target_polarity": 0.7631578978739286,
+          "labels": {
+            "positive": 17,
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-04",
+          "topic": "ev",
+          "accepted_count": 14,
+          "processed_posts_on_day": 1076,
+          "mean_target_polarity": 0.7142857185431889,
+          "labels": {
+            "positive": 12,
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-05",
+          "topic": "ev",
+          "accepted_count": 11,
+          "processed_posts_on_day": 1292,
+          "mean_target_polarity": 0.08727273074063388,
+          "labels": {
+            "positive": 6,
+            "negative": 5
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-06",
+          "topic": "ev",
+          "accepted_count": 31,
+          "processed_posts_on_day": 2494,
+          "mean_target_polarity": 0.8983870994660162,
+          "labels": {
+            "positive": 30,
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-07",
+          "topic": "ev",
+          "accepted_count": 32,
+          "processed_posts_on_day": 1692,
+          "mean_target_polarity": 0.7253124993294477,
+          "labels": {
+            "positive": 28,
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-08",
+          "topic": "ev",
+          "accepted_count": 20,
+          "processed_posts_on_day": 1995,
+          "mean_target_polarity": 0.6695000052452087,
+          "labels": {
+            "positive": 17,
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-09",
+          "topic": "ev",
+          "accepted_count": 41,
+          "processed_posts_on_day": 2860,
+          "mean_target_polarity": 0.7968292701535109,
+          "labels": {
+            "positive": 38,
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-10",
+          "topic": "ev",
+          "accepted_count": 22,
+          "processed_posts_on_day": 1959,
+          "mean_target_polarity": 0.42545454610477795,
+          "labels": {
+            "positive": 16,
+            "negative": 6
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-11",
+          "topic": "ev",
+          "accepted_count": 23,
+          "processed_posts_on_day": 2072,
+          "mean_target_polarity": 0.7560869584912839,
+          "labels": {
+            "positive": 21,
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-12",
+          "topic": "ev",
+          "accepted_count": 20,
+          "processed_posts_on_day": 2248,
+          "mean_target_polarity": 0.5765000015497208,
+          "labels": {
+            "positive": 16,
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-13",
+          "topic": "ev",
+          "accepted_count": 24,
+          "processed_posts_on_day": 1913,
+          "mean_target_polarity": 0.7183333386977514,
+          "labels": {
+            "positive": 21,
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-14",
+          "topic": "ev",
+          "accepted_count": 10,
+          "processed_posts_on_day": 1294,
+          "mean_target_polarity": 0.5509999990463257,
+          "labels": {
+            "positive": 8,
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-15",
+          "topic": "ev",
+          "accepted_count": 12,
+          "processed_posts_on_day": 1226,
+          "mean_target_polarity": 0.6191666672627131,
+          "labels": {
+            "positive": 10,
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-16",
+          "topic": "ev",
+          "accepted_count": 19,
+          "processed_posts_on_day": 1388,
+          "mean_target_polarity": 0.5452631586476376,
+          "labels": {
+            "positive": 15,
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-17",
+          "topic": "ev",
+          "accepted_count": 10,
+          "processed_posts_on_day": 1383,
+          "mean_target_polarity": 0.7669999957084656,
+          "labels": {
+            "positive": 9,
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-18",
+          "topic": "ev",
+          "accepted_count": 26,
+          "processed_posts_on_day": 2079,
+          "mean_target_polarity": 0.5157692363628974,
+          "labels": {
+            "positive": 20,
+            "negative": 6
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-19",
+          "topic": "ev",
+          "accepted_count": 27,
+          "processed_posts_on_day": 2337,
+          "mean_target_polarity": 0.2937037017610338,
+          "labels": {
+            "positive": 18,
+            "negative": 9
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-20",
+          "topic": "ev",
+          "accepted_count": 23,
+          "processed_posts_on_day": 2066,
+          "mean_target_polarity": 0.6069565259892008,
+          "labels": {
+            "positive": 19,
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-21",
+          "topic": "ev",
+          "accepted_count": 38,
+          "processed_posts_on_day": 1552,
+          "mean_target_polarity": 0.7415789522622761,
+          "labels": {
+            "positive": 34,
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-22",
+          "topic": "ev",
+          "accepted_count": 20,
+          "processed_posts_on_day": 1457,
+          "mean_target_polarity": 0.6610000044107437,
+          "labels": {
+            "positive": 17,
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-23",
+          "topic": "ev",
+          "accepted_count": 27,
+          "processed_posts_on_day": 1618,
+          "mean_target_polarity": 0.6340740742506804,
+          "labels": {
+            "positive": 23,
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-24",
+          "topic": "ev",
+          "accepted_count": 23,
+          "processed_posts_on_day": 1398,
+          "mean_target_polarity": 0.6869565222574316,
+          "labels": {
+            "positive": 20,
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-25",
+          "topic": "ev",
+          "accepted_count": 16,
+          "processed_posts_on_day": 1241,
+          "mean_target_polarity": 0.5812500007450581,
+          "labels": {
+            "positive": 13,
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-26",
+          "topic": "ev",
+          "accepted_count": 27,
+          "processed_posts_on_day": 1269,
+          "mean_target_polarity": 0.43925926199665777,
+          "labels": {
+            "positive": 20,
+            "negative": 7
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-27",
+          "topic": "ev",
+          "accepted_count": 16,
+          "processed_posts_on_day": 1212,
+          "mean_target_polarity": 0.4649999998509884,
+          "labels": {
+            "positive": 12,
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-28",
+          "topic": "ev",
+          "accepted_count": 19,
+          "processed_posts_on_day": 880,
+          "mean_target_polarity": 0.628947377204895,
+          "labels": {
+            "positive": 16,
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-29",
+          "topic": "ev",
+          "accepted_count": 14,
+          "processed_posts_on_day": 1052,
+          "mean_target_polarity": 0.552857152053288,
+          "labels": {
+            "positive": 11,
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-30",
+          "topic": "ev",
+          "accepted_count": 21,
+          "processed_posts_on_day": 1279,
+          "mean_target_polarity": 0.7666666678019932,
+          "labels": {
+            "positive": 19,
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-31",
+          "topic": "ev",
+          "accepted_count": 32,
+          "processed_posts_on_day": 1871,
+          "mean_target_polarity": 0.6953125,
+          "labels": {
+            "positive": 28,
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-01",
+          "topic": "ev",
+          "accepted_count": 21,
+          "processed_posts_on_day": 1537,
+          "mean_target_polarity": 0.5914285750616164,
+          "labels": {
+            "positive": 17,
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-02",
+          "topic": "ev",
+          "accepted_count": 21,
+          "processed_posts_on_day": 1704,
+          "mean_target_polarity": 0.8461904781205314,
+          "labels": {
+            "positive": 20,
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-03",
+          "topic": "ev",
+          "accepted_count": 16,
+          "processed_posts_on_day": 1097,
+          "mean_target_polarity": 0.23000000417232513,
+          "labels": {
+            "positive": 10,
+            "negative": 6
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-04",
+          "topic": "ev",
+          "accepted_count": 19,
+          "processed_posts_on_day": 957,
+          "mean_target_polarity": 0.3489473713071723,
+          "labels": {
+            "positive": 13,
+            "negative": 6
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-05",
+          "topic": "ev",
+          "accepted_count": 25,
+          "processed_posts_on_day": 794,
+          "mean_target_polarity": 0.3211999988555908,
+          "labels": {
+            "positive": 17,
+            "negative": 8
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-06",
+          "topic": "ev",
+          "accepted_count": 14,
+          "processed_posts_on_day": 989,
+          "mean_target_polarity": 0.6785714328289032,
+          "labels": {
+            "positive": 12,
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-07",
+          "topic": "ev",
+          "accepted_count": 20,
+          "processed_posts_on_day": 1329,
+          "mean_target_polarity": 0.27950001060962676,
+          "labels": {
+            "positive": 13,
+            "negative": 7
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-08",
+          "topic": "ev",
+          "accepted_count": 4,
+          "processed_posts_on_day": 1478,
+          "mean_target_polarity": 0.4324999898672104,
+          "labels": {
+            "positive": 3,
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-09",
+          "topic": "ev",
+          "accepted_count": 21,
+          "processed_posts_on_day": 1175,
+          "mean_target_polarity": 0.48380952789669945,
+          "labels": {
+            "positive": 16,
+            "negative": 5
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-10",
+          "topic": "ev",
+          "accepted_count": 13,
+          "processed_posts_on_day": 1207,
+          "mean_target_polarity": -0.05846154231291551,
+          "labels": {
+            "negative": 7,
+            "positive": 6
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-11",
+          "topic": "ev",
+          "accepted_count": 16,
+          "processed_posts_on_day": 894,
+          "mean_target_polarity": 0.3293749988079071,
+          "labels": {
+            "positive": 11,
+            "negative": 5
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-12",
+          "topic": "ev",
+          "accepted_count": 12,
+          "processed_posts_on_day": 1158,
+          "mean_target_polarity": 0.9266666720310847,
+          "labels": {
+            "positive": 12
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-13",
+          "topic": "ev",
+          "accepted_count": 16,
+          "processed_posts_on_day": 1170,
+          "mean_target_polarity": 0.8162500001490116,
+          "labels": {
+            "positive": 15,
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-14",
+          "topic": "ev",
+          "accepted_count": 20,
+          "processed_posts_on_day": 1310,
+          "mean_target_polarity": 0.8435000061988831,
+          "labels": {
+            "positive": 19,
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-15",
+          "topic": "ev",
+          "accepted_count": 15,
+          "processed_posts_on_day": 1242,
+          "mean_target_polarity": 0.44333333571751915,
+          "labels": {
+            "positive": 11,
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-16",
+          "topic": "ev",
+          "accepted_count": 14,
+          "processed_posts_on_day": 908,
+          "mean_target_polarity": 0.26785714285714285,
+          "labels": {
+            "positive": 9,
+            "negative": 5
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-17",
+          "topic": "ev",
+          "accepted_count": 19,
+          "processed_posts_on_day": 1260,
+          "mean_target_polarity": 0.552631582084455,
+          "labels": {
+            "positive": 15,
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-18",
+          "topic": "ev",
+          "accepted_count": 15,
+          "processed_posts_on_day": 701,
+          "mean_target_polarity": 0.3086666742960612,
+          "labels": {
+            "positive": 10,
+            "negative": 5
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-19",
+          "topic": "ev",
+          "accepted_count": 9,
+          "processed_posts_on_day": 786,
+          "mean_target_polarity": 0.8844444553057352,
+          "labels": {
+            "positive": 9
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-20",
+          "topic": "ev",
+          "accepted_count": 17,
+          "processed_posts_on_day": 1089,
+          "mean_target_polarity": 0.6241176514064565,
+          "labels": {
+            "positive": 14,
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-21",
+          "topic": "ev",
+          "accepted_count": 10,
+          "processed_posts_on_day": 894,
+          "mean_target_polarity": 0.9350000023841858,
+          "labels": {
+            "positive": 10
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-22",
+          "topic": "ev",
+          "accepted_count": 14,
+          "processed_posts_on_day": 960,
+          "mean_target_polarity": 0.6900000018732888,
+          "labels": {
+            "positive": 12,
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-23",
+          "topic": "ev",
+          "accepted_count": 11,
+          "processed_posts_on_day": 866,
+          "mean_target_polarity": 0.6027272777123884,
+          "labels": {
+            "positive": 9,
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-24",
+          "topic": "ev",
+          "accepted_count": 12,
+          "processed_posts_on_day": 821,
+          "mean_target_polarity": 0.3033333321412404,
+          "labels": {
+            "positive": 8,
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-25",
+          "topic": "ev",
+          "accepted_count": 7,
+          "processed_posts_on_day": 701,
+          "mean_target_polarity": 0.6842857258660453,
+          "labels": {
+            "positive": 6,
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-26",
+          "topic": "ev",
+          "accepted_count": 12,
+          "processed_posts_on_day": 594,
+          "mean_target_polarity": 0.6258333375056585,
+          "labels": {
+            "positive": 10,
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-27",
+          "topic": "ev",
+          "accepted_count": 11,
+          "processed_posts_on_day": 748,
+          "mean_target_polarity": 0.7872727296569131,
+          "labels": {
+            "positive": 10,
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-28",
+          "topic": "ev",
+          "accepted_count": 11,
+          "processed_posts_on_day": 1196,
+          "mean_target_polarity": 0.38727272098714655,
+          "labels": {
+            "positive": 8,
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        }
+      ],
+      "meta": {
+        "from": "2026-01-28",
+        "to": "2026-04-28",
+        "dataset_kind": "live",
+        "sentiment_definition": "mean P(positive)-P(negative) among accepted poster-target attitudes",
+        "timezone": "UTC",
+        "model": "jev-1.13.0",
+        "topic_counts_overlap": true
+      }
+    },
+    "social/target-sentiment|platform=bluesky&topic=oil_vehicle": {
+      "data": [
+        {
+          "date": "2026-01-28",
+          "topic": "oil_vehicle",
+          "accepted_count": 8,
+          "processed_posts_on_day": 336,
+          "mean_target_polarity": -0.9675000011920929,
+          "labels": {
+            "negative": 8
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-01-29",
+          "topic": "oil_vehicle",
+          "accepted_count": 7,
+          "processed_posts_on_day": 346,
+          "mean_target_polarity": -0.7100000040871757,
+          "labels": {
+            "negative": 6,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-01-30",
+          "topic": "oil_vehicle",
+          "accepted_count": 3,
+          "processed_posts_on_day": 271,
+          "mean_target_polarity": -0.9933333396911621,
+          "labels": {
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-01-31",
+          "topic": "oil_vehicle",
+          "accepted_count": 6,
+          "processed_posts_on_day": 220,
+          "mean_target_polarity": -0.6316666603088379,
+          "labels": {
+            "negative": 5,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-01",
+          "topic": "oil_vehicle",
+          "accepted_count": 3,
+          "processed_posts_on_day": 192,
+          "mean_target_polarity": -0.9233333468437195,
+          "labels": {
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-02",
+          "topic": "oil_vehicle",
+          "accepted_count": 2,
+          "processed_posts_on_day": 248,
+          "mean_target_polarity": -0.9300000071525574,
+          "labels": {
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-03",
+          "topic": "oil_vehicle",
+          "accepted_count": 3,
+          "processed_posts_on_day": 266,
+          "mean_target_polarity": -0.9766666690508524,
+          "labels": {
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-04",
+          "topic": "oil_vehicle",
+          "accepted_count": 3,
+          "processed_posts_on_day": 283,
+          "mean_target_polarity": -0.9933333396911621,
+          "labels": {
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-05",
+          "topic": "oil_vehicle",
+          "accepted_count": 8,
+          "processed_posts_on_day": 342,
+          "mean_target_polarity": -0.7187500074505806,
+          "labels": {
+            "negative": 7,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-06",
+          "topic": "oil_vehicle",
+          "accepted_count": 1,
+          "processed_posts_on_day": 289,
+          "mean_target_polarity": -0.9900000095367432,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-07",
+          "topic": "oil_vehicle",
+          "accepted_count": 6,
+          "processed_posts_on_day": 279,
+          "mean_target_polarity": -0.3566666742165883,
+          "labels": {
+            "negative": 4,
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-08",
+          "topic": "oil_vehicle",
+          "accepted_count": 8,
+          "processed_posts_on_day": 227,
+          "mean_target_polarity": -0.9574999958276749,
+          "labels": {
+            "negative": 8
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-09",
+          "topic": "oil_vehicle",
+          "accepted_count": 2,
+          "processed_posts_on_day": 232,
+          "mean_target_polarity": -0.9850000143051147,
+          "labels": {
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-10",
+          "topic": "oil_vehicle",
+          "accepted_count": 3,
+          "processed_posts_on_day": 255,
+          "mean_target_polarity": -0.8399999936421713,
+          "labels": {
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-11",
+          "topic": "oil_vehicle",
+          "accepted_count": 3,
+          "processed_posts_on_day": 281,
+          "mean_target_polarity": -0.3366666833559672,
+          "labels": {
+            "negative": 2,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-12",
+          "topic": "oil_vehicle",
+          "accepted_count": 6,
+          "processed_posts_on_day": 293,
+          "mean_target_polarity": -0.9400000075499216,
+          "labels": {
+            "negative": 6
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-13",
+          "topic": "oil_vehicle",
+          "accepted_count": 2,
+          "processed_posts_on_day": 298,
+          "mean_target_polarity": -0.8800000250339508,
+          "labels": {
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-14",
+          "topic": "oil_vehicle",
+          "accepted_count": 4,
+          "processed_posts_on_day": 188,
+          "mean_target_polarity": -0.9925000071525574,
+          "labels": {
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-15",
+          "topic": "oil_vehicle",
+          "accepted_count": 3,
+          "processed_posts_on_day": 228,
+          "mean_target_polarity": -0.9366666674613953,
+          "labels": {
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-16",
+          "topic": "oil_vehicle",
+          "accepted_count": 7,
+          "processed_posts_on_day": 278,
+          "mean_target_polarity": -0.9557142853736877,
+          "labels": {
+            "negative": 7
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-17",
+          "topic": "oil_vehicle",
+          "accepted_count": 4,
+          "processed_posts_on_day": 271,
+          "mean_target_polarity": -0.9675000011920929,
+          "labels": {
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-18",
+          "topic": "oil_vehicle",
+          "accepted_count": 3,
+          "processed_posts_on_day": 344,
+          "mean_target_polarity": -0.9733333388964335,
+          "labels": {
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-19",
+          "topic": "oil_vehicle",
+          "accepted_count": 2,
+          "processed_posts_on_day": 279,
+          "mean_target_polarity": -0.9749999940395355,
+          "labels": {
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-20",
+          "topic": "oil_vehicle",
+          "accepted_count": 4,
+          "processed_posts_on_day": 355,
+          "mean_target_polarity": -0.9800000041723251,
+          "labels": {
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-21",
+          "topic": "oil_vehicle",
+          "accepted_count": 5,
+          "processed_posts_on_day": 233,
+          "mean_target_polarity": -0.977999997138977,
+          "labels": {
+            "negative": 5
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-22",
+          "topic": "oil_vehicle",
+          "accepted_count": 6,
+          "processed_posts_on_day": 178,
+          "mean_target_polarity": -0.6466666758060455,
+          "labels": {
+            "negative": 5,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-23",
+          "topic": "oil_vehicle",
+          "accepted_count": 3,
+          "processed_posts_on_day": 378,
+          "mean_target_polarity": -0.950000007947286,
+          "labels": {
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-24",
+          "topic": "oil_vehicle",
+          "accepted_count": 10,
+          "processed_posts_on_day": 341,
+          "mean_target_polarity": -0.972000002861023,
+          "labels": {
+            "negative": 10
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-25",
+          "topic": "oil_vehicle",
+          "accepted_count": 10,
+          "processed_posts_on_day": 546,
+          "mean_target_polarity": -0.925,
+          "labels": {
+            "negative": 10
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-26",
+          "topic": "oil_vehicle",
+          "accepted_count": 2,
+          "processed_posts_on_day": 343,
+          "mean_target_polarity": -0.9300000071525574,
+          "labels": {
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-27",
+          "topic": "oil_vehicle",
+          "accepted_count": 4,
+          "processed_posts_on_day": 302,
+          "mean_target_polarity": -0.9200000017881393,
+          "labels": {
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-28",
+          "topic": "oil_vehicle",
+          "accepted_count": 4,
+          "processed_posts_on_day": 691,
+          "mean_target_polarity": -0.9725000113248825,
+          "labels": {
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-01",
+          "topic": "oil_vehicle",
+          "accepted_count": 4,
+          "processed_posts_on_day": 837,
+          "mean_target_polarity": -0.5300000011920929,
+          "labels": {
+            "negative": 3,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-02",
+          "topic": "oil_vehicle",
+          "accepted_count": 2,
+          "processed_posts_on_day": 1429,
+          "mean_target_polarity": -0.949999988079071,
+          "labels": {
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-03",
+          "topic": "oil_vehicle",
+          "accepted_count": 11,
+          "processed_posts_on_day": 1633,
+          "mean_target_polarity": -0.77727271751924,
+          "labels": {
+            "negative": 10,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-04",
+          "topic": "oil_vehicle",
+          "accepted_count": 4,
+          "processed_posts_on_day": 1076,
+          "mean_target_polarity": -0.989999994635582,
+          "labels": {
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-05",
+          "topic": "oil_vehicle",
+          "accepted_count": 5,
+          "processed_posts_on_day": 1292,
+          "mean_target_polarity": -0.95,
+          "labels": {
+            "negative": 5
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-06",
+          "topic": "oil_vehicle",
+          "accepted_count": 14,
+          "processed_posts_on_day": 2494,
+          "mean_target_polarity": -0.5371428557804653,
+          "labels": {
+            "negative": 11,
+            "positive": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-07",
+          "topic": "oil_vehicle",
+          "accepted_count": 8,
+          "processed_posts_on_day": 1692,
+          "mean_target_polarity": -0.9587500020861626,
+          "labels": {
+            "negative": 8
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-08",
+          "topic": "oil_vehicle",
+          "accepted_count": 17,
+          "processed_posts_on_day": 1995,
+          "mean_target_polarity": -0.8317647050408756,
+          "labels": {
+            "negative": 16,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-09",
+          "topic": "oil_vehicle",
+          "accepted_count": 24,
+          "processed_posts_on_day": 2860,
+          "mean_target_polarity": -0.924583338201046,
+          "labels": {
+            "negative": 24
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-10",
+          "topic": "oil_vehicle",
+          "accepted_count": 15,
+          "processed_posts_on_day": 1959,
+          "mean_target_polarity": -0.9373333334922791,
+          "labels": {
+            "negative": 15
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-11",
+          "topic": "oil_vehicle",
+          "accepted_count": 11,
+          "processed_posts_on_day": 2072,
+          "mean_target_polarity": -0.9754545471884988,
+          "labels": {
+            "negative": 11
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-12",
+          "topic": "oil_vehicle",
+          "accepted_count": 17,
+          "processed_posts_on_day": 2248,
+          "mean_target_polarity": -0.7194117658278522,
+          "labels": {
+            "negative": 15,
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-13",
+          "topic": "oil_vehicle",
+          "accepted_count": 13,
+          "processed_posts_on_day": 1913,
+          "mean_target_polarity": -0.9461538516558133,
+          "labels": {
+            "negative": 13
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-14",
+          "topic": "oil_vehicle",
+          "accepted_count": 8,
+          "processed_posts_on_day": 1294,
+          "mean_target_polarity": -0.6912500113248825,
+          "labels": {
+            "negative": 7,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-15",
+          "topic": "oil_vehicle",
+          "accepted_count": 11,
+          "processed_posts_on_day": 1226,
+          "mean_target_polarity": -0.9545454545454546,
+          "labels": {
+            "negative": 11
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-16",
+          "topic": "oil_vehicle",
+          "accepted_count": 16,
+          "processed_posts_on_day": 1388,
+          "mean_target_polarity": -0.8175000064074993,
+          "labels": {
+            "negative": 15,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-17",
+          "topic": "oil_vehicle",
+          "accepted_count": 10,
+          "processed_posts_on_day": 1383,
+          "mean_target_polarity": -0.9699999988079071,
+          "labels": {
+            "negative": 10
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-18",
+          "topic": "oil_vehicle",
+          "accepted_count": 11,
+          "processed_posts_on_day": 2079,
+          "mean_target_polarity": -0.7663636370138689,
+          "labels": {
+            "negative": 10,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-19",
+          "topic": "oil_vehicle",
+          "accepted_count": 11,
+          "processed_posts_on_day": 2337,
+          "mean_target_polarity": -0.6309090961109508,
+          "labels": {
+            "negative": 9,
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-20",
+          "topic": "oil_vehicle",
+          "accepted_count": 14,
+          "processed_posts_on_day": 2066,
+          "mean_target_polarity": -0.6757142926965441,
+          "labels": {
+            "negative": 12,
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-21",
+          "topic": "oil_vehicle",
+          "accepted_count": 8,
+          "processed_posts_on_day": 1552,
+          "mean_target_polarity": -0.6724999994039536,
+          "labels": {
+            "negative": 7,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-22",
+          "topic": "oil_vehicle",
+          "accepted_count": 15,
+          "processed_posts_on_day": 1457,
+          "mean_target_polarity": -0.6880000034968058,
+          "labels": {
+            "negative": 13,
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-23",
+          "topic": "oil_vehicle",
+          "accepted_count": 16,
+          "processed_posts_on_day": 1618,
+          "mean_target_polarity": -0.8162500075995922,
+          "labels": {
+            "negative": 15,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-24",
+          "topic": "oil_vehicle",
+          "accepted_count": 11,
+          "processed_posts_on_day": 1398,
+          "mean_target_polarity": -0.9409090930765326,
+          "labels": {
+            "negative": 11
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-25",
+          "topic": "oil_vehicle",
+          "accepted_count": 9,
+          "processed_posts_on_day": 1241,
+          "mean_target_polarity": -0.9422222309642367,
+          "labels": {
+            "negative": 9
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-26",
+          "topic": "oil_vehicle",
+          "accepted_count": 14,
+          "processed_posts_on_day": 1269,
+          "mean_target_polarity": -0.9528571494988033,
+          "labels": {
+            "negative": 14
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-27",
+          "topic": "oil_vehicle",
+          "accepted_count": 13,
+          "processed_posts_on_day": 1212,
+          "mean_target_polarity": -0.9130769234437209,
+          "labels": {
+            "negative": 13
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-28",
+          "topic": "oil_vehicle",
+          "accepted_count": 3,
+          "processed_posts_on_day": 880,
+          "mean_target_polarity": -0.8533333341280619,
+          "labels": {
+            "negative": 3
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-29",
+          "topic": "oil_vehicle",
+          "accepted_count": 11,
+          "processed_posts_on_day": 1052,
+          "mean_target_polarity": -0.9472727287899364,
+          "labels": {
+            "negative": 11
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-30",
+          "topic": "oil_vehicle",
+          "accepted_count": 8,
+          "processed_posts_on_day": 1279,
+          "mean_target_polarity": -0.7249999940395355,
+          "labels": {
+            "negative": 7,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-31",
+          "topic": "oil_vehicle",
+          "accepted_count": 15,
+          "processed_posts_on_day": 1871,
+          "mean_target_polarity": -0.709333328406016,
+          "labels": {
+            "negative": 13,
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-01",
+          "topic": "oil_vehicle",
+          "accepted_count": 13,
+          "processed_posts_on_day": 1537,
+          "mean_target_polarity": -0.7769230741720933,
+          "labels": {
+            "negative": 12,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-02",
+          "topic": "oil_vehicle",
+          "accepted_count": 20,
+          "processed_posts_on_day": 1704,
+          "mean_target_polarity": -0.8700000017881393,
+          "labels": {
+            "negative": 19,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-03",
+          "topic": "oil_vehicle",
+          "accepted_count": 13,
+          "processed_posts_on_day": 1097,
+          "mean_target_polarity": -0.6615384679574233,
+          "labels": {
+            "negative": 11,
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-04",
+          "topic": "oil_vehicle",
+          "accepted_count": 21,
+          "processed_posts_on_day": 957,
+          "mean_target_polarity": -0.9371428603217715,
+          "labels": {
+            "negative": 21
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-05",
+          "topic": "oil_vehicle",
+          "accepted_count": 15,
+          "processed_posts_on_day": 794,
+          "mean_target_polarity": -0.9346666733423868,
+          "labels": {
+            "negative": 15
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-06",
+          "topic": "oil_vehicle",
+          "accepted_count": 10,
+          "processed_posts_on_day": 989,
+          "mean_target_polarity": -0.914000004529953,
+          "labels": {
+            "negative": 10
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-07",
+          "topic": "oil_vehicle",
+          "accepted_count": 10,
+          "processed_posts_on_day": 1329,
+          "mean_target_polarity": -0.7889999985694885,
+          "labels": {
+            "negative": 9,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-08",
+          "topic": "oil_vehicle",
+          "accepted_count": 9,
+          "processed_posts_on_day": 1478,
+          "mean_target_polarity": -0.9544444547759162,
+          "labels": {
+            "negative": 9
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-09",
+          "topic": "oil_vehicle",
+          "accepted_count": 15,
+          "processed_posts_on_day": 1175,
+          "mean_target_polarity": -0.928000005086263,
+          "labels": {
+            "negative": 15
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-10",
+          "topic": "oil_vehicle",
+          "accepted_count": 7,
+          "processed_posts_on_day": 1207,
+          "mean_target_polarity": -0.9014285632542202,
+          "labels": {
+            "negative": 7
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-11",
+          "topic": "oil_vehicle",
+          "accepted_count": 12,
+          "processed_posts_on_day": 894,
+          "mean_target_polarity": -0.6158333371082941,
+          "labels": {
+            "negative": 10,
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-12",
+          "topic": "oil_vehicle",
+          "accepted_count": 9,
+          "processed_posts_on_day": 1158,
+          "mean_target_polarity": -0.9388888875643412,
+          "labels": {
+            "negative": 9
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-13",
+          "topic": "oil_vehicle",
+          "accepted_count": 9,
+          "processed_posts_on_day": 1170,
+          "mean_target_polarity": -0.9288888838556077,
+          "labels": {
+            "negative": 9
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-14",
+          "topic": "oil_vehicle",
+          "accepted_count": 9,
+          "processed_posts_on_day": 1310,
+          "mean_target_polarity": -0.932222220632765,
+          "labels": {
+            "negative": 9
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-15",
+          "topic": "oil_vehicle",
+          "accepted_count": 10,
+          "processed_posts_on_day": 1242,
+          "mean_target_polarity": -0.9120000064373016,
+          "labels": {
+            "negative": 10
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-16",
+          "topic": "oil_vehicle",
+          "accepted_count": 4,
+          "processed_posts_on_day": 908,
+          "mean_target_polarity": -0.9450000077486038,
+          "labels": {
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-17",
+          "topic": "oil_vehicle",
+          "accepted_count": 10,
+          "processed_posts_on_day": 1260,
+          "mean_target_polarity": -0.5740000009536743,
+          "labels": {
+            "negative": 8,
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-18",
+          "topic": "oil_vehicle",
+          "accepted_count": 4,
+          "processed_posts_on_day": 701,
+          "mean_target_polarity": -0.9375000149011612,
+          "labels": {
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-19",
+          "topic": "oil_vehicle",
+          "accepted_count": 4,
+          "processed_posts_on_day": 786,
+          "mean_target_polarity": -0.9574999958276749,
+          "labels": {
+            "negative": 4
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-20",
+          "topic": "oil_vehicle",
+          "accepted_count": 14,
+          "processed_posts_on_day": 1089,
+          "mean_target_polarity": -0.9471428564616612,
+          "labels": {
+            "negative": 14
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-21",
+          "topic": "oil_vehicle",
+          "accepted_count": 10,
+          "processed_posts_on_day": 894,
+          "mean_target_polarity": -0.9189999997615814,
+          "labels": {
+            "negative": 10
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-22",
+          "topic": "oil_vehicle",
+          "accepted_count": 9,
+          "processed_posts_on_day": 960,
+          "mean_target_polarity": -0.9333333439297147,
+          "labels": {
+            "negative": 9
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-23",
+          "topic": "oil_vehicle",
+          "accepted_count": 15,
+          "processed_posts_on_day": 866,
+          "mean_target_polarity": -0.8206666668256124,
+          "labels": {
+            "negative": 14,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-24",
+          "topic": "oil_vehicle",
+          "accepted_count": 12,
+          "processed_posts_on_day": 821,
+          "mean_target_polarity": -0.8016666620969772,
+          "labels": {
+            "negative": 11,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-25",
+          "topic": "oil_vehicle",
+          "accepted_count": 9,
+          "processed_posts_on_day": 701,
+          "mean_target_polarity": -0.9733333322736952,
+          "labels": {
+            "negative": 9
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-26",
+          "topic": "oil_vehicle",
+          "accepted_count": 7,
+          "processed_posts_on_day": 594,
+          "mean_target_polarity": -0.9457142863954816,
+          "labels": {
+            "negative": 7
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-27",
+          "topic": "oil_vehicle",
+          "accepted_count": 7,
+          "processed_posts_on_day": 748,
+          "mean_target_polarity": -0.41000000068119596,
+          "labels": {
+            "negative": 5,
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-28",
+          "topic": "oil_vehicle",
+          "accepted_count": 10,
+          "processed_posts_on_day": 1196,
+          "mean_target_polarity": -0.7370000004768371,
+          "labels": {
+            "negative": 9,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        }
+      ],
+      "meta": {
+        "from": "2026-01-28",
+        "to": "2026-04-28",
+        "dataset_kind": "live",
+        "sentiment_definition": "mean P(positive)-P(negative) among accepted poster-target attitudes",
+        "timezone": "UTC",
+        "model": "jev-1.13.0",
+        "topic_counts_overlap": true
+      }
+    },
+    "social/target-sentiment|platform=mastodon&topic=fuel_price": {
+      "data": [
+        {
+          "date": "2026-02-07",
+          "topic": "fuel_price",
+          "accepted_count": 1,
+          "processed_posts_on_day": 6,
+          "mean_target_polarity": -0.9399999976158142,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-21",
+          "topic": "fuel_price",
+          "accepted_count": 1,
+          "processed_posts_on_day": 7,
+          "mean_target_polarity": -0.9100000262260437,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-28",
+          "topic": "fuel_price",
+          "accepted_count": 1,
+          "processed_posts_on_day": 3,
+          "mean_target_polarity": -0.9100000262260437,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-01",
+          "topic": "fuel_price",
+          "accepted_count": 1,
+          "processed_posts_on_day": 3,
+          "mean_target_polarity": -0.9900000095367432,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-04",
+          "topic": "fuel_price",
+          "accepted_count": 1,
+          "processed_posts_on_day": 22,
+          "mean_target_polarity": -0.9900000095367432,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-05",
+          "topic": "fuel_price",
+          "accepted_count": 1,
+          "processed_posts_on_day": 16,
+          "mean_target_polarity": -1.0,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-09",
+          "topic": "fuel_price",
+          "accepted_count": 1,
+          "processed_posts_on_day": 24,
+          "mean_target_polarity": -1.0,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-10",
+          "topic": "fuel_price",
+          "accepted_count": 1,
+          "processed_posts_on_day": 16,
+          "mean_target_polarity": -1.0,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-11",
+          "topic": "fuel_price",
+          "accepted_count": 1,
+          "processed_posts_on_day": 20,
+          "mean_target_polarity": -0.9100000262260437,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-13",
+          "topic": "fuel_price",
+          "accepted_count": 1,
+          "processed_posts_on_day": 16,
+          "mean_target_polarity": -0.9900000095367432,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-19",
+          "topic": "fuel_price",
+          "accepted_count": 1,
+          "processed_posts_on_day": 27,
+          "mean_target_polarity": -0.9100000262260437,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-22",
+          "topic": "fuel_price",
+          "accepted_count": 1,
+          "processed_posts_on_day": 17,
+          "mean_target_polarity": -0.8799999952316284,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-29",
+          "topic": "fuel_price",
+          "accepted_count": 1,
+          "processed_posts_on_day": 18,
+          "mean_target_polarity": -0.15000000596046448,
+          "labels": {
+            "neutral": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-04",
+          "topic": "fuel_price",
+          "accepted_count": 2,
+          "processed_posts_on_day": 13,
+          "mean_target_polarity": -0.9650000035762787,
+          "labels": {
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-07",
+          "topic": "fuel_price",
+          "accepted_count": 1,
+          "processed_posts_on_day": 16,
+          "mean_target_polarity": -0.8999999761581421,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-10",
+          "topic": "fuel_price",
+          "accepted_count": 2,
+          "processed_posts_on_day": 28,
+          "mean_target_polarity": -0.9200000166893005,
+          "labels": {
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-15",
+          "topic": "fuel_price",
+          "accepted_count": 1,
+          "processed_posts_on_day": 16,
+          "mean_target_polarity": -0.8799999952316284,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-20",
+          "topic": "fuel_price",
+          "accepted_count": 2,
+          "processed_posts_on_day": 18,
+          "mean_target_polarity": -0.9199999868869781,
+          "labels": {
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-24",
+          "topic": "fuel_price",
+          "accepted_count": 1,
+          "processed_posts_on_day": 17,
+          "mean_target_polarity": -0.8999999761581421,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-25",
+          "topic": "fuel_price",
+          "accepted_count": 1,
+          "processed_posts_on_day": 12,
+          "mean_target_polarity": -0.9399999976158142,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        }
+      ],
+      "meta": {
+        "from": "2026-01-28",
+        "to": "2026-04-28",
+        "dataset_kind": "live",
+        "sentiment_definition": "mean P(positive)-P(negative) among accepted poster-target attitudes",
+        "timezone": "UTC",
+        "model": "jev-1.13.0",
+        "topic_counts_overlap": true
+      }
+    },
+    "social/target-sentiment|platform=mastodon&topic=public_transport": {
+      "data": [
+        {
+          "date": "2026-01-30",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 20,
+          "mean_target_polarity": -1.0,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-01-31",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 11,
+          "mean_target_polarity": -1.0,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-03",
+          "topic": "public_transport",
+          "accepted_count": 2,
+          "processed_posts_on_day": 18,
+          "mean_target_polarity": -0.9900000095367432,
+          "labels": {
+            "negative": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-04",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 10,
+          "mean_target_polarity": 0.75,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-07",
+          "topic": "public_transport",
+          "accepted_count": 2,
+          "processed_posts_on_day": 6,
+          "mean_target_polarity": 0.8199999928474426,
+          "labels": {
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-14",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 12,
+          "mean_target_polarity": 0.8999999761581421,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-18",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 14,
+          "mean_target_polarity": 0.8399999737739563,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-19",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 4,
+          "mean_target_polarity": 0.8799999952316284,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-20",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 9,
+          "mean_target_polarity": -0.9900000095367432,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-21",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 7,
+          "mean_target_polarity": -0.8999999761581421,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-23",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 10,
+          "mean_target_polarity": 1.0,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-24",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 13,
+          "mean_target_polarity": -0.9700000286102295,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-25",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 13,
+          "mean_target_polarity": 1.0,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-04",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 22,
+          "mean_target_polarity": 0.9900000095367432,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-06",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 19,
+          "mean_target_polarity": -0.9800000190734863,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-09",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 24,
+          "mean_target_polarity": 0.9599999785423279,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-11",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 20,
+          "mean_target_polarity": -0.9100000262260437,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-14",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 22,
+          "mean_target_polarity": 0.9700000286102295,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-15",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 9,
+          "mean_target_polarity": -1.0,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-19",
+          "topic": "public_transport",
+          "accepted_count": 2,
+          "processed_posts_on_day": 27,
+          "mean_target_polarity": 0.8650000095367432,
+          "labels": {
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-21",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 16,
+          "mean_target_polarity": -1.0,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-22",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 17,
+          "mean_target_polarity": -0.9700000286102295,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-23",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 24,
+          "mean_target_polarity": 0.9800000190734863,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-24",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 21,
+          "mean_target_polarity": 0.9599999785423279,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-25",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 22,
+          "mean_target_polarity": 0.949999988079071,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-28",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 7,
+          "mean_target_polarity": 0.9399999976158142,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-29",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 18,
+          "mean_target_polarity": 0.9900000095367432,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-31",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 21,
+          "mean_target_polarity": -1.0,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-01",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 18,
+          "mean_target_polarity": -0.9100000262260437,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-02",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 32,
+          "mean_target_polarity": 0.8199999928474426,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-05",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 13,
+          "mean_target_polarity": -0.9599999785423279,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-12",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 10,
+          "mean_target_polarity": 0.9399999976158142,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-14",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 15,
+          "mean_target_polarity": 1.0,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-16",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 13,
+          "mean_target_polarity": 0.9800000190734863,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-27",
+          "topic": "public_transport",
+          "accepted_count": 1,
+          "processed_posts_on_day": 11,
+          "mean_target_polarity": 1.0,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        }
+      ],
+      "meta": {
+        "from": "2026-01-28",
+        "to": "2026-04-28",
+        "dataset_kind": "live",
+        "sentiment_definition": "mean P(positive)-P(negative) among accepted poster-target attitudes",
+        "timezone": "UTC",
+        "model": "jev-1.13.0",
+        "topic_counts_overlap": true
+      }
+    },
+    "social/target-sentiment|platform=mastodon&topic=ev": {
+      "data": [
+        {
+          "date": "2026-01-29",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 8,
+          "mean_target_polarity": 0.8999999761581421,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-01",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 6,
+          "mean_target_polarity": 0.9599999785423279,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-02",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 12,
+          "mean_target_polarity": 0.8700000047683716,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-07",
+          "topic": "ev",
+          "accepted_count": 2,
+          "processed_posts_on_day": 6,
+          "mean_target_polarity": -0.05500000715255737,
+          "labels": {
+            "negative": 1,
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-08",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 3,
+          "mean_target_polarity": 0.8500000238418579,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-10",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 22,
+          "mean_target_polarity": -0.9800000190734863,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-21",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 7,
+          "mean_target_polarity": 0.8600000143051147,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-23",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 10,
+          "mean_target_polarity": 0.9599999785423279,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-28",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 3,
+          "mean_target_polarity": 0.8700000047683716,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-02",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 18,
+          "mean_target_polarity": 0.9800000190734863,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-04",
+          "topic": "ev",
+          "accepted_count": 2,
+          "processed_posts_on_day": 22,
+          "mean_target_polarity": 0.9600000083446503,
+          "labels": {
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-06",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 19,
+          "mean_target_polarity": 1.0,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-12",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 22,
+          "mean_target_polarity": 1.0,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-14",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 22,
+          "mean_target_polarity": 0.9700000286102295,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-15",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 9,
+          "mean_target_polarity": 1.0,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-19",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 27,
+          "mean_target_polarity": 0.8799999952316284,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-21",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 16,
+          "mean_target_polarity": -1.0,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-23",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 24,
+          "mean_target_polarity": 0.9300000071525574,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-24",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 21,
+          "mean_target_polarity": 0.949999988079071,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-25",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 22,
+          "mean_target_polarity": 0.9700000286102295,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-27",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 16,
+          "mean_target_polarity": 0.8899999856948853,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-01",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 18,
+          "mean_target_polarity": 1.0,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-02",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 32,
+          "mean_target_polarity": 1.0,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-04",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 13,
+          "mean_target_polarity": 0.8999999761581421,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-07",
+          "topic": "ev",
+          "accepted_count": 2,
+          "processed_posts_on_day": 16,
+          "mean_target_polarity": 0.8149999976158142,
+          "labels": {
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-13",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 21,
+          "mean_target_polarity": -1.0,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-15",
+          "topic": "ev",
+          "accepted_count": 2,
+          "processed_posts_on_day": 16,
+          "mean_target_polarity": 0.9350000023841858,
+          "labels": {
+            "positive": 2
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-18",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 18,
+          "mean_target_polarity": 0.8899999856948853,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-24",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 17,
+          "mean_target_polarity": 1.0,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-25",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 12,
+          "mean_target_polarity": 0.8899999856948853,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-28",
+          "topic": "ev",
+          "accepted_count": 1,
+          "processed_posts_on_day": 17,
+          "mean_target_polarity": 1.0,
+          "labels": {
+            "positive": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        }
+      ],
+      "meta": {
+        "from": "2026-01-28",
+        "to": "2026-04-28",
+        "dataset_kind": "live",
+        "sentiment_definition": "mean P(positive)-P(negative) among accepted poster-target attitudes",
+        "timezone": "UTC",
+        "model": "jev-1.13.0",
+        "topic_counts_overlap": true
+      }
+    },
+    "social/target-sentiment|platform=mastodon&topic=oil_vehicle": {
+      "data": [
+        {
+          "date": "2026-02-07",
+          "topic": "oil_vehicle",
+          "accepted_count": 1,
+          "processed_posts_on_day": 6,
+          "mean_target_polarity": -1.0,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-19",
+          "topic": "oil_vehicle",
+          "accepted_count": 1,
+          "processed_posts_on_day": 4,
+          "mean_target_polarity": -0.949999988079071,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-02-24",
+          "topic": "oil_vehicle",
+          "accepted_count": 1,
+          "processed_posts_on_day": 13,
+          "mean_target_polarity": -0.8600000143051147,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-02",
+          "topic": "oil_vehicle",
+          "accepted_count": 1,
+          "processed_posts_on_day": 18,
+          "mean_target_polarity": -0.8700000047683716,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-09",
+          "topic": "oil_vehicle",
+          "accepted_count": 1,
+          "processed_posts_on_day": 24,
+          "mean_target_polarity": -0.9800000190734863,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-11",
+          "topic": "oil_vehicle",
+          "accepted_count": 1,
+          "processed_posts_on_day": 20,
+          "mean_target_polarity": -0.8799999952316284,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-19",
+          "topic": "oil_vehicle",
+          "accepted_count": 1,
+          "processed_posts_on_day": 27,
+          "mean_target_polarity": -1.0,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-03-21",
+          "topic": "oil_vehicle",
+          "accepted_count": 1,
+          "processed_posts_on_day": 16,
+          "mean_target_polarity": -0.8899999856948853,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-03",
+          "topic": "oil_vehicle",
+          "accepted_count": 1,
+          "processed_posts_on_day": 28,
+          "mean_target_polarity": -0.800000011920929,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-16",
+          "topic": "oil_vehicle",
+          "accepted_count": 1,
+          "processed_posts_on_day": 13,
+          "mean_target_polarity": -1.0,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        },
+        {
+          "date": "2026-04-20",
+          "topic": "oil_vehicle",
+          "accepted_count": 1,
+          "processed_posts_on_day": 18,
+          "mean_target_polarity": -1.0,
+          "labels": {
+            "negative": 1
+          },
+          "sentiment_scope": "poster_target_attitude"
+        }
+      ],
+      "meta": {
+        "from": "2026-01-28",
+        "to": "2026-04-28",
+        "dataset_kind": "live",
+        "sentiment_definition": "mean P(positive)-P(negative) among accepted poster-target attitudes",
+        "timezone": "UTC",
+        "model": "jev-1.13.0",
+        "topic_counts_overlap": true
+      }
+    }
+  }
+}

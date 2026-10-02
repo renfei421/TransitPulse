@@ -1,0 +1,38 @@
+{
+  "experiment_id": "iran-20260228-v1",
+  "snapshot_updated_at": "2026-10-01T13:57:06.082676+00:00",
+  "cloud_counts": {
+    "social_discussion_posts_raw": 124491,
+    "social_processing_decisions": 124491,
+    "social_posts_jev": 19395
+  },
+  "run_status": "running",
+  "run_report": {
+    "already_processed": 17640,
+    "succeeded_this_run": 1700,
+    "failed_this_run": 0,
+    "accounted_cost_usd": 2.5052384279999975,
+    "cost_cap_usd": 15.0
+  },
+  "local_page": "http://127.0.0.1:8765/",
+  "refresh_seconds": 30,
+  "publicly_exposed": false,
+  "new_model_calls_from_dashboard": false,
+  "verification": {
+    "proxy_tests_passed": 2,
+    "ruff": "passed",
+    "browser_checks": [
+      "automatic progress updates",
+      "public_transport target selection",
+      "Mastodon platform selection",
+      "post cursor pagination page 2",
+      "no browser console errors",
+      "final reload and visible screenshot"
+    ]
+  },
+  "source_sha256": {
+    "scripts/serve_event_dashboard.py": "3dcca6dfa3ad208edc845fe6cc3365645da70da151cdb4e06a5932c53341b978",
+    "frontend/event_dashboard.html": "a84ec2c30a4bd16656778475a1cf2914df611ff260d6e70959871b7cfb5b40e9",
+    "test/test_event_dashboard.py": "cf6d7bfb698c33e66dc6ef23e49efeab35840891ed6e0b772851e345bfd0a0b1"
+  }
+}

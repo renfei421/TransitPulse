@@ -1,0 +1,43 @@
+{
+  "verified_at_utc": "2026-09-30T18:33:14.865919+00:00",
+  "tests": {
+    "tests": 132,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "test_seconds": 34.351,
+  "coverage": {
+    "line_rate": 0.5098,
+    "lines_valid": 3172,
+    "lines_covered": 1617,
+    "scope": "Entire backend, including legacy offline scripts. Not just selected core modules."
+  },
+  "selected_modules": {
+    "api/app.py": 0.8571,
+    "api/queries.py": 0.9259,
+    "common/es.py": 0.871,
+    "data_process/sentiment.py": 0.9416,
+    "data_process/cloud_sentiment/news_sentiment_pipeline.py": 0.9315,
+    "oil_sentiment_corr/compute.py": 0.8621
+  },
+  "commands": [
+    "python -m pytest --tb=short -q --junitxml=artifacts/test-results.xml --cov=backend --cov-report=xml:artifacts/coverage.xml",
+    "python -m scripts.validate_deployment",
+    "python -m scripts.audit_repository",
+    "python -m scripts.smoke_fission",
+    "python -m scripts.execute_notebook"
+  ],
+  "environment": {
+    "TEST_ES_URL": "http://127.0.0.1:19200",
+    "TEST_REDIS_URL": "redis://127.0.0.1:16379/0",
+    "RUN_MODEL_TESTS": "1",
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2"
+  },
+  "boundaries": [
+    "Remote GitLab pipeline was not executed",
+    "Remote Kubernetes unavailable",
+    "KEDA manifests validated offline; cloud scale-out not tested"
+  ]
+}

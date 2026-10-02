@@ -1,0 +1,61 @@
+# Short-lived acceptance profile: one data node, zero application index replicas.
+# Retain protects the disk from an accidental PVC deletion; it is not a backup.
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: elastic
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+---
+apiVersion: elasticsearch.k8s.elastic.co/v1
+kind: Elasticsearch
+metadata:
+  name: elasticsearch
+  namespace: elastic
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+spec:
+  version: 8.19.22
+  image: docker.elastic.co/elasticsearch/elasticsearch:8.19.22@sha256:e98f9c3b09beb2fbb9eaf667d602df3f0e00bd3644138b8458dc17ba1a675595
+  volumeClaimDeletePolicy: DeleteOnScaledownOnly
+  http:
+    service:
+      spec:
+        type: ClusterIP
+    tls:
+      selfSignedCertificate:
+        subjectAltNames:
+          # Allows verified TLS over a loopback-only kubectl port-forward.
+          - ip: 127.0.0.1
+          - dns: localhost
+  nodeSets:
+    - name: acceptance
+      count: 1
+      config:
+        # Avoid privileged host sysctl changes for this small acceptance cluster.
+        # Revisit vm.max_map_count and enable mmap before capacity benchmarking.
+        node.store.allow_mmap: false
+      podTemplate:
+        spec:
+          automountServiceAccountToken: false
+          containers:
+            - name: elasticsearch
+              env:
+                - name: ES_JAVA_OPTS
+                  value: -Xms1g -Xmx1g
+              resources:
+                requests:
+                  cpu: 500m
+                  memory: 2Gi
+                limits:
+                  cpu: '2'
+                  memory: 2Gi
+      volumeClaimTemplates:
+        - metadata:
+            name: elasticsearch-data
+          spec:
+            accessModes: [ReadWriteOnce]
+            storageClassName: do-block-storage-retain
+            resources:
+              requests:
+                storage: 20Gi

@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: fission
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: transport-fission-packages
+  namespace: fission
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+spec:
+  accessModes: [ReadWriteOnce]
+  storageClassName: do-block-storage-retain
+  resources:
+    requests:
+      storage: 1Gi

@@ -1,0 +1,30 @@
+{
+  "size": 0,
+  "query": {
+    "bool": {
+      "filter": [
+        {
+          "term": {
+            "ticker": "BRENT"
+          }
+        }
+      ]
+    }
+  },
+  "aggs": {
+    "by_day": {
+      "date_histogram": {
+        "field": "date",
+        "calendar_interval": "day",
+        "min_doc_count": 0
+      },
+      "aggs": {
+        "avg_price": {
+          "avg": {
+            "field": "price"
+          }
+        }
+      }
+    }
+  }
+}

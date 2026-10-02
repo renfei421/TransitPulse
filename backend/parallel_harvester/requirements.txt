@@ -1,0 +1,2 @@
+# Pinned runtime dependencies generated from uv.lock.
+-r ../../requirements-fission.txt

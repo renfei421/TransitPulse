@@ -1,0 +1,121 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 1,
+      "number_of_replicas": 1
+    }
+  },
+  "mappings": {
+    "properties": {
+      "computed_at": {
+        "type": "date"
+      },
+      "from_date": {
+        "type": "date"
+      },
+      "to_date": {
+        "type": "date"
+      },
+      "correlation_pearson": {
+        "type": "double"
+      },
+      "p_value": {
+        "type": "double"
+      },
+      "n_days_used": {
+        "type": "integer"
+      },
+      "best_lag_days": {
+        "type": "integer"
+      },
+      "ccf_window": {
+        "type": "nested",
+        "properties": {
+          "lag": {
+            "type": "integer"
+          },
+          "n_pairs": {
+            "type": "integer"
+          },
+          "corr": {
+            "type": "float"
+          },
+          "p_value": {
+            "type": "float"
+          },
+          "p_value_bonferroni": {
+            "type": "float"
+          }
+        }
+      },
+      "scatter_data": {
+        "type": "nested",
+        "properties": {
+          "date": {
+            "type": "date"
+          },
+          "brent_return_pct": {
+            "type": "double"
+          },
+          "oil_sentiment": {
+            "type": "double"
+          }
+        }
+      },
+      "id": {
+        "type": "keyword"
+      },
+      "metric": {
+        "type": "keyword"
+      },
+      "polarity_definition": {
+        "type": "keyword"
+      },
+      "lag_unit": {
+        "type": "keyword"
+      },
+      "interpretation": {
+        "type": "keyword"
+      },
+      "pipeline_version": {
+        "type": "keyword"
+      },
+      "model_name": {
+        "type": "keyword"
+      },
+      "p_value_bonferroni": {
+        "type": "float"
+      },
+      "minimum_pairs": {
+        "type": "integer"
+      },
+      "lag_tests": {
+        "type": "integer"
+      },
+      "dataset_kind": {
+        "type": "keyword"
+      },
+      "best_lag_scatter_data": {
+        "type": "nested",
+        "properties": {
+          "price_date": {
+            "type": "date"
+          },
+          "sentiment_date": {
+            "type": "date"
+          },
+          "brent_return_pct": {
+            "type": "double"
+          },
+          "oil_sentiment": {
+            "type": "double"
+          }
+        }
+      }
+    },
+    "_meta": {
+      "schema_version": 2,
+      "source": "database/mappings"
+    }
+  }
+}

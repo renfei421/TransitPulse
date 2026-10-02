@@ -1,0 +1,36 @@
+{
+  "size": 200,
+  "query": {
+    "bool": {
+      "filter": [
+        {
+          "term": {
+            "ticker": "BRENT"
+          }
+        },
+        {
+          "range": {
+            "date": {
+              "gte": "2026-02-14",
+              "lte": "now/d"
+            }
+          }
+        },
+        {
+          "exists": {
+            "field": "daily_return_pct"
+          }
+        }
+      ]
+    }
+  },
+  "_source": [
+    "date",
+    "daily_return_pct"
+  ],
+  "sort": [
+    {
+      "date": "asc"
+    }
+  ]
+}

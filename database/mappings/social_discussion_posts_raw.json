@@ -1,0 +1,145 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 2,
+      "number_of_replicas": 1
+    }
+  },
+  "mappings": {
+    "properties": {
+      "doc_id": {
+        "type": "keyword"
+      },
+      "platform": {
+        "type": "keyword"
+      },
+      "server_domain": {
+        "type": "keyword"
+      },
+      "post_id": {
+        "type": "keyword"
+      },
+      "post_url": {
+        "type": "keyword"
+      },
+      "author_id_hash": {
+        "type": "keyword"
+      },
+      "created_at": {
+        "type": "date"
+      },
+      "fetched_at": {
+        "type": "date"
+      },
+      "raw_text": {
+        "type": "text"
+      },
+      "lang": {
+        "type": "keyword"
+      },
+      "collection_profile": {
+        "type": "keyword"
+      },
+      "analysis_language_route": {
+        "type": "keyword"
+      },
+      "country_text_hints": {
+        "type": "keyword"
+      },
+      "source_query": {
+        "type": "keyword"
+      },
+      "matched_keywords": {
+        "type": "keyword"
+      },
+      "candidate_topics": {
+        "type": "keyword"
+      },
+      "direct_candidate_topics": {
+        "type": "keyword"
+      },
+      "topic_count": {
+        "type": "integer"
+      },
+      "is_seed_post": {
+        "type": "boolean"
+      },
+      "seed_type": {
+        "type": "keyword"
+      },
+      "is_reply": {
+        "type": "boolean"
+      },
+      "parent_post_id": {
+        "type": "keyword"
+      },
+      "thread_root_id": {
+        "type": "keyword"
+      },
+      "collection_method": {
+        "type": "keyword"
+      },
+      "collection_methods": {
+        "type": "keyword"
+      },
+      "reply_has_keyword": {
+        "type": "boolean"
+      },
+      "like_count": {
+        "type": "integer"
+      },
+      "reply_count": {
+        "type": "integer"
+      },
+      "repost_count": {
+        "type": "integer"
+      },
+      "nearest_event_id": {
+        "type": "keyword"
+      },
+      "nearest_event_name": {
+        "type": "keyword"
+      },
+      "days_from_event": {
+        "type": "integer"
+      },
+      "event_period": {
+        "type": "keyword"
+      },
+      "dataset_kind": {
+        "type": "keyword"
+      },
+      "source_dataset": {
+        "type": "keyword"
+      },
+      "source_record_id": {
+        "type": "keyword"
+      },
+      "schema_version": {
+        "type": "integer"
+      },
+      "inferred_region": {
+        "type": "keyword"
+      },
+      "region_confidence": {
+        "type": "float"
+      },
+      "region_source": {
+        "type": "keyword"
+      },
+      "experiment_id": {
+        "type": "keyword"
+      },
+      "experiment_phase": {
+        "type": "keyword"
+      },
+      "analysis_timezone": {
+        "type": "keyword"
+      }
+    },
+    "_meta": {
+      "schema_version": 2,
+      "source": "database/mappings"
+    }
+  }
+}

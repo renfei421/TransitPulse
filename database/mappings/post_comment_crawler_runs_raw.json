@@ -1,0 +1,65 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 1,
+      "number_of_replicas": 1
+    }
+  },
+  "mappings": {
+    "properties": {
+      "doc_id": {
+        "type": "keyword"
+      },
+      "run_id": {
+        "type": "keyword"
+      },
+      "platform": {
+        "type": "keyword"
+      },
+      "status": {
+        "type": "keyword"
+      },
+      "started_at": {
+        "type": "date"
+      },
+      "ended_at": {
+        "type": "date"
+      },
+      "query_count": {
+        "type": "integer"
+      },
+      "seed_records_fetched": {
+        "type": "integer"
+      },
+      "seed_records_inserted": {
+        "type": "integer"
+      },
+      "reply_nodes_inserted": {
+        "type": "integer"
+      },
+      "reply_edges_inserted": {
+        "type": "integer"
+      },
+      "error_message": {
+        "type": "text"
+      },
+      "queries_failed": {
+        "type": "integer"
+      },
+      "window_start": {
+        "type": "date"
+      },
+      "window_end": {
+        "type": "date"
+      },
+      "writes": {
+        "type": "object",
+        "enabled": false
+      }
+    },
+    "_meta": {
+      "schema_version": 2,
+      "source": "database/mappings"
+    }
+  }
+}

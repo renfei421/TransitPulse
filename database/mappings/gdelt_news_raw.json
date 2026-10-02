@@ -1,0 +1,68 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 3,
+      "number_of_replicas": 1
+    }
+  },
+  "mappings": {
+    "properties": {
+      "id": {
+        "type": "keyword"
+      },
+      "index_name": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "time": {
+        "type": "date"
+      },
+      "title": {
+        "type": "text"
+      },
+      "text": {
+        "type": "text"
+      },
+      "raw_html": {
+        "type": "text",
+        "index": false
+      },
+      "url": {
+        "type": "keyword"
+      },
+      "source_domain": {
+        "type": "keyword"
+      },
+      "source_query": {
+        "type": "keyword"
+      },
+      "keyword": {
+        "type": "keyword"
+      },
+      "dataset_kind": {
+        "type": "keyword"
+      },
+      "source_dataset": {
+        "type": "keyword"
+      },
+      "time_source": {
+        "type": "keyword"
+      },
+      "fetched_at": {
+        "type": "date"
+      },
+      "schema_version": {
+        "type": "integer"
+      }
+    },
+    "_meta": {
+      "schema_version": 2,
+      "source": "database/mappings"
+    }
+  }
+}

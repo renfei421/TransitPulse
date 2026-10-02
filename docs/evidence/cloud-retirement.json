@@ -1,0 +1,46 @@
+{
+  "updated_at": "2026-10-02T04:02:10.177779+00:00",
+  "status": "awaiting_independent_backup_and_cloud_retirement",
+  "cloud_resources_deleted": false,
+  "billing_stopped_verified": false,
+  "archive_export_complete": true,
+  "local_restore_verified": true,
+  "api_parity_checks_passed": 11,
+  "offline_recalculation_verified": true,
+  "independent_backup_verified": false,
+  "control_plane_access": "DigitalOcean console authenticated; target cluster and two running nodes verified in UI",
+  "cluster_name": "k8s-1-34-10-do-5-sgp1-1790830229700",
+  "region": "sgp1",
+  "worker_droplet_ids": [
+    "605174089",
+    "605174090"
+  ],
+  "volume_ids": [
+    "1d1d9f7b-bd5e-11f1-b2ef-fe722b6d0cd1",
+    "bd1e7987-bd61-11f1-b2ef-fe722b6d0cd1"
+  ],
+  "active_inference_jobs": 0,
+  "cronjobs": 0,
+  "kubernetes_load_balancer_services": 0,
+  "application_indices_write_blocked": true,
+  "automation": "PAUSED",
+  "local_dashboard": "http://127.0.0.1:8765/",
+  "portfolio": "frontend/transitpulse.html",
+  "remaining_user_inputs": [
+    "independent private backup destination"
+  ],
+  "private_recovery_package": {
+    "filename": "transitpulse-private-recovery.zip",
+    "bytes": 382428363,
+    "sha256": "c4aecb731286f6e04aab696f8ed964d5cc1a75c567cac81e21ebee4dd851dcef",
+    "members_verified": 834,
+    "independent_copy_verified": false
+  },
+  "source_commit": "86c2d7a",
+  "local_regression": {
+    "full_suite_passed": 208,
+    "full_suite_skipped": 1,
+    "archive_tests_after_sqlite_fix_passed": 8
+  },
+  "cluster_id": "7b234e63-b94d-4633-9810-c28bd44564f8"
+}

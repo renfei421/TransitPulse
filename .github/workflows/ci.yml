@@ -1,0 +1,53 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.11'
+      - run: python -m pip install uv==0.12.13
+      - run: uv sync --frozen --extra experiment --extra notebook
+      - run: uv run --no-sync ruff check backend database scripts test
+      - run: uv run --no-sync python -m scripts.validate_deployment
+      - run: uv run --no-sync python -m scripts.audit_repository
+      - run: uv run --no-sync pytest -q -m 'not integration and not e2e and not model'
+  integration:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    services:
+      elasticsearch:
+        image: docker.elastic.co/elasticsearch/elasticsearch:8.19.1
+        env:
+          discovery.type: single-node
+          xpack.security.enabled: 'false'
+          xpack.ml.enabled: 'false'
+          ES_JAVA_OPTS: -Xms512m -Xmx512m
+        ports: ['9200:9200']
+      redis:
+        image: redis:7.4.5-alpine
+        ports: ['6379:6379']
+    env:
+      TEST_ES_URL: http://127.0.0.1:9200
+      TEST_REDIS_URL: redis://127.0.0.1:6379/0
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.11'
+      - run: python -m pip install uv==0.12.13
+      - run: uv sync --frozen --extra experiment --extra notebook
+      - run: uv run --no-sync python -m scripts.wait_services
+      - run: uv run --no-sync pytest -q -m 'integration or e2e'

@@ -1,0 +1,46 @@
+{
+  "fission_version": "1.23.0",
+  "metrics_server_image": "registry.k8s.io/metrics-server/metrics-server:v0.9.0@sha256:d9862115e7c7881280d3d75ca26bda8ffc0fc213315979575bf23ce9826205c0",
+  "files": {
+    "fission-all-1.23.0.tgz": {
+      "url": "https://github.com/fission/fission-charts/releases/download/fission-all-1.23.0/fission-all-1.23.0.tgz",
+      "sha256": "fbf071154c6dafdcebdcdb456f1f7c81270c431eaedf6c9429e6b820b0f758a0"
+    },
+    "metrics-server.yaml": {
+      "url": "https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.9.0/components.yaml",
+      "sha256": "1cec29a5267809306a2c6ec74a3e449abbb705b4a8beed0c8a1963910f72c79b"
+    },
+    "fission.io_canaryconfigs.yaml": {
+      "url": "https://raw.githubusercontent.com/fission/fission/v1.23.0/crds/v1/fission.io_canaryconfigs.yaml",
+      "sha256": "28249674a57ad000e99c7a18bb82fff993175b06da5fb6ac35b2d2ae91c3aca5"
+    },
+    "fission.io_environments.yaml": {
+      "url": "https://raw.githubusercontent.com/fission/fission/v1.23.0/crds/v1/fission.io_environments.yaml",
+      "sha256": "525d66fbfe68c68333bdd80fe599e37b2f20bb19fd847a10a7ec10991ac08b1f"
+    },
+    "fission.io_functions.yaml": {
+      "url": "https://raw.githubusercontent.com/fission/fission/v1.23.0/crds/v1/fission.io_functions.yaml",
+      "sha256": "eb4e2b65cd563d4d6bd0c1929ca3491fbea63d0c07aecc583f09b292c705fc5e"
+    },
+    "fission.io_httptriggers.yaml": {
+      "url": "https://raw.githubusercontent.com/fission/fission/v1.23.0/crds/v1/fission.io_httptriggers.yaml",
+      "sha256": "c7eed96894389e1f2e98a1e6ef77648072f0274cc47294ff8b4325701d57694f"
+    },
+    "fission.io_kuberneteswatchtriggers.yaml": {
+      "url": "https://raw.githubusercontent.com/fission/fission/v1.23.0/crds/v1/fission.io_kuberneteswatchtriggers.yaml",
+      "sha256": "b18cfc72fb0e986ec023facc0ae1c425e42810cb1251ffe3713e040f7fda4318"
+    },
+    "fission.io_messagequeuetriggers.yaml": {
+      "url": "https://raw.githubusercontent.com/fission/fission/v1.23.0/crds/v1/fission.io_messagequeuetriggers.yaml",
+      "sha256": "470cbf75c97fd49c60ce2de62edd0c95e032b5eb542405498cc9ba5e59adc7d5"
+    },
+    "fission.io_packages.yaml": {
+      "url": "https://raw.githubusercontent.com/fission/fission/v1.23.0/crds/v1/fission.io_packages.yaml",
+      "sha256": "2913b592864cc7eee9dc5f409e99c528998ed51904a943c1b106baccd14b91a2"
+    },
+    "fission.io_timetriggers.yaml": {
+      "url": "https://raw.githubusercontent.com/fission/fission/v1.23.0/crds/v1/fission.io_timetriggers.yaml",
+      "sha256": "441fa36c83368aa5f9b30154037d13ab64c8d8e240903a7f07c5701ae7a7b895"
+    }
+  }
+}

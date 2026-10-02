@@ -1,0 +1,86 @@
+{
+  "verified_at": "2026-10-01T17:52:14.653032+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "resource": "experiments/status",
+      "filters": {},
+      "passed": true
+    },
+    {
+      "resource": "quality",
+      "filters": {},
+      "passed": true
+    },
+    {
+      "resource": "oil/prices",
+      "filters": {},
+      "passed": true
+    },
+    {
+      "resource": "social/target-sentiment",
+      "filters": {
+        "platform": "bluesky",
+        "topic": "fuel_price"
+      },
+      "passed": true
+    },
+    {
+      "resource": "social/target-sentiment",
+      "filters": {
+        "platform": "bluesky",
+        "topic": "public_transport"
+      },
+      "passed": true
+    },
+    {
+      "resource": "social/target-sentiment",
+      "filters": {
+        "platform": "bluesky",
+        "topic": "ev"
+      },
+      "passed": true
+    },
+    {
+      "resource": "social/target-sentiment",
+      "filters": {
+        "platform": "bluesky",
+        "topic": "oil_vehicle"
+      },
+      "passed": true
+    },
+    {
+      "resource": "social/target-sentiment",
+      "filters": {
+        "platform": "mastodon",
+        "topic": "fuel_price"
+      },
+      "passed": true
+    },
+    {
+      "resource": "social/target-sentiment",
+      "filters": {
+        "platform": "mastodon",
+        "topic": "public_transport"
+      },
+      "passed": true
+    },
+    {
+      "resource": "social/target-sentiment",
+      "filters": {
+        "platform": "mastodon",
+        "topic": "ev"
+      },
+      "passed": true
+    },
+    {
+      "resource": "social/target-sentiment",
+      "filters": {
+        "platform": "mastodon",
+        "topic": "oil_vehicle"
+      },
+      "passed": true
+    }
+  ],
+  "scope": "All fields in 11 cloud/local aggregate responses; numeric tolerance 1e-10; request_id excluded"
+}

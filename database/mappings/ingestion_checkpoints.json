@@ -1,0 +1,38 @@
+{
+  "mappings": {
+    "properties": {
+      "id": {
+        "type": "keyword"
+      },
+      "source": {
+        "type": "keyword"
+      },
+      "fingerprint": {
+        "type": "keyword"
+      },
+      "cursor": {
+        "type": "keyword"
+      },
+      "status": {
+        "type": "keyword"
+      },
+      "line_number": {
+        "type": "long"
+      },
+      "accepted": {
+        "type": "long"
+      },
+      "updated_at": {
+        "type": "date"
+      },
+      "details": {
+        "type": "object",
+        "enabled": false
+      }
+    },
+    "_meta": {
+      "schema_version": 2,
+      "source": "database/mappings"
+    }
+  }
+}

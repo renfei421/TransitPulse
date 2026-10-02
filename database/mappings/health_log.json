@@ -1,0 +1,23 @@
+{
+  "mappings": {
+    "properties": {
+      "id": {
+        "type": "keyword"
+      },
+      "status": {
+        "type": "keyword"
+      },
+      "checked_at": {
+        "type": "date"
+      },
+      "checks": {
+        "type": "object",
+        "enabled": false
+      }
+    },
+    "_meta": {
+      "schema_version": 2,
+      "source": "database/mappings"
+    }
+  }
+}

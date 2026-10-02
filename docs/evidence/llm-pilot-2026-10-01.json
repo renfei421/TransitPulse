@@ -1,0 +1,74 @@
+{
+  "checked_at_utc": "2026-10-01T09:57:59.052969+00:00",
+  "model": "gpt-4.1-mini-2025-04-14",
+  "prompt_version": "transport-targets-v1",
+  "contract_sha256": "0dc03b8896e01ed5f42cbaa9ada68b8690d12d5952b2156cfffe19b3c23162b6",
+  "sample_sha256": "ff5feea24adf8f35e1a7b4a65d34221502e1c323b35f904ebf5f80f3529b184b",
+  "unique_posts": 30,
+  "initial_pass": {
+    "accepted": 25,
+    "rejected": 5,
+    "cached_from_smoke": 3
+  },
+  "explicit_diagnostic_pass": {
+    "requested": 5,
+    "accepted": 1,
+    "rejected": 4,
+    "failure_reasons": {
+      "Evidence is not a bounded exact substring": 2,
+      "Duplicate targets": 2
+    }
+  },
+  "api_calls": 35,
+  "stored_annotations": 26,
+  "unresolved_posts": 4,
+  "automatic_billable_retries": 0,
+  "relevance": {
+    "related": 16,
+    "adjacent": 9,
+    "unrelated": 1
+  },
+  "content_types": {
+    "news_or_link": 14,
+    "personal_experience": 3,
+    "other": 4,
+    "promotion": 1,
+    "opinion": 4
+  },
+  "whole_post_tones": {
+    "neutral": 16,
+    "positive": 4,
+    "negative": 5,
+    "mixed": 1
+  },
+  "model_needs_review": 2,
+  "input_truncated": 1,
+  "explicit_mode_switches": 0,
+  "accepted_request_latency_seconds": {
+    "n": 26,
+    "median": 1.43,
+    "max": 3.75
+  },
+  "cost_usd": {
+    "known_response_token_estimate": 0.0124736,
+    "missing_usage_initial_rejections": 5,
+    "reserved_ceiling_all_35_calls": 0.1213488,
+    "note": "Known cost excludes five initial rejected responses whose usage was not retained. The reservation ceiling includes every call and is a conservative estimate, not an invoice."
+  },
+  "agreement_with_prior_assistant_triage": {
+    "equal": 20,
+    "compared": 26,
+    "interpretation": "Agreement between AI assessments, not accuracy, independent human labels, or a held-out evaluation."
+  },
+  "limits": [
+    "Schema-valid and exact evidence do not establish semantic correctness",
+    "Accepted-result latency excludes rejected calls and is not a service-level benchmark",
+    "No fine-tuning; fixed prompt and model snapshot",
+    "This was local API orchestration with cloud ES persistence, not an in-cluster LLM worker"
+  ],
+  "reports_sha256": {
+    "llm_smoke_20261001": "0542828202b9411ecc110fca297eb7bc4bac6392685e13fdacde06ab24566b76",
+    "llm_pilot_20261001": "3d93eec14662e5ecdf10479c32cf3b8ab3a3913a842973087acc5ae650caf3a6",
+    "llm_diagnostic_20261001": "be7638d92c3bd32fbdeaf9b1d7a0fe6ccd48f9fd1bc2d23caa4df86ce4eca6fc"
+  }
+}

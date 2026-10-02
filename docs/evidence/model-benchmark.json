@@ -1,0 +1,31 @@
+{
+  "workload": "96 unique short synthetic English transport texts",
+  "model": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+  "revision": "3216a57f2a0d9c45a2e6c20157c20c49fb4bf9c7",
+  "device": "CPU",
+  "torch_threads": 2,
+  "torch_version": "2.8.0+cpu",
+  "cache": "cleared before each variant",
+  "load_time_included": false,
+  "results": [
+    {
+      "batch_size": 1,
+      "seconds": 3.5029455999610946,
+      "texts_per_second": 27.40550695422339,
+      "predictions": 96
+    },
+    {
+      "batch_size": 8,
+      "seconds": 1.7438555000117049,
+      "texts_per_second": 55.05043279065017,
+      "predictions": 96
+    },
+    {
+      "batch_size": 16,
+      "seconds": 1.5964107000036165,
+      "texts_per_second": 60.13490137580669,
+      "predictions": 96
+    }
+  ],
+  "limit": "One run per batch size; not a statistical performance claim or accuracy evaluation."
+}

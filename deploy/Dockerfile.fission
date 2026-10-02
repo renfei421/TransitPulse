@@ -1,0 +1,5 @@
+# Verified upstream Fission Python runtime manifest, pinned 2026-10-01.
+FROM ghcr.io/fission/python-env@sha256:446f2cd7c2a8c835deb925586d8f761aed288e0eba4437230996573612bab266
+COPY requirements-fission.txt /tmp/requirements-fission.txt
+RUN pip uninstall -y chardet && pip install --no-cache-dir --require-hashes -r /tmp/requirements-fission.txt
+# Source code is versioned in a Fission deployment archive, never a ConfigMap.

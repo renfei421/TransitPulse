@@ -1,0 +1,121 @@
+{
+  "mappings": {
+    "properties": {
+      "doc_id": {
+        "type": "keyword"
+      },
+      "annotation_id": {
+        "type": "keyword"
+      },
+      "source_doc_id": {
+        "type": "keyword"
+      },
+      "source_dataset": {
+        "type": "keyword"
+      },
+      "dataset_kind": {
+        "type": "keyword"
+      },
+      "platform": {
+        "type": "keyword"
+      },
+      "model_name": {
+        "type": "keyword"
+      },
+      "model_revision": {
+        "type": "keyword"
+      },
+      "prompt_version": {
+        "type": "keyword"
+      },
+      "contract_sha256": {
+        "type": "keyword"
+      },
+      "input_sha256": {
+        "type": "keyword"
+      },
+      "relevance": {
+        "type": "keyword"
+      },
+      "content_type": {
+        "type": "keyword"
+      },
+      "overall_tone": {
+        "type": "keyword"
+      },
+      "raw_text": {
+        "type": "text"
+      },
+      "created_at": {
+        "type": "date"
+      },
+      "annotated_at": {
+        "type": "date"
+      },
+      "schema_version": {
+        "type": "integer"
+      },
+      "input_truncated": {
+        "type": "boolean"
+      },
+      "input_characters": {
+        "type": "integer"
+      },
+      "needs_review": {
+        "type": "boolean"
+      },
+      "cache_hit": {
+        "type": "boolean"
+      },
+      "latency_seconds": {
+        "type": "float"
+      },
+      "estimated_cost_usd": {
+        "type": "double"
+      },
+      "budget_reserved_usd": {
+        "type": "double"
+      },
+      "usage": {
+        "type": "object",
+        "enabled": false
+      },
+      "targets": {
+        "type": "nested",
+        "properties": {
+          "target": {
+            "type": "keyword"
+          },
+          "sentiment": {
+            "type": "keyword"
+          },
+          "evidence": {
+            "type": "text",
+            "index": false
+          }
+        }
+      },
+      "mode_switch": {
+        "properties": {
+          "explicit": {
+            "type": "boolean"
+          },
+          "from_mode": {
+            "type": "keyword"
+          },
+          "to_mode": {
+            "type": "keyword"
+          },
+          "evidence": {
+            "type": "text",
+            "index": false
+          }
+        }
+      }
+    },
+    "_meta": {
+      "schema_version": 1,
+      "source": "database/mappings"
+    }
+  }
+}

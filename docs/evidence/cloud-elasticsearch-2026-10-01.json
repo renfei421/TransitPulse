@@ -1,0 +1,137 @@
+{
+  "checked_at_utc": "2026-10-01T06:17:42.667144+00:00",
+  "context": "do-sgp1-k8s-1-34-10-do-5-sgp1-1790830229700",
+  "elasticsearch_version": "8.19.22",
+  "license": "basic",
+  "cluster_health": "green",
+  "data_nodes": 1,
+  "service_type": "ClusterIP",
+  "tls_ca_and_hostname_verified": true,
+  "anonymous_and_wrong_password_rejected": true,
+  "app_can_read_write": true,
+  "app_cannot_create_indices_manage_security_or_read_other_prefix": true,
+  "index_prefix": "v2_",
+  "indices": [
+    {
+      "index": "v2_news_processed",
+      "health": "green",
+      "docs.count": "0",
+      "pri": "1",
+      "rep": "0"
+    },
+    {
+      "index": "v2_oil_sentiment_corr_results",
+      "health": "green",
+      "docs.count": "0",
+      "pri": "1",
+      "rep": "0"
+    },
+    {
+      "index": "v2_post_comment_crawler_runs_raw",
+      "health": "green",
+      "docs.count": "0",
+      "pri": "1",
+      "rep": "0"
+    },
+    {
+      "index": "v2_gdelt_news_volume_raw",
+      "health": "green",
+      "docs.count": "0",
+      "pri": "1",
+      "rep": "0"
+    },
+    {
+      "index": "v2_social_discussion_edges_raw",
+      "health": "green",
+      "docs.count": "0",
+      "pri": "1",
+      "rep": "0"
+    },
+    {
+      "index": "v2_gdelt_news_raw",
+      "health": "green",
+      "docs.count": "0",
+      "pri": "1",
+      "rep": "0"
+    },
+    {
+      "index": "v2_oil_prices_raw",
+      "health": "green",
+      "docs.count": "0",
+      "pri": "1",
+      "rep": "0"
+    },
+    {
+      "index": "v2_pipeline_runs",
+      "health": "green",
+      "docs.count": "0",
+      "pri": "1",
+      "rep": "0"
+    },
+    {
+      "index": "v2_health_log",
+      "health": "green",
+      "docs.count": "0",
+      "pri": "1",
+      "rep": "0"
+    },
+    {
+      "index": "v2_social_discussion_posts_raw",
+      "health": "green",
+      "docs.count": "0",
+      "pri": "1",
+      "rep": "0"
+    },
+    {
+      "index": "v2_cloud_storage_probe",
+      "health": "green",
+      "docs.count": "3",
+      "pri": "1",
+      "rep": "0"
+    },
+    {
+      "index": "v2_ingestion_checkpoints",
+      "health": "green",
+      "docs.count": "0",
+      "pri": "1",
+      "rep": "0"
+    },
+    {
+      "index": "v2_social_posts_processed",
+      "health": "green",
+      "docs.count": "0",
+      "pri": "1",
+      "rep": "0"
+    }
+  ],
+  "storage": {
+    "claim": "elasticsearch-data-elasticsearch-es-acceptance-0",
+    "claim_uid": "828576e9-09cb-4ad6-816a-6c27c0a1f5d6",
+    "phase": "Bound",
+    "capacity": {
+      "storage": "20Gi"
+    },
+    "volume": "pvc-828576e9-09cb-4ad6-816a-6c27c0a1f5d6",
+    "reclaim_policy": "Retain",
+    "volume_claim_delete_policy": "DeleteOnScaledownOnly"
+  },
+  "persistence_probe": {
+    "index": "v2_cloud_storage_probe",
+    "document_id": "50d1d239-c958-41a4-a615-5c31a7af2a3e",
+    "restarted": true,
+    "pod_uid_before": "f6a5bca5-965b-4d31-bf24-ef696114a5b0",
+    "pod_uid_after": "2ed75a03-e2fe-4954-8927-19c541a269c1",
+    "node_before": "pool-v394x3mp2-3xp5yl",
+    "node_after": "pool-v394x3mp2-3xp5yl",
+    "same_pvc_and_volume": true,
+    "document_matches": true,
+    "restart_verification_seconds": 126.73
+  },
+  "limits": [
+    "Single ES node, zero index replicas; not highly available",
+    "No node-loss, cross-node reattachment, snapshot restore or load benchmark in this test",
+    "Original university data has not been recovered or imported"
+  ],
+  "app_cannot_explicitly_change_mappings": true,
+  "app_can_bulk_upsert": true
+}

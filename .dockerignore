@@ -1,0 +1,16 @@
+.git
+.venv
+**/.venv
+__pycache__
+**/__pycache__
+data
+artifacts
+*.zip
+*.pdf
+.env*
+!.env.example
+frontend
+test
+docs
+config_private.py
+**/config_private.py

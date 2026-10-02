@@ -1,0 +1,365 @@
+{
+  "experiment_id": "iran-20260228-v1",
+  "recorded_at": "2026-10-01T13:06:09.774295+00:00",
+  "state": "running",
+  "window": {
+    "start": "2026-01-28",
+    "end": "2026-04-28",
+    "event_date": "2026-02-28",
+    "timezone": "UTC"
+  },
+  "collection": {
+    "checked_at": "2026-10-01T12:45:21.016007+00:00",
+    "platforms": {
+      "bluesky": {
+        "returned_occurrences": 124272,
+        "malformed": 826,
+        "outside_event_window_occurrences": 0,
+        "request_pages": 1659,
+        "unique_in_window": 121744,
+        "topic_keyword_matched": 95844,
+        "with_country_text_evidence": 20809,
+        "country_filter_applied": false,
+        "task_statuses": {
+          "capped": 1,
+          "exhausted": 545
+        },
+        "by_phase": {
+          "pre": 11287,
+          "post_month_1": 62825,
+          "post_month_2": 47632
+        }
+      },
+      "mastodon": {
+        "returned_occurrences": 29591,
+        "malformed": 0,
+        "outside_event_window_occurrences": 25224,
+        "request_pages": 741,
+        "unique_in_window": 2747,
+        "topic_keyword_matched": 1901,
+        "with_country_text_evidence": 1085,
+        "country_filter_applied": false,
+        "task_statuses": {
+          "capped": 4,
+          "passed_start": 14
+        },
+        "by_phase": {
+          "post_month_2": 1122,
+          "post_month_1": 1003,
+          "pre": 622
+        }
+      }
+    }
+  },
+  "cohort": {
+    "prepared_at": "2026-10-01T12:48:21.583244+00:00",
+    "raw_records": 124491,
+    "eligible_records": 90576,
+    "eligibility_reasons": {
+      "eligible": 90576,
+      "no_topic_keyword": 26746,
+      "insufficient_prose": 1534,
+      "duplicate_model_text": 3104,
+      "language_disagreement": 1247,
+      "provider_language_unknown": 326,
+      "language_uncertain": 784,
+      "provider_non_english": 174
+    },
+    "eligible_by_platform": {
+      "bluesky": 89280,
+      "mastodon": 1296
+    },
+    "input_sha256": "467b1612b53efbaf86a0357159d8cfd52ba554142823deb3e183ae7d76b39463",
+    "raw_sha256": "98335d2c8de1f1e58dd1aa42bbaf38261d7d6ce881023e5d81fdeff7e877be31",
+    "decisions_sha256": "46ddb3ecdf4b9b074331cbc4cc757a5e278c0f285d1af8e1292b50e42066060a",
+    "deduplication": "Earliest post per normalized model-text fingerprint",
+    "collection_statuses": [
+      {
+        "platform": "bluesky",
+        "status": "capped",
+        "tasks": 1
+      },
+      {
+        "platform": "bluesky",
+        "status": "exhausted",
+        "tasks": 545
+      },
+      {
+        "platform": "mastodon",
+        "status": "capped",
+        "tasks": 4
+      },
+      {
+        "platform": "mastodon",
+        "status": "passed_start",
+        "tasks": 14
+      }
+    ],
+    "collection_gaps": [
+      {
+        "platform": "bluesky",
+        "query": "\"gas prices\"",
+        "day": "2026-03-09",
+        "host": null,
+        "pages": 30,
+        "status": "capped"
+      },
+      {
+        "platform": "mastodon",
+        "query": "electriccars",
+        "day": null,
+        "host": "aus.social",
+        "pages": 100,
+        "status": "capped"
+      },
+      {
+        "platform": "mastodon",
+        "query": "electricvehicles",
+        "day": null,
+        "host": "aus.social",
+        "pages": 100,
+        "status": "capped"
+      },
+      {
+        "platform": "mastodon",
+        "query": "electriccars",
+        "day": null,
+        "host": "mastodon.au",
+        "pages": 100,
+        "status": "capped"
+      },
+      {
+        "platform": "mastodon",
+        "query": "electricvehicles",
+        "day": null,
+        "host": "mastodon.au",
+        "pages": 100,
+        "status": "capped"
+      }
+    ],
+    "limits": [
+      "Provider language plus langid routing is not human language annotation",
+      "Text deduplication may remove later reposts; raw daily volume is reported separately",
+      "Parent context not inferred: direct-text Jev rubric may abstain on replies"
+    ]
+  },
+  "ingestion": {
+    "social_discussion_posts_raw": {
+      "attempted": 124491,
+      "created": 124491,
+      "already_present": 0,
+      "failed": 0
+    },
+    "social_processing_decisions": {
+      "attempted": 124491,
+      "created": 124491,
+      "updated": 0,
+      "noop": 0,
+      "failed": 0,
+      "succeeded": 124491
+    }
+  },
+  "oil": {
+    "schema_changes": [
+      {
+        "index": "v2_social_discussion_posts_raw",
+        "action": "updated_mapping"
+      },
+      {
+        "index": "v2_social_processing_decisions",
+        "action": "updated_mapping"
+      },
+      {
+        "index": "v2_social_posts_jev",
+        "action": "updated_mapping"
+      },
+      {
+        "index": "v2_jev_inference_attempts",
+        "action": "updated_mapping"
+      },
+      {
+        "index": "v2_experiment_runs",
+        "action": "updated_mapping"
+      }
+    ],
+    "cloud_secrets": [
+      "transport-jev-secrets",
+      "transport-source-secrets"
+    ],
+    "oil_price_records": 63,
+    "oil_first_date": "2026-01-28",
+    "oil_last_date": "2026-04-28",
+    "oil_writes": {
+      "attempted": 63,
+      "created": 63,
+      "updated": 0,
+      "noop": 0,
+      "failed": 0,
+      "succeeded": 63
+    }
+  },
+  "budget_authorization": {
+    "experiment_id": "iran-20260228-v1",
+    "input_sha256": "467b1612b53efbaf86a0357159d8cfd52ba554142823deb3e183ae7d76b39463",
+    "maximum_inference_cost_usd": 15.0,
+    "recorded_at": "2026-10-01T12:55:08.658000+00:00",
+    "authorization": "User explicitly approved raising total Jev inference ceiling to USD 15 on 2026-10-01; cumulative across resumptions, excluding cloud infrastructure."
+  },
+  "cloud_status_snapshot": {
+    "experiment_id": "iran-20260228-v1",
+    "expected_raw": 124491,
+    "expected_processed": 90576,
+    "cloud_counts": {
+      "social_discussion_posts_raw": 124491,
+      "social_processing_decisions": 124491,
+      "social_posts_jev": 1225
+    },
+    "run": {
+      "experiment_id": "iran-20260228-v1",
+      "status": "running",
+      "updated_at": "2026-10-01T13:05:02.935848+00:00",
+      "model_name": "jev-1.13.0",
+      "report": {
+        "experiment_id": "iran-20260228-v1",
+        "model": "jev-1.13.0",
+        "contract_sha256": "1fd68c77ba3a4febbbb5fc7fae903f643ac69d7cab2e51312edae1027b19d416",
+        "input_sha256": "467b1612b53efbaf86a0357159d8cfd52ba554142823deb3e183ae7d76b39463",
+        "total_records": 90576,
+        "already_processed": 691,
+        "succeeded_this_run": 500,
+        "failed_this_run": 0,
+        "new_api_calls": 499,
+        "cache_hits": 1,
+        "errors": [],
+        "cost_cap_usd": 15.0,
+        "original_plan_cost_cap_usd": 10.0,
+        "accounted_cost_usd": 0.15620320799999987,
+        "workers": 4,
+        "requests_per_second_limit": 8.0,
+        "started_at": "2026-10-01T13:03:59.723391+00:00",
+        "status": "running",
+        "elapsed_seconds": 63.21,
+        "updated_at": "2026-10-01T13:05:02.935769+00:00"
+      }
+    },
+    "jobs": [
+      {
+        "name": "transport-jev-event-69d265c4",
+        "status": {
+          "conditions": [
+            {
+              "lastProbeTime": "2026-10-01T12:53:45Z",
+              "lastTransitionTime": "2026-10-01T12:53:45Z",
+              "message": "Job has reached the specified backoff limit",
+              "reason": "BackoffLimitExceeded",
+              "status": "True",
+              "type": "FailureTarget"
+            },
+            {
+              "lastProbeTime": "2026-10-01T12:53:45Z",
+              "lastTransitionTime": "2026-10-01T12:53:45Z",
+              "message": "Job has reached the specified backoff limit",
+              "reason": "BackoffLimitExceeded",
+              "status": "True",
+              "type": "Failed"
+            }
+          ],
+          "failed": 1,
+          "ready": 0,
+          "startTime": "2026-10-01T12:51:17Z",
+          "terminating": 0,
+          "uncountedTerminatedPods": {}
+        }
+      },
+      {
+        "name": "transport-jev-event-b7cc07da",
+        "status": {
+          "active": 1,
+          "ready": 1,
+          "startTime": "2026-10-01T13:03:20Z",
+          "terminating": 0,
+          "uncountedTerminatedPods": {}
+        }
+      }
+    ]
+  },
+  "latest_release": {
+    "job": "transport-jev-event-b7cc07da",
+    "pod": "transport-jev-event-b7cc07da-sj2s6",
+    "release_sha256": "9b7d9a00dc83fcd17161ee0761f960f8d96d70792f1f720c2a14690bc28de723",
+    "cost_cap_usd": 15.0,
+    "state": "release_uploaded"
+  },
+  "api_checks": [
+    {
+      "path": "/api/v1/experiments/status",
+      "status": 200,
+      "request_id": true
+    },
+    {
+      "path": "/api/v1/social/posts",
+      "status": 200,
+      "request_id": true
+    },
+    {
+      "path": "/api/v1/social/target-sentiment",
+      "status": 200,
+      "request_id": true
+    }
+  ],
+  "existing_api_checks_passed": 15,
+  "tests": {
+    "passed": 190,
+    "skipped": 1,
+    "failed": 0,
+    "skip_reason": "Optional pinned RoBERTa weights test not requested in this Jev run",
+    "local_services": [
+      "Elasticsearch",
+      "Redis"
+    ],
+    "junit_sha256": "67f1d5c344964179b244b805d5a49d8cf1b5e99096e3876fd155a631de351a75"
+  },
+  "native_response_recovery": {
+    "first_job_succeeded": 691,
+    "first_job_native_rejections": 1,
+    "bounded_choice_gap": 0.01,
+    "old_validation": "jev-rounded-wire-v2",
+    "new_validation": "jev-rounded-wire-v3",
+    "rubric_changed": false,
+    "replayed_native_response_without_new_api_call": true,
+    "affected_state_abstains": true
+  },
+  "source_sha256": {
+    "backend/api/app.py": "8aa78ee014b9ac0948eb5a9fa4ccd7bbe9edd3f0b449b047178ea487fad31a80",
+    "backend/api/jev_queries.py": "8e35b77e05d41cba8ab980134b7df6a442e73fcc4eb8c61daa4b3729639b95c6",
+    "backend/api/openapi.json": "73dc8b703abebedd526e2b5d56be7f7d8fece15e800fd9c36f08bc6c58edba9a",
+    "backend/api/queries.py": "70cbd124ec3dce13fbe3eb61926bd02e69237fa5383fa80745b904adf2c534a3",
+    "backend/brent_ingest/fetch_brent.py": "7d75240de31621ae1ad01b17ea93985012f26ace5cf6dc876304bdfbd95269c2",
+    "backend/data_process/event_jev.py": "f4f799cd92ff9f2e90b72c79c795c2e66088e724fccb083f679c9b4fd9a46bfb",
+    "backend/data_process/jev_sentiment.py": "235e78cc48a93925de10ce508d7164d5d6d45a254c7ff9797943c1e17798cb51",
+    "backend/ingestion/authenticated_bluesky.py": "0ec7bfb717aa70b2b473d20c832099f14619907590eee9a09f01c8900b76b58a",
+    "backend/ingestion/event_harvest.py": "ce88c6148edd833586c2409fb354e6169bd8a77d474ae79ce7ee576bf606ebaf",
+    "backend/ingestion/import_ndjson.py": "c97e1d90fe167d404c6ad0bc174ee9cd9107c0101a42210b173fcadd13e0dcca",
+    "database/mappings/experiment_runs.json": "efe78b734f3753bc915241f23c13e5b389748bd599e6eec9a7caba2a4528d748",
+    "database/mappings/jev_inference_attempts.json": "81a0dabaf27738c148ae2e7a2b0bda57b75707538b8d0f5bfb290353980444a1",
+    "database/mappings/social_discussion_posts_raw.json": "a3af1e537f96d036e4c3a4f60ce2776666428ed528715034ca6bff25c320deb6",
+    "database/mappings/social_posts_jev.json": "52f40e896ed08cdad54e0f666100d701204104404120f6ef451bc24ba9bc697a",
+    "database/mappings/social_processing_decisions.json": "792cc2f4e698b75a3e44d62ed0f2164533ff1b4871e221814b62e88b079602aa",
+    "experiments/iran-20260228.json": "cce2276e830f9e7142d448443ba58176d9c48747025444bb137a4aa2ee324b3a",
+    "pyproject.toml": "96078ea99fcf6e23d46822689694a195d3f08419ed2cdd0c0199bf8e4615f0f2",
+    "requirements-experiment.txt": "d5424f0d233dad048dadc6e700cdce8deab4038106387854ab038261c52af7e1",
+    "scripts/analyze_event_experiment.py": "562491cf032a5acfbce326248f18ea661361995ecffff5cb898a12f68f2e40ab",
+    "scripts/cloud_event_experiment.py": "4c011a1309c8fe9ba3c06ab12e8ad0f24b360800111fad50d24f036dde3ed98a",
+    "scripts/export_requirements.py": "ced68f72f5e5bed2cde8601fa7e4a9aa45005041fb6dd0de9e8ba3db4fe35d34",
+    "scripts/prepare_event_cohort.py": "2a5060717ac2d87696db927933a906b3918daa1504a78e264edc2ca97e1fb909",
+    "test/test_event_experiment.py": "2099b499bde1fa901a0b77aeda5bd6c4413db8748fc0da96f7f274c9e0ad63f5",
+    "test/test_jev_sentiment.py": "38c3b1e3da068bc1fbe90c1b5947baff22d4b578e82fd334370b8b1fa1920b1a",
+    "uv.lock": "aa81055e5b3e57c462d4af908aedc42e595f93ed3562e2d93c94779ad96167ec"
+  },
+  "limits": [
+    "Inference is ongoing: 90,576 is the planned cohort, not a completed count",
+    "Search coverage is bounded; capped tasks are recorded",
+    "No human-gold accuracy or causal-effect claim",
+    "Credential values and individual post text excluded from this evidence"
+  ]
+}

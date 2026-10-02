@@ -1,0 +1,161 @@
+{
+  "reviewer": "Codex assistant",
+  "reviewer_type": "ai",
+  "scope": "30 source samples and 26 accepted structured outputs plus 5 diagnostic responses; no link/image verification",
+  "human_gold": false,
+  "labels_overwritten": false,
+  "reviewed_at_utc": "2026-10-01T09:57:59.053968+00:00",
+  "sample_sha256": "ff5feea24adf8f35e1a7b4a65d34221502e1c323b35f904ebf5f80f3529b184b",
+  "items": [
+    {
+      "sample_id": "S001",
+      "stored_annotation": true,
+      "review_note": "纯标签缺少正文，应人工复核；模型未触发 needs_review。"
+    },
+    {
+      "sample_id": "S002",
+      "stored_annotation": true,
+      "review_note": "fuelprices 仅在末尾标签，正文谈生活与社会变化；相关性放宽。"
+    },
+    {
+      "sample_id": "S003",
+      "stored_annotation": true,
+      "review_note": "能抽取交通应用正向评价；属于转述评价，不能推断作者亲自使用。"
+    },
+    {
+      "sample_id": "S004",
+      "stored_annotation": true,
+      "review_note": "新闻事件并不自动表达作者对油价的态度；neutral 比方向推断更稳妥。"
+    },
+    {
+      "sample_id": "S005",
+      "stored_annotation": true,
+      "review_note": "交通开放日属于文化邻近内容，没有明确态度证据。"
+    },
+    {
+      "sample_id": "S006",
+      "stored_annotation": true,
+      "review_note": "仅提供链接和标题，adjacent 取决于研究边界；需统一标注规范。"
+    },
+    {
+      "sample_id": "S007",
+      "stored_annotation": true,
+      "review_note": "保留新闻中立表达；海运能源供应与个人交通偏好应分开。"
+    },
+    {
+      "sample_id": "S008",
+      "stored_annotation": false,
+      "review_note": "两次均未通过证据校验；诊断回复引用超过160字符，未入库。"
+    },
+    {
+      "sample_id": "S009",
+      "stored_annotation": true,
+      "review_note": "个人驾驶安全经历，主题邻近；不等同模式选择。"
+    },
+    {
+      "sample_id": "S010",
+      "stored_annotation": true,
+      "review_note": "正确识别橄榄油不是车用燃油，标为 unrelated。"
+    },
+    {
+      "sample_id": "S011",
+      "stored_annotation": true,
+      "review_note": "看不到图片的梗，模型触发复核；不能从标题确定立场。"
+    },
+    {
+      "sample_id": "S012",
+      "stored_annotation": true,
+      "review_note": "柴油价格与电动车新闻，没有个人转变证据。"
+    },
+    {
+      "sample_id": "S013",
+      "stored_annotation": true,
+      "review_note": "标题有正向措辞；不能直接归为作者使用电动车的满意度。"
+    },
+    {
+      "sample_id": "S014",
+      "stored_annotation": true,
+      "review_note": "铁路事故不一定属于公共交通态度，目标归属需要复核。"
+    },
+    {
+      "sample_id": "S015",
+      "stored_annotation": true,
+      "review_note": "文化活动照片，个人经历并不代表交通服务态度。"
+    },
+    {
+      "sample_id": "S016",
+      "stored_annotation": false,
+      "review_note": "两次被拦截；诊断回复证据超过160字符，未入库。"
+    },
+    {
+      "sample_id": "S017",
+      "stored_annotation": true,
+      "review_note": "识别推广内容有用，但相关/邻近边界与前次AI审核不同。"
+    },
+    {
+      "sample_id": "S018",
+      "stored_annotation": true,
+      "review_note": "实时公交查询工具具有服务相关性；LLM判adjacent偏保守。"
+    },
+    {
+      "sample_id": "S019",
+      "stored_annotation": true,
+      "review_note": "启用充电站属于事实性新闻，positive 可能把进展推成作者态度。"
+    },
+    {
+      "sample_id": "S020",
+      "stored_annotation": false,
+      "review_note": "诊断出现重复driving目标，被拦截；道路安全与选择问题也需区分。"
+    },
+    {
+      "sample_id": "S021",
+      "stored_annotation": true,
+      "review_note": "识别公交服务中断，可用于问题归类；仍未证实作者体验。"
+    },
+    {
+      "sample_id": "S022",
+      "stored_annotation": true,
+      "review_note": "明显目标误配：把国际油运水道归为public_transport；已有截断复核标记。"
+    },
+    {
+      "sample_id": "S023",
+      "stored_annotation": true,
+      "review_note": "新建充电站是报道事实，positive 不能用作居民满意度。"
+    },
+    {
+      "sample_id": "S024",
+      "stored_annotation": true,
+      "review_note": "油价负担负向可由文本支持，但这是评论/转述，不代表本人调查答卷。"
+    },
+    {
+      "sample_id": "S025",
+      "stored_annotation": false,
+      "review_note": "诊断重复fuel_price目标，被拦截；没有自动合并来掩盖输出缺陷。"
+    },
+    {
+      "sample_id": "S026",
+      "stored_annotation": true,
+      "review_note": "与S024近重复，但被分成news_or_link而非opinion，类别一致性需要评测。"
+    },
+    {
+      "sample_id": "S027",
+      "stored_annotation": true,
+      "review_note": "识别延误话题，neutral无法表达调侃的细节，暂不强行判负面。"
+    },
+    {
+      "sample_id": "S028",
+      "stored_annotation": true,
+      "review_note": "补查通过；仅处理文本中的驾驶困难，不推断作者健康属性；相关性边界有分歧。"
+    },
+    {
+      "sample_id": "S029",
+      "stored_annotation": true,
+      "review_note": "讽刺负向识别有意义，但模型未开启 sarcasm 复核标记。"
+    },
+    {
+      "sample_id": "S030",
+      "stored_annotation": true,
+      "review_note": "将事实性的补贴调查判为油价负向，需区分受访者描述与发帖者立场。"
+    }
+  ]
+}

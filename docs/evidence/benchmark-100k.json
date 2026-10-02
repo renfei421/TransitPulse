@@ -1,0 +1,39 @@
+{
+  "kind": "synthetic_local_benchmark",
+  "hardware": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.16",
+    "logical_cpu_count": 22
+  },
+  "elasticsearch": "8.19.1",
+  "index_prefix": "bench_189789b93c_",
+  "stored_documents": 100000,
+  "configuration": {
+    "batch_size": 500,
+    "shards": 1,
+    "replicas": 0,
+    "http_concurrency": 4,
+    "query_requests": 100,
+    "baseline_records": 200
+  },
+  "ingestion": {
+    "seconds": 12.955363299930468,
+    "documents_per_second": 7718.810942224731,
+    "python_traced_peak_mb": 1.74029541015625,
+    "single_request_baseline_seconds": 1.1574789999285713,
+    "same_size_bulk_seconds": 0.06931130005978048,
+    "same_size_speedup": 16.699715615350662
+  },
+  "query": {
+    "p50_ms": 6.880849949084222,
+    "p95_ms": 9.31309990119189,
+    "p99_ms": 10.339300031773746,
+    "requests_per_second": 540.5694683690821
+  },
+  "limitations": [
+    "Synthetic text, no neural inference",
+    "Single local node; no distributed-scaling claim",
+    "Memory is Python traced allocations, not total process or Elasticsearch RSS",
+    "Warm repeated aggregation queries; not uncached production traffic"
+  ]
+}

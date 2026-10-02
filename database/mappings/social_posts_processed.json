@@ -1,0 +1,272 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 3,
+      "number_of_replicas": 1
+    }
+  },
+  "mappings": {
+    "properties": {
+      "doc_id": {
+        "type": "keyword"
+      },
+      "post_id": {
+        "type": "keyword"
+      },
+      "parent_post_id": {
+        "type": "keyword"
+      },
+      "depth": {
+        "type": "integer"
+      },
+      "created_at": {
+        "type": "date"
+      },
+      "processed_at": {
+        "type": "date"
+      },
+      "platform": {
+        "type": "keyword"
+      },
+      "server_domain": {
+        "type": "keyword"
+      },
+      "post_url": {
+        "type": "keyword"
+      },
+      "post_type": {
+        "type": "keyword"
+      },
+      "raw_text": {
+        "type": "text"
+      },
+      "keyword": {
+        "type": "keyword"
+      },
+      "candidate_topics": {
+        "type": "keyword"
+      },
+      "seed_type": {
+        "type": "keyword"
+      },
+      "seed_query": {
+        "type": "keyword"
+      },
+      "seed_topics": {
+        "type": "keyword"
+      },
+      "original_sentiment_label": {
+        "type": "keyword"
+      },
+      "original_sentiment_score": {
+        "type": "float"
+      },
+      "reply_relation": {
+        "type": "keyword"
+      },
+      "reply_relation_confidence": {
+        "type": "float"
+      },
+      "local_sentiment_label": {
+        "type": "keyword"
+      },
+      "local_sentiment_score": {
+        "type": "float"
+      },
+      "contextual_sentiment_label": {
+        "type": "keyword"
+      },
+      "contextual_sentiment_score": {
+        "type": "float"
+      },
+      "sentiment_method": {
+        "type": "keyword"
+      },
+      "context_text": {
+        "type": "text"
+      },
+      "thread_index": {
+        "type": "integer"
+      },
+      "thread_seed_post_id": {
+        "type": "keyword"
+      },
+      "thread_seed_query": {
+        "type": "keyword"
+      },
+      "thread_seed_type": {
+        "type": "keyword"
+      },
+      "is_seed_post": {
+        "type": "boolean"
+      },
+      "is_reply": {
+        "type": "boolean"
+      },
+      "collection_method": {
+        "type": "keyword"
+      },
+      "collection_methods": {
+        "type": "keyword"
+      },
+      "matched_keywords": {
+        "type": "keyword"
+      },
+      "inferred_region": {
+        "type": "keyword"
+      },
+      "inferred_region_confidence": {
+        "type": "keyword"
+      },
+      "nearest_event_id": {
+        "type": "keyword"
+      },
+      "nearest_event_name": {
+        "type": "keyword"
+      },
+      "days_from_event": {
+        "type": "integer"
+      },
+      "event_period": {
+        "type": "keyword"
+      },
+      "news_attention_score": {
+        "type": "float"
+      },
+      "fuel_price_cpl": {
+        "type": "float"
+      },
+      "fuel_price_change_7d": {
+        "type": "float"
+      },
+      "fuel_price_source": {
+        "type": "keyword"
+      },
+      "dataset_kind": {
+        "type": "keyword"
+      },
+      "source_dataset": {
+        "type": "keyword"
+      },
+      "model_name": {
+        "type": "keyword"
+      },
+      "model_revision": {
+        "type": "keyword"
+      },
+      "pipeline_version": {
+        "type": "keyword"
+      },
+      "score_type": {
+        "type": "keyword"
+      },
+      "processing_run_id": {
+        "type": "keyword"
+      },
+      "schema_version": {
+        "type": "integer"
+      },
+      "fetched_at": {
+        "type": "date"
+      },
+      "thread_root_id": {
+        "type": "keyword"
+      },
+      "author_id_hash": {
+        "type": "keyword"
+      },
+      "direct_candidate_topics": {
+        "type": "keyword"
+      },
+      "inherited_candidate_topics": {
+        "type": "keyword"
+      },
+      "topic_source": {
+        "type": "keyword"
+      },
+      "local_sentiment_polarity": {
+        "type": "float"
+      },
+      "contextual_sentiment_polarity": {
+        "type": "float"
+      },
+      "context_missing_parent": {
+        "type": "boolean"
+      },
+      "sentiment_probabilities": {
+        "properties": {
+          "negative": {
+            "type": "float"
+          },
+          "neutral": {
+            "type": "float"
+          },
+          "positive": {
+            "type": "float"
+          }
+        }
+      },
+      "lang": {
+        "type": "keyword"
+      },
+      "country_text_hints": {
+        "type": "keyword"
+      },
+      "collection_profile": {
+        "type": "keyword"
+      },
+      "eligibility_policy": {
+        "type": "keyword"
+      },
+      "language_model": {
+        "type": "keyword"
+      },
+      "provider_language": {
+        "type": "keyword"
+      },
+      "content_kind": {
+        "type": "keyword"
+      },
+      "detected_language": {
+        "type": "keyword"
+      },
+      "text_fingerprint": {
+        "type": "keyword"
+      },
+      "decision": {
+        "type": "keyword"
+      },
+      "reason": {
+        "type": "keyword"
+      },
+      "sentiment_scope": {
+        "type": "keyword"
+      },
+      "input_preprocessing": {
+        "type": "keyword"
+      },
+      "input_truncation_side": {
+        "type": "keyword"
+      },
+      "substantive_words": {
+        "type": "integer"
+      },
+      "input_max_tokens": {
+        "type": "integer"
+      },
+      "input_token_count": {
+        "type": "integer"
+      },
+      "language_confidence": {
+        "type": "float"
+      },
+      "input_truncated": {
+        "type": "boolean"
+      }
+    },
+    "_meta": {
+      "schema_version": 2,
+      "source": "database/mappings"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "settings": {"number_of_shards": 1, "number_of_replicas": 0},
+  "mappings": {"dynamic": "strict", "properties": {
+    "attempt_id": {"type": "keyword"}, "doc_id": {"type": "keyword"},
+    "experiment_id": {"type": "keyword"}, "contract_sha256": {"type": "keyword"},
+    "input_sha256": {"type": "keyword"}, "status": {"type": "keyword"},
+    "started_at": {"type": "date"}, "settled_at": {"type": "date"},
+    "reserved_usd": {"type": "double"}, "accounted_usd": {"type": "double"},
+    "latency_seconds": {"type": "double"}, "input_tokens": {"type": "long"},
+    "error_type": {"type": "keyword"}, "error_reason": {"type": "keyword"},
+    "response_cache": {"type": "object", "enabled": false}
+  }}
+}

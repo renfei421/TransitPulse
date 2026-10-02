@@ -1,0 +1,255 @@
+{
+  "reviewer": "Codex assistant",
+  "reviewer_type": "ai",
+  "basis": "Full normalized text of each of 30 stratified samples; linked articles and images not fetched; topical triage does not verify factual claims or author residence",
+  "criteria": {
+    "related": "Transport use/service/access/cost/choice, EV infrastructure, or petroleum energy supply and price content",
+    "adjacent": "Transport culture, safety or promotional design without a clear connection to those analysis questions",
+    "unrelated": "No substantive relation, or a different meaning of a keyword",
+    "uncertain": "Text does not contain enough information; images and links not inspected"
+  },
+  "reviewed_at_utc": "2026-10-01T09:13:41.838065+00:00",
+  "sample_sha256": "ff5feea24adf8f35e1a7b4a65d34221502e1c323b35f904ebf5f80f3529b184b",
+  "labels": [
+    {
+      "sample_id": "S001",
+      "doc_id": "0024896e6cc8c5f5e25c831fc105b88261a9e2b958af908a1e959c0a31749d65",
+      "stratum": "hashtag_added_candidate",
+      "topic_relevance": "uncertain",
+      "geographic_context": "unknown",
+      "note": "仅有街拍与公交标签，未附可判读的实质正文；本轮不检查图片。"
+    },
+    {
+      "sample_id": "S002",
+      "doc_id": "033b147ac162ea1ab49e194da5569d3ab152deda57268301248cd7d063654506",
+      "stratum": "hashtag_added_candidate",
+      "topic_relevance": "unrelated",
+      "geographic_context": "unknown",
+      "note": "生活意义与社会危机感想，燃油价格只出现在标签中。"
+    },
+    {
+      "sample_id": "S003",
+      "doc_id": "035676b03dae5b492c8a6d60e56f9372a313db8d1b8b2fa0722f2b7c5b0122c0",
+      "stratum": "hashtag_added_candidate",
+      "topic_relevance": "related",
+      "geographic_context": "other_country",
+      "note": "玻利维亚 Cochabamba 公交应用评价与出行信息；推广性质，不等于独立用户意见。"
+    },
+    {
+      "sample_id": "S004",
+      "doc_id": "05959e7bc529bf92053474ee9df5d4664360dca47834ace4b4c3c683b33e546a",
+      "stratum": "hashtag_added_candidate",
+      "topic_relevance": "related",
+      "geographic_context": "international",
+      "note": "霍尔木兹海峡通航与能源供应新闻标题；作为能源背景相关，不视为交通方式选择。"
+    },
+    {
+      "sample_id": "S005",
+      "doc_id": "05d3671b324bb0c7b6380b88cc15642fb9bffa0fd3142b678b161d2a9a3d9b7e",
+      "stratum": "hashtag_added_candidate",
+      "topic_relevance": "adjacent",
+      "geographic_context": "other_country",
+      "note": "多伦多街车车库开放日，偏交通爱好者活动，无服务成本或出行评价。"
+    },
+    {
+      "sample_id": "S006",
+      "doc_id": "07e286aea7beb1691cf21c064bdcb6185d942ffaa8ade61d3df630eb88aacdab",
+      "stratum": "hashtag_added_candidate",
+      "topic_relevance": "adjacent",
+      "geographic_context": "other_country",
+      "note": "英国部门的交通传播措辞建议，缺乏正文中的具体出行体验。"
+    },
+    {
+      "sample_id": "S007",
+      "doc_id": "08414fe3c02b070362488fec86ae99237f8d9c5bb5d2e063d19898a4bed50efe",
+      "stratum": "hashtag_added_candidate",
+      "topic_relevance": "related",
+      "geographic_context": "international",
+      "note": "油轮出口与航线风险的新闻摘要，能源供应背景相关；文中事件未外部核实。"
+    },
+    {
+      "sample_id": "S008",
+      "doc_id": "09791576d3f4d3ccf7c47c23c1161ea3e819448e78fb89b94d73eba1660d01c9",
+      "stratum": "hashtag_added_candidate",
+      "topic_relevance": "related",
+      "geographic_context": "unknown",
+      "note": "明确支持公共交通及其城市可达性价值，具有态度信息。"
+    },
+    {
+      "sample_id": "S009",
+      "doc_id": "09ba5f23907f2598e24241ca5f46945794807886f4c4cf0f17f2b418a51e562c",
+      "stratum": "hashtag_added_candidate",
+      "topic_relevance": "adjacent",
+      "geographic_context": "other_country",
+      "note": "英国行车记录仪与道路举报指南，偏道路安全，非燃油车成本或替代选择。"
+    },
+    {
+      "sample_id": "S010",
+      "doc_id": "0bd4fc68703eba1943b3eefcc5c89d0148fcb73c6634db5c642b7b452eca9ebd",
+      "stratum": "hashtag_added_candidate",
+      "topic_relevance": "unrelated",
+      "geographic_context": "unknown",
+      "note": "食品通胀与橄榄油价格，oilprices 标签不代表石油或车用燃料。"
+    },
+    {
+      "sample_id": "S011",
+      "doc_id": "01434bde960d1266716721df78ec8ed4aed8bc63a3c5ae0666d05b4c1f4639f4",
+      "stratum": "other_topic_candidate",
+      "topic_relevance": "uncertain",
+      "geographic_context": "unknown",
+      "note": "EV 梗图链接与标签；未查看图片，无法判断实际态度。"
+    },
+    {
+      "sample_id": "S012",
+      "doc_id": "0177ee8c639015cf19837e05ad02f7c0c73b8f872c3016d70a4b2b9d3eca254d",
+      "stratum": "other_topic_candidate",
+      "topic_relevance": "related",
+      "geographic_context": "other_country",
+      "note": "中国电动重型车辆与柴油价格新闻，交通能源替代相关，非个人用车体验。"
+    },
+    {
+      "sample_id": "S013",
+      "doc_id": "018906dc00848cd6198258ca6a5ecda7712f44ba0a179d3c995c8da552d253b9",
+      "stratum": "other_topic_candidate",
+      "topic_relevance": "related",
+      "geographic_context": "other_country",
+      "note": "美国路灯充电设施新闻，充电可用性相关；简写 US 未被保守国家词表覆盖。"
+    },
+    {
+      "sample_id": "S014",
+      "doc_id": "01957051c8166891883f28f83eb13288f344bd2af12e2761b4fb8242cd660740",
+      "stratum": "other_topic_candidate",
+      "topic_relevance": "adjacent",
+      "geographic_context": "other_country",
+      "note": "新西兰铁路死亡事件的悼念新闻，交通事故相关但非出行成本或选择。"
+    },
+    {
+      "sample_id": "S015",
+      "doc_id": "01fd02b7e037746b441404622c98b41e10e4c5442edd0f5b747a288a7093321f",
+      "stratum": "other_topic_candidate",
+      "topic_relevance": "adjacent",
+      "geographic_context": "other_country",
+      "note": "Brampton 公交包车摄影活动，缺乏服务质量、成本和选择内容。"
+    },
+    {
+      "sample_id": "S016",
+      "doc_id": "026be362c212fb10459e2143e9cffe50103cbd6bca98a72085406b236d84c921",
+      "stratum": "other_topic_candidate",
+      "topic_relevance": "related",
+      "geographic_context": "international",
+      "note": "油价与对伊朗制裁新闻，主题直接相关但不是个人情绪样本。"
+    },
+    {
+      "sample_id": "S017",
+      "doc_id": "0289ce3b1125cf1ff630102577ee556e27be7aa8853040f53206b1eaec5d784d",
+      "stratum": "other_topic_candidate",
+      "topic_relevance": "adjacent",
+      "geographic_context": "unknown",
+      "note": "自行车充电租赁应用的 UI 设计推广，EV 充电只作应用场景，不是设施体验。"
+    },
+    {
+      "sample_id": "S018",
+      "doc_id": "03596f15067105f3ef6a18e1c5b7c8726f9fadcc4a8f292746b3c15ae5b8036e",
+      "stratum": "other_topic_candidate",
+      "topic_relevance": "related",
+      "geographic_context": "other_country",
+      "note": "西雅图实时公交、列车与渡轮地图，公共交通信息可用性相关。"
+    },
+    {
+      "sample_id": "S019",
+      "doc_id": "04417bfe76f8031761b8ed2cc866619e0c6c3d9be230015730d44decc19de3e5",
+      "stratum": "other_topic_candidate",
+      "topic_relevance": "related",
+      "geographic_context": "other_country",
+      "note": "Rawang 充电站启用及功率信息，与充电设施相关；地点判读来自正文，不代表作者所在地。"
+    },
+    {
+      "sample_id": "S020",
+      "doc_id": "048f2e7124a94795910e03adad80b05bdc733eab5df6a6d4dc1f0a035c45a997",
+      "stratum": "other_topic_candidate",
+      "topic_relevance": "adjacent",
+      "geographic_context": "other_country",
+      "note": "英国道路事故与危险驾驶评论，安全话题相邻，不涉及燃油车成本。"
+    },
+    {
+      "sample_id": "S021",
+      "doc_id": "0c4649719bc2f5c0b043059ce7f3574149c71251c1a6ab2f076f665943ab68bf",
+      "stratum": "regional_hint_candidate",
+      "topic_relevance": "related",
+      "geographic_context": "australian_context",
+      "note": "Perth 与 Elizabeth Quay、Joondalup Line 的列车延误信息，正文有明确交通地点组合。"
+    },
+    {
+      "sample_id": "S022",
+      "doc_id": "1aa0ac6f91258efb19908f3c291a324ec829346e94930ca5a2e0888af66d812b",
+      "stratum": "regional_hint_candidate",
+      "topic_relevance": "related",
+      "geographic_context": "international",
+      "note": "长篇新闻与评论混合文本含油路中断及油价讨论，也夹杂艺术图注和政治议题；Australian 图注不能证明澳洲出行背景，driving the news 不是驾驶。"
+    },
+    {
+      "sample_id": "S023",
+      "doc_id": "1cb112593affd5e266c0568cecdde1b16757f57a2cbb4fe9ff450c0985fa04f3",
+      "stratum": "regional_hint_candidate",
+      "topic_relevance": "related",
+      "geographic_context": "australian_context",
+      "note": "澳洲超市新增快充设施新闻，充电可达性相关；未验证新闻真实性。"
+    },
+    {
+      "sample_id": "S024",
+      "doc_id": "226e8ee7e8e0075d13f2f982959a6f3ee60f79bb795b23ecccf3c0b84002cc52",
+      "stratum": "regional_hint_candidate",
+      "topic_relevance": "related",
+      "geographic_context": "other_country",
+      "note": "美国油价与家庭预算评论；act 是普通动词，不构成澳洲地域证据。"
+    },
+    {
+      "sample_id": "S025",
+      "doc_id": "25e35946d40cc78adb74eb308a9f5011d55a441397f6a36b2f68e4eeec02a226",
+      "stratum": "regional_hint_candidate",
+      "topic_relevance": "related",
+      "geographic_context": "international",
+      "note": "伊朗冲突与油价上涨评论；act 为普通词，不是澳洲 ACT 地区。"
+    },
+    {
+      "sample_id": "S026",
+      "doc_id": "27903fecf89cc9e52d92dd1b950153e1e963e851470da4c74e460beb7da16637",
+      "stratum": "regional_hint_candidate",
+      "topic_relevance": "related",
+      "geographic_context": "other_country",
+      "note": "美国家庭燃油预算评论，与 S024 内容高度相似；不同帖子 ID 不能视为独立观点。"
+    },
+    {
+      "sample_id": "S027",
+      "doc_id": "2ef29d76866603b74da3acb8537cd895e65d44b3216d67ec5909c92347a0e369",
+      "stratum": "regional_hint_candidate",
+      "topic_relevance": "related",
+      "geographic_context": "australian_context",
+      "note": "Perth 列车因轨道障碍延误的体验，与公交可靠性相关；仅凭 Perth 单词仍有同名地点歧义。"
+    },
+    {
+      "sample_id": "S028",
+      "doc_id": "3a150e0d4e5368c5c19c6adfdca30ba12fe090405cf0ad354cb7587d2e16bfad",
+      "stratum": "regional_hint_candidate",
+      "topic_relevance": "adjacent",
+      "geographic_context": "australian_context",
+      "note": "驾驶条件、停车与道路安全的个人讨论；与成本或能源替代相邻。仅标注帖子主题，不提取作者个人健康属性。"
+    },
+    {
+      "sample_id": "S029",
+      "doc_id": "3ca6bfbfe872a98f8113a0de082f7a2328878217444b830984779fda6a68309d",
+      "stratum": "regional_hint_candidate",
+      "topic_relevance": "related",
+      "geographic_context": "australian_context",
+      "note": "对澳洲电动车价格和产品传播的讽刺评论，有购车态度；反讽需避免当作字面积极情感。"
+    },
+    {
+      "sample_id": "S030",
+      "doc_id": "41438575a2284f402d8c7d7e8a66c6fed5a0062e45e84d38bf4b6f19f4fe90d7",
+      "stratum": "regional_hint_candidate",
+      "topic_relevance": "related",
+      "geographic_context": "other_country",
+      "note": "正文讨论马来西亚燃油补贴额度；Australia 是新闻分发标签，不能作为澳洲居民意见。"
+    }
+  ]
+}

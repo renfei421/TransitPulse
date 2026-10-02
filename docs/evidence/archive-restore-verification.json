@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "verified_at": "2026-10-01T17:51:13.813223+00:00",
+  "es_version": "8.19.22",
+  "indices": {
+    "v2_cloud_storage_probe": {
+      "count": 3,
+      "documents_sha256": "6f3cc163674a026630e11aa60559232090997a4da0a5a2f622768fb5500bd762"
+    },
+    "v2_experiment_runs": {
+      "count": 1,
+      "documents_sha256": "d22eeeb1353a55fdc0594657e95cf1411102861aee335b4f4ac77e00c23eee1b"
+    },
+    "v2_gdelt_news_raw": {
+      "count": 0,
+      "documents_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "v2_gdelt_news_volume_raw": {
+      "count": 0,
+      "documents_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "v2_health_log": {
+      "count": 0,
+      "documents_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "v2_ingestion_checkpoints": {
+      "count": 0,
+      "documents_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "v2_jev_inference_attempts": {
+      "count": 90587,
+      "documents_sha256": "6dcd3c34dff5d68520e7dcd031f0f6d8944bf8388688438c7f4ee105a6a823c6"
+    },
+    "v2_news_processed": {
+      "count": 0,
+      "documents_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "v2_oil_prices_raw": {
+      "count": 63,
+      "documents_sha256": "5c7daba87dc6324140213991fecfb72672295e362612f31facd4d9984a2153da"
+    },
+    "v2_oil_sentiment_corr_results": {
+      "count": 0,
+      "documents_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "v2_pipeline_runs": {
+      "count": 1,
+      "documents_sha256": "e4ff3b440ea0195fc67061b8f16201aa22ea314525b7fcea79408b772dde5afb"
+    },
+    "v2_post_comment_crawler_runs_raw": {
+      "count": 0,
+      "documents_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "v2_social_discussion_edges_raw": {
+      "count": 0,
+      "documents_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "v2_social_discussion_posts_raw": {
+      "count": 125894,
+      "documents_sha256": "f90b919e5368c0794a0c1527193ec6401f5defe714dfe717750b146592995483"
+    },
+    "v2_social_posts_annotations": {
+      "count": 26,
+      "documents_sha256": "bc05f139974e897ae610300a0befc132e852a1acc5209fc8742519cd28954715"
+    },
+    "v2_social_posts_jev": {
+      "count": 90576,
+      "documents_sha256": "f7d7fd1c783b5fc9da6d1b1a8a172d7f71a81e5c0003e937516a82d6a903d068"
+    },
+    "v2_social_posts_processed": {
+      "count": 1047,
+      "documents_sha256": "6a2ec42039d8468b558c177739feb5f9b6aa4e43524090e0532242132925d921"
+    },
+    "v2_social_processing_decisions": {
+      "count": 125894,
+      "documents_sha256": "4681efb1ea55a4f3db7007e24738d131de6d5d18eee6f451a0b86ebf5e5d1692"
+    }
+  },
+  "index_count": 18,
+  "total_documents": 434092,
+  "compressed_index_bytes": 178409615,
+  "verification": "all full _id/_source/routing document fingerprints; order independent; no inference calls"
+}

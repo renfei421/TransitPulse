@@ -1,0 +1,45 @@
+{
+  "checked_at_utc": "2026-10-01T06:46:06.476366+00:00",
+  "context": "do-sgp1-k8s-1-34-10-do-5-sgp1-1790830229700",
+  "index": "v2_social_posts_processed",
+  "dataset_kind": "synthetic",
+  "temporary_documents": 2,
+  "checks": [
+    {
+      "check": "default_excludes_synthetic",
+      "passed": true
+    },
+    {
+      "check": "cursor_pages_are_disjoint_and_complete",
+      "passed": true
+    },
+    {
+      "check": "pagination_terminates",
+      "passed": true
+    },
+    {
+      "check": "topic_filter_applies",
+      "passed": true
+    },
+    {
+      "check": "signed_sentiment_and_counts",
+      "passed": true
+    },
+    {
+      "check": "platform_aggregation",
+      "passed": true
+    },
+    {
+      "check": "quality_does_not_invent_raw_coverage",
+      "passed": true
+    },
+    {
+      "check": "exact_probe_documents_removed",
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Precomputed fixture labels; no sentiment model executed",
+    "No harvesting, throughput, or autoscaling test"
+  ]
+}

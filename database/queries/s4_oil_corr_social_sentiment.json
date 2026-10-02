@@ -1,0 +1,49 @@
+{
+  "size": 0,
+  "query": {
+    "bool": {
+      "filter": [
+        {
+          "range": {
+            "created_at": {
+              "gte": "2026-02-14",
+              "lte": "now/d"
+            }
+          }
+        },
+        {
+          "term": {
+            "candidate_topics": "fuel_price"
+          }
+        },
+        {
+          "exists": {
+            "field": "contextual_sentiment_polarity"
+          }
+        }
+      ]
+    }
+  },
+  "aggs": {
+    "by_day": {
+      "date_histogram": {
+        "field": "created_at",
+        "calendar_interval": "day",
+        "time_zone": "Australia/Sydney",
+        "min_doc_count": 1
+      },
+      "aggs": {
+        "mean_model_polarity": {
+          "avg": {
+            "field": "contextual_sentiment_polarity"
+          }
+        },
+        "post_count": {
+          "value_count": {
+            "field": "doc_id"
+          }
+        }
+      }
+    }
+  }
+}

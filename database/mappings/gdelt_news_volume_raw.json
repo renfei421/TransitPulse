@@ -1,0 +1,56 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 1,
+      "number_of_replicas": 1
+    }
+  },
+  "mappings": {
+    "properties": {
+      "date": {
+        "type": "date",
+        "format": "yyyy-MM-dd||strict_date_optional_time"
+      },
+      "index_name": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "keyword": {
+        "type": "keyword"
+      },
+      "volume": {
+        "type": "integer"
+      },
+      "share_percent": {
+        "type": "float"
+      },
+      "id": {
+        "type": "keyword"
+      },
+      "dataset_kind": {
+        "type": "keyword"
+      },
+      "source_dataset": {
+        "type": "keyword"
+      },
+      "total_monitored": {
+        "type": "float"
+      },
+      "fetched_at": {
+        "type": "date"
+      },
+      "bucket_count": {
+        "type": "integer"
+      }
+    },
+    "_meta": {
+      "schema_version": 2,
+      "source": "database/mappings"
+    }
+  }
+}

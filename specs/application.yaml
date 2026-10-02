@@ -1,0 +1,381 @@
+apiVersion: fission.io/v1
+kind: Environment
+metadata:
+  name: transport-python
+  namespace: default
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+spec:
+  version: 3
+  poolsize: 0
+  runtime:
+    image: transport-fission:review
+    container:
+      name: transport-python
+    podspec:
+      containers:
+      - name: transport-python
+        envFrom:
+        - configMapRef:
+            name: transport-config
+        - secretRef:
+            name: transport-secrets
+        volumeMounts:
+        - name: es-ca
+          mountPath: /etc/es-ca
+          readOnly: true
+      volumes:
+      - name: es-ca
+        secret:
+          secretName: transport-es-ca
+  resources:
+    requests:
+      cpu: 100m
+      memory: 256Mi
+    limits:
+      cpu: '1'
+      memory: 512Mi
+---
+apiVersion: fission.io/v1
+kind: Environment
+metadata:
+  name: transport-trigger-python
+  namespace: default
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+spec:
+  version: 3
+  poolsize: 0
+  runtime:
+    image: transport-fission:review
+    container:
+      name: transport-trigger-python
+    podspec:
+      containers:
+      - name: transport-trigger-python
+        envFrom:
+        - configMapRef:
+            name: transport-config
+        - secretRef:
+            name: transport-secrets
+        volumeMounts:
+        - name: es-ca
+          mountPath: /etc/es-ca
+          readOnly: true
+      volumes:
+      - name: es-ca
+        secret:
+          secretName: transport-es-ca
+      serviceAccountName: transport-job-trigger
+  resources:
+    requests:
+      cpu: 100m
+      memory: 256Mi
+    limits:
+      cpu: '1'
+      memory: 512Mi
+---
+kind: ArchiveUploadSpec
+name: transport-code
+include:
+- artifacts/transport-functions.zip
+---
+apiVersion: fission.io/v1
+kind: Package
+metadata:
+  name: transport-python-code
+  namespace: default
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+status:
+  buildstatus: succeeded
+spec:
+  environment:
+    name: transport-python
+    namespace: default
+  deployment:
+    type: url
+    url: archive://transport-code
+---
+apiVersion: fission.io/v1
+kind: Package
+metadata:
+  name: transport-trigger-python-code
+  namespace: default
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+status:
+  buildstatus: succeeded
+spec:
+  environment:
+    name: transport-trigger-python
+    namespace: default
+  deployment:
+    type: url
+    url: archive://transport-code
+---
+apiVersion: fission.io/v1
+kind: Function
+metadata:
+  name: transport-api
+  namespace: default
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+spec:
+  environment:
+    name: transport-python
+    namespace: default
+  package:
+    functionName: backend.api.app.main
+    packageref:
+      name: transport-python-code
+      namespace: default
+  functionTimeout: 30
+  idletimeout: 120
+  concurrency: 20
+  requestsPerPod: 20
+  InvokeStrategy:
+    StrategyType: execution
+    ExecutionStrategy:
+      ExecutorType: newdeploy
+      MinScale: 1
+      MaxScale: 3
+      TargetCPUPercent: 70
+      SpecializationTimeout: 120
+  resources:
+    requests:
+      cpu: 100m
+      memory: 256Mi
+    limits:
+      cpu: '1'
+      memory: 512Mi
+---
+apiVersion: fission.io/v1
+kind: Function
+metadata:
+  name: transport-social-job
+  namespace: default
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+spec:
+  environment:
+    name: transport-trigger-python
+    namespace: default
+  package:
+    functionName: backend.data_process.cloud_sentiment.fission_job_trigger.main
+    packageref:
+      name: transport-trigger-python-code
+      namespace: default
+  functionTimeout: 40
+  idletimeout: 120
+  concurrency: 1
+  requestsPerPod: 1
+  InvokeStrategy:
+    StrategyType: execution
+    ExecutionStrategy:
+      ExecutorType: newdeploy
+      MinScale: 0
+      MaxScale: 1
+      TargetCPUPercent: 70
+      SpecializationTimeout: 120
+  resources:
+    requests:
+      cpu: 100m
+      memory: 256Mi
+    limits:
+      cpu: '1'
+      memory: 512Mi
+---
+apiVersion: fission.io/v1
+kind: Function
+metadata:
+  name: transport-news-job
+  namespace: default
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+spec:
+  environment:
+    name: transport-trigger-python
+    namespace: default
+  package:
+    functionName: backend.data_process.cloud_sentiment.fission_news_trigger.main
+    packageref:
+      name: transport-trigger-python-code
+      namespace: default
+  functionTimeout: 40
+  idletimeout: 120
+  concurrency: 1
+  requestsPerPod: 1
+  InvokeStrategy:
+    StrategyType: execution
+    ExecutionStrategy:
+      ExecutorType: newdeploy
+      MinScale: 0
+      MaxScale: 1
+      TargetCPUPercent: 70
+      SpecializationTimeout: 120
+  resources:
+    requests:
+      cpu: 100m
+      memory: 256Mi
+    limits:
+      cpu: '1'
+      memory: 512Mi
+---
+apiVersion: fission.io/v1
+kind: Function
+metadata:
+  name: transport-bluesky
+  namespace: default
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+spec:
+  environment:
+    name: transport-python
+    namespace: default
+  package:
+    functionName: backend.parallel_harvester.app.main_bluesky
+    packageref:
+      name: transport-python-code
+      namespace: default
+  functionTimeout: 900
+  idletimeout: 120
+  concurrency: 1
+  requestsPerPod: 1
+  InvokeStrategy:
+    StrategyType: execution
+    ExecutionStrategy:
+      ExecutorType: newdeploy
+      MinScale: 0
+      MaxScale: 1
+      TargetCPUPercent: 70
+      SpecializationTimeout: 120
+  resources:
+    requests:
+      cpu: 100m
+      memory: 256Mi
+    limits:
+      cpu: '1'
+      memory: 512Mi
+---
+apiVersion: fission.io/v1
+kind: Function
+metadata:
+  name: transport-mastodon
+  namespace: default
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+spec:
+  environment:
+    name: transport-python
+    namespace: default
+  package:
+    functionName: backend.parallel_harvester.app.main_mastodon
+    packageref:
+      name: transport-python-code
+      namespace: default
+  functionTimeout: 900
+  idletimeout: 120
+  concurrency: 1
+  requestsPerPod: 1
+  InvokeStrategy:
+    StrategyType: execution
+    ExecutionStrategy:
+      ExecutorType: newdeploy
+      MinScale: 0
+      MaxScale: 1
+      TargetCPUPercent: 70
+      SpecializationTimeout: 120
+  resources:
+    requests:
+      cpu: 100m
+      memory: 256Mi
+    limits:
+      cpu: '1'
+      memory: 512Mi
+---
+apiVersion: fission.io/v1
+kind: HTTPTrigger
+metadata:
+  name: transport-api-v1
+  namespace: default
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+spec:
+  prefix: /api/v1
+  keepPrefix: true
+  methods:
+  - GET
+  functionref:
+    type: name
+    name: transport-api
+  createingress: false
+---
+apiVersion: fission.io/v1
+kind: HTTPTrigger
+metadata:
+  name: transport-api-compat
+  namespace: default
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+spec:
+  prefix: /api
+  keepPrefix: true
+  methods:
+  - GET
+  functionref:
+    type: name
+    name: transport-api
+  createingress: false
+---
+apiVersion: fission.io/v1
+kind: TimeTrigger
+metadata:
+  name: transport-social-job
+  namespace: default
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+spec:
+  cron: 0 0 18 * * *
+  functionref:
+    type: name
+    name: transport-social-job
+---
+apiVersion: fission.io/v1
+kind: TimeTrigger
+metadata:
+  name: transport-news-job
+  namespace: default
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+spec:
+  cron: 0 15 18 * * *
+  functionref:
+    type: name
+    name: transport-news-job
+---
+apiVersion: fission.io/v1
+kind: TimeTrigger
+metadata:
+  name: transport-bluesky
+  namespace: default
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+spec:
+  cron: 0 0 */6 * * *
+  functionref:
+    type: name
+    name: transport-bluesky
+---
+apiVersion: fission.io/v1
+kind: TimeTrigger
+metadata:
+  name: transport-mastodon
+  namespace: default
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+spec:
+  cron: 0 30 */6 * * *
+  functionref:
+    type: name
+    name: transport-mastodon

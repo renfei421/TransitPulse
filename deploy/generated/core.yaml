@@ -1,0 +1,59 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: transport-config
+  namespace: default
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+data:
+  ES_HOST: https://elasticsearch-es-http.elastic.svc:9200
+  ES_USER: transport-app
+  ES_VERIFY_CERTS: 'true'
+  ES_CA_CERT: /etc/es-ca/ca.crt
+  ES_INDEX_PREFIX: v2_
+  JOB_NAMESPACE: default
+  SENTIMENT_JOB_IMAGE: transport-model:review
+  QUEUE_PREFIX: transport
+  REDIS_ADDRESS: transport-redis:6379
+  OMP_NUM_THREADS: '2'
+  MKL_NUM_THREADS: '2'
+  LOG_LEVEL: INFO
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: transport-job-trigger
+  namespace: default
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: transport-job-creator
+  namespace: default
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+rules:
+- apiGroups:
+  - batch
+  resources:
+  - jobs
+  verbs:
+  - create
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: transport-job-creator
+  namespace: default
+  labels:
+    app.kubernetes.io/part-of: transport-analytics
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: transport-job-creator
+subjects:
+- kind: ServiceAccount
+  name: transport-job-trigger
+  namespace: default

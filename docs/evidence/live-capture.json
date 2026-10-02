@@ -1,0 +1,30 @@
+{
+  "capture_date_sydney": "2026-10-01",
+  "protocol": "Jetstream legacy-v1",
+  "events_seen": 1485,
+  "accepted": 12,
+  "filtered": 1326,
+  "deletions_applied": 0,
+  "bytes_received": 1234538,
+  "reconnects": 0,
+  "duration_seconds": 48.015,
+  "writes": {
+    "created": 12,
+    "updated": 0,
+    "noop": 0,
+    "failed": 0
+  },
+  "cohort": "global English transport keywords, not Australia-representative",
+  "verified_index_counts": {
+    "social_discussion_posts_raw": 12,
+    "social_posts_processed": 12
+  },
+  "model": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+  "model_revision": "3216a57f2a0d9c45a2e6c20157c20c49fb4bf9c7",
+  "processing_run_id": "social_974577285a4c4f5e8517de659656f335",
+  "processing_duration_seconds_excluding_load": 1.281,
+  "historical_search_attempt": "Bluesky public search HTTP 403; no successful backfill claimed",
+  "eia": "Not executed without a supplied valid API key",
+  "assignment1": "No source NDJSON provided; import tested with isolated fixtures",
+  "record_privacy": "No real post text or author identities included in this artifact"
+}

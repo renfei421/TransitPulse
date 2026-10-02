@@ -1,0 +1,369 @@
+{
+  "reviewer": "Codex assistant",
+  "reviewer_type": "ai",
+  "basis": "Full text of each of the 45 selected sample records; linked articles/images not fetched; no author residence inferred",
+  "labels": [
+    {
+      "sample_id": "S001",
+      "topic_relevance": "unrelated",
+      "geographic_context": "unknown",
+      "note": "主体是个人生活与社会危机感想，油价仅为标签。",
+      "doc_id": "033b147ac162ea1ab49e194da5569d3ab152deda57268301248cd7d063654506",
+      "stratum": "hashtag_added_candidate"
+    },
+    {
+      "sample_id": "S002",
+      "topic_relevance": "adjacent",
+      "geographic_context": "other_country",
+      "note": "贝宁城市道路空间分配，与交通规划相邻，未直接讨论公交体验或价格。",
+      "doc_id": "03aff0d2d028fa7300d93cbfa22b5d61182ca89aa3847a83d73304645e4da671",
+      "stratum": "hashtag_added_candidate"
+    },
+    {
+      "sample_id": "S003",
+      "topic_relevance": "adjacent",
+      "geographic_context": "other_country",
+      "note": "德国城市参加电车竞赛，交通文化内容，非通勤或成本讨论。",
+      "doc_id": "09ac720863008800e7a50d19cfb069f7cf67e2f714e51c628ed05795882844e6",
+      "stratum": "hashtag_added_candidate"
+    },
+    {
+      "sample_id": "S004",
+      "topic_relevance": "adjacent",
+      "geographic_context": "other_country",
+      "note": "英国行车记录仪与道路违法举报，驾驶安全相关。",
+      "doc_id": "09ba5f23907f2598e24241ca5f46945794807886f4c4cf0f17f2b418a51e562c",
+      "stratum": "hashtag_added_candidate"
+    },
+    {
+      "sample_id": "S005",
+      "topic_relevance": "uncertain",
+      "geographic_context": "ambiguous",
+      "note": "宏观通胀标题和多个人名标签，正文不足以确认油价关系；英国标记与人物背景线索混杂。",
+      "doc_id": "0c8478927327d146685f9234f834f70bb6eef59c3af8d1a43cdec6ff35481eed",
+      "stratum": "hashtag_added_candidate"
+    },
+    {
+      "sample_id": "S006",
+      "topic_relevance": "adjacent",
+      "geographic_context": "other_country",
+      "note": "旧金山公交历史活动摄影，公共交通文化内容。",
+      "doc_id": "10a2e40fdb10f2983d5a640f8baccfb340ec3457febf3b636671fd916aa12188",
+      "stratum": "hashtag_added_candidate"
+    },
+    {
+      "sample_id": "S007",
+      "topic_relevance": "adjacent",
+      "geographic_context": "other_country",
+      "note": "马里城市空间分配，与交通规划相邻。",
+      "doc_id": "10a472d792cddc7163df4a2522cdca2c47fc19ceaa083f65b63d77318db596c3",
+      "stratum": "hashtag_added_candidate"
+    },
+    {
+      "sample_id": "S008",
+      "topic_relevance": "related",
+      "geographic_context": "other_country",
+      "note": "汽车燃油效率政策与燃料消耗直接相关；非澳洲明确样本。",
+      "doc_id": "125050488fa83b74510ba652173d9a63cc11271ccee3b4c36cd004b8e0bdf87e",
+      "stratum": "hashtag_added_candidate"
+    },
+    {
+      "sample_id": "S009",
+      "topic_relevance": "related",
+      "geographic_context": "unknown",
+      "note": "电动车企业交付量新闻，符合宽口径 EV 主题，不是用户出行体验。",
+      "doc_id": "12692be3eb2f8bead4c3a537eeec0b1b4a70fb47d9b5392c73a3bb83eced335d",
+      "stratum": "hashtag_added_candidate"
+    },
+    {
+      "sample_id": "S010",
+      "topic_relevance": "adjacent",
+      "geographic_context": "other_country",
+      "note": "马尼拉城市道路空间分配，与交通规划相邻。",
+      "doc_id": "12ef411152a7ce209ccb9f7a901d48bf7a122700acb77459bf78b32e09522440",
+      "stratum": "hashtag_added_candidate"
+    },
+    {
+      "sample_id": "S011",
+      "topic_relevance": "related",
+      "geographic_context": "unknown",
+      "note": "汽车依赖与城市噪声成本，涉及出行模式选择。",
+      "doc_id": "16a2dd38da7757a4c2bf1b95273df1271a814a6ba59c8b29d103b44e05b36eac",
+      "stratum": "hashtag_added_candidate"
+    },
+    {
+      "sample_id": "S012",
+      "topic_relevance": "uncertain",
+      "geographic_context": "other_country",
+      "note": "摩尔多瓦能源和水危机标题，油价仅标签，需要正文才能确认具体交通关联。",
+      "doc_id": "1eb1235af5a3a05812911209a6b5e11b3e831063fe9c61fffb5c7657d84a96cf",
+      "stratum": "hashtag_added_candidate"
+    },
+    {
+      "sample_id": "S013",
+      "topic_relevance": "uncertain",
+      "geographic_context": "other_country",
+      "note": "与 S012 相同新闻标题的另一次传播；不同 URI 不代表独立观点。",
+      "doc_id": "21a1b25e966cf8ebd2b358fc3af0a310430d813105798263dd3581ff056e36fb",
+      "stratum": "hashtag_added_candidate"
+    },
+    {
+      "sample_id": "S014",
+      "topic_relevance": "adjacent",
+      "geographic_context": "other_country",
+      "note": "吉隆坡城市空间分配，与交通规划相邻。",
+      "doc_id": "22337ae3e312a2b8f7e2696dcc66c62cb887c8a24bc2e3a3a33485a91a02f4a9",
+      "stratum": "hashtag_added_candidate"
+    },
+    {
+      "sample_id": "S015",
+      "topic_relevance": "uncertain",
+      "geographic_context": "other_country",
+      "note": "叙利亚社会与食物供应新闻，油价仅标签，正文截断，交通关联未确认。",
+      "doc_id": "28fc75353447a6958caaf3571a2ef246048b4f61de7f0b17bcc005d76ace8493",
+      "stratum": "hashtag_added_candidate"
+    },
+    {
+      "sample_id": "S016",
+      "topic_relevance": "related",
+      "geographic_context": "other_country",
+      "note": "讨论美国汽车定价、进口 EV 和公共交通替代关系。",
+      "doc_id": "013787b3e6366fb60a9a64014717831d07c92453a16cc743a677d75c0d1ab24e",
+      "stratum": "other_topic_candidate"
+    },
+    {
+      "sample_id": "S017",
+      "topic_relevance": "uncertain",
+      "geographic_context": "unknown",
+      "note": "电动车 meme 链接，仅标题不足以判断具体主张；未查看链接图片。",
+      "doc_id": "01434bde960d1266716721df78ec8ed4aed8bc63a3c5ae0666d05b4c1f4639f4",
+      "stratum": "other_topic_candidate"
+    },
+    {
+      "sample_id": "S018",
+      "topic_relevance": "related",
+      "geographic_context": "unknown",
+      "note": "柴油涨价与电动卡车替代直接相关，跨主题候选。",
+      "doc_id": "0177ee8c639015cf19837e05ad02f7c0c73b8f872c3016d70a4b2b9d3eca254d",
+      "stratum": "other_topic_candidate"
+    },
+    {
+      "sample_id": "S019",
+      "topic_relevance": "adjacent",
+      "geographic_context": "other_country",
+      "note": "新西兰铁路事故纪念新闻，交通安全相邻，不是成本或出行选择讨论。",
+      "doc_id": "01957051c8166891883f28f83eb13288f344bd2af12e2761b4fb8242cd660740",
+      "stratum": "other_topic_candidate"
+    },
+    {
+      "sample_id": "S020",
+      "topic_relevance": "related",
+      "geographic_context": "other_country",
+      "note": "印度 E20 燃料兼容性、油耗和车辆使用成本。",
+      "doc_id": "01c7616f3711ee9722aa700b06e2ba324c7b8468e4122ada8fa531699c64bd7f",
+      "stratum": "other_topic_candidate"
+    },
+    {
+      "sample_id": "S021",
+      "topic_relevance": "related",
+      "geographic_context": "unknown",
+      "note": "E20 汽油问题与插电混合动力替代，标题为罗马字转写；API 语言 en 不代表正文纯英语。",
+      "doc_id": "020ab85cf7bc92d5a2c9d12b268f7d58768b6298ca419336deb2961f7d2cc83e",
+      "stratum": "other_topic_candidate"
+    },
+    {
+      "sample_id": "S022",
+      "topic_relevance": "related",
+      "geographic_context": "other_country",
+      "note": "巴基斯坦汽柴油价格政策，明确油价主题。",
+      "doc_id": "02256a653b2ff1f9cd3b5144facad9448b3f01b59552f54f766b9b10ebcb4e89",
+      "stratum": "other_topic_candidate"
+    },
+    {
+      "sample_id": "S023",
+      "topic_relevance": "adjacent",
+      "geographic_context": "other_country",
+      "note": "华沙电车竞赛影像，交通文化内容。",
+      "doc_id": "0471d59700c7792f8a9a16adb711f445caf64a9b6a4b6033eb64508defe62af0",
+      "stratum": "other_topic_candidate"
+    },
+    {
+      "sample_id": "S024",
+      "topic_relevance": "adjacent",
+      "geographic_context": "other_country",
+      "note": "英国驾驶速度和道路安全事件，保留宽驾驶主题。",
+      "doc_id": "048f2e7124a94795910e03adad80b05bdc733eab5df6a6d4dc1f0a035c45a997",
+      "stratum": "other_topic_candidate"
+    },
+    {
+      "sample_id": "S025",
+      "topic_relevance": "related",
+      "geographic_context": "unknown",
+      "note": "油价上涨与 EV 车主成本对比，直接相关。",
+      "doc_id": "04b03153ad648f501448842536950dd7adcee0a0d3ae9a1949c0681623f1ee8e",
+      "stratum": "other_topic_candidate"
+    },
+    {
+      "sample_id": "S026",
+      "topic_relevance": "related",
+      "geographic_context": "other_country",
+      "note": "德语内容建议汽车工厂转产公交车辆并扩大公共交通，直接相关；需语言路由。",
+      "doc_id": "04b3681350ebb6eec19efe589ad74b5fa904c7f33b80470d8bfe76c2a9f06181",
+      "stratum": "other_topic_candidate"
+    },
+    {
+      "sample_id": "S027",
+      "topic_relevance": "adjacent",
+      "geographic_context": "other_country",
+      "note": "奥克兰公交窗外摄影，出行场景存在但缺少成本或服务评价。",
+      "doc_id": "04f1903554884744f334f3b50459767315400fc5efd37d429982e03bb4927296",
+      "stratum": "other_topic_candidate"
+    },
+    {
+      "sample_id": "S028",
+      "topic_relevance": "unrelated",
+      "geographic_context": "other_country",
+      "note": "主体是城市夜景摄影与相机参数，driving 只在大量标签里。",
+      "doc_id": "065b3af35cad3fc61cb3b04848c73763537f80482bac69f7b396178060656293",
+      "stratum": "other_topic_candidate"
+    },
+    {
+      "sample_id": "S029",
+      "topic_relevance": "related",
+      "geographic_context": "other_country",
+      "note": "欧洲汽车市场竞争、EV 产品与价格评价。",
+      "doc_id": "068d26a182538ed9365f98c048cd933580f34119c89af91c16c23c217a2444c2",
+      "stratum": "other_topic_candidate"
+    },
+    {
+      "sample_id": "S030",
+      "topic_relevance": "related",
+      "geographic_context": "other_country",
+      "note": "俄罗斯汽油短缺与能源基础设施，燃料供应主题。",
+      "doc_id": "0716248041fb82ef51e1f973202c91eb5f16bcb891d7a8444072adcd4e295289",
+      "stratum": "other_topic_candidate"
+    },
+    {
+      "sample_id": "S031",
+      "topic_relevance": "adjacent",
+      "geographic_context": "mixed",
+      "note": "欧洲电车竞赛提及澳洲参赛方，不能算澳洲本地交通体验。",
+      "doc_id": "027d605f009d3b62bc9b1e124d475230326e9c573333f484cff73067b637dc6d",
+      "stratum": "regional_hint_candidate"
+    },
+    {
+      "sample_id": "S032",
+      "topic_relevance": "related",
+      "geographic_context": "australian_context",
+      "note": "Myki 电车支付异常，直接使用体验；地域来自系统名而非用户居住地。",
+      "doc_id": "097375d4250b6ab41489efa44d4481042ea301932051e504e6346bd43145de63",
+      "stratum": "regional_hint_candidate"
+    },
+    {
+      "sample_id": "S033",
+      "topic_relevance": "related",
+      "geographic_context": "australian_context",
+      "note": "墨尔本电车实际出行可达性与便利性体验。",
+      "doc_id": "0b1a578969942a9f1be65819aab75f219962fd6417d712834bacf88acaaf0d75",
+      "stratum": "regional_hint_candidate"
+    },
+    {
+      "sample_id": "S034",
+      "topic_relevance": "related",
+      "geographic_context": "australian_context",
+      "note": "维州交通运营合同、公共支出与服务治理；Victoria 单词模糊，但上下文提供更强线索。",
+      "doc_id": "11abf11d69056790d50f704f48d5fec0f0b92b1c80b659e7391aa923ab85c540",
+      "stratum": "regional_hint_candidate"
+    },
+    {
+      "sample_id": "S035",
+      "topic_relevance": "adjacent",
+      "geographic_context": "australian_context",
+      "note": "墨尔本电车历史视频评论，交通文化/历史内容。",
+      "doc_id": "16adf8a18ad781fec2b16de91be0a9b3ecfa3cbc1d075fd6d3c54080de41deb3",
+      "stratum": "regional_hint_candidate"
+    },
+    {
+      "sample_id": "S036",
+      "topic_relevance": "adjacent",
+      "geographic_context": "mixed",
+      "note": "国际电车赛事列出墨尔本，不能当作本地通勤样本。",
+      "doc_id": "264b808ad507fa6c4331bee8c66b34309ed3dcd9c9b4a6161bfe9bb3c3266c4d",
+      "stratum": "regional_hint_candidate"
+    },
+    {
+      "sample_id": "S037",
+      "topic_relevance": "related",
+      "geographic_context": "australian_context",
+      "note": "前往布里斯班的 EV 长途使用、续航与适用性体验。",
+      "doc_id": "2ef2f6ed571d283aa87ecfc53645c45da304aa9afcdb425162bc03e27483adaf",
+      "stratum": "regional_hint_candidate"
+    },
+    {
+      "sample_id": "S038",
+      "topic_relevance": "related",
+      "geographic_context": "australian_context",
+      "note": "澳洲燃油税减免结束与加油价格变化新闻；属于新闻传播。",
+      "doc_id": "3368899f4416ee1fcd47cc2726c308d66aed6296d96edd2fd580f779563ee739",
+      "stratum": "regional_hint_candidate"
+    },
+    {
+      "sample_id": "S039",
+      "topic_relevance": "adjacent",
+      "geographic_context": "australian_context",
+      "note": "墨尔本电车观察，主题相关但没有明确服务或成本判断。",
+      "doc_id": "381e0339ef0da2ffd8bc580269ae2b1fb30d61d51cad248812cfca92e5e1be79",
+      "stratum": "regional_hint_candidate"
+    },
+    {
+      "sample_id": "S040",
+      "topic_relevance": "adjacent",
+      "geographic_context": "australian_context",
+      "note": "驾驶体验与驾驶资格制度，属于宽驾驶议题，非油价/动力选择；不标注个人属性。",
+      "doc_id": "3a150e0d4e5368c5c19c6adfdca30ba12fe090405cf0ad354cb7587d2e16bfad",
+      "stratum": "regional_hint_candidate"
+    },
+    {
+      "sample_id": "S041",
+      "topic_relevance": "related",
+      "geographic_context": "international_with_au_tag",
+      "note": "国际油价与供应航道冲击，澳洲标记来自聚合标签；不能据此证明本地影响或观点。",
+      "doc_id": "3b327f890e320ab15f7ac38265bf45bd4055e22d693f5a9b62a318fc1d6a21d2",
+      "stratum": "regional_hint_candidate"
+    },
+    {
+      "sample_id": "S042",
+      "topic_relevance": "related",
+      "geographic_context": "other_country",
+      "note": "正文是马来西亚燃油补贴与成本应对，Australia 聚合标签会误导地域判定。",
+      "doc_id": "41438575a2284f402d8c7d7e8a66c6fed5a0062e45e84d38bf4b6f19f4fe90d7",
+      "stratum": "regional_hint_candidate"
+    },
+    {
+      "sample_id": "S043",
+      "topic_relevance": "related",
+      "geographic_context": "australian_context",
+      "note": "铁路线路与网络韧性；Myki/MetroTrainsMelbourne 提供澳洲交通背景线索。",
+      "doc_id": "448f2d7ca2344216081771a01a7e611afbcb3d5da25fb491cbfb1f9911b7987e",
+      "stratum": "regional_hint_candidate"
+    },
+    {
+      "sample_id": "S044",
+      "topic_relevance": "related",
+      "geographic_context": "australian_context",
+      "note": "澳洲 EV 产品上市与价格，明确主题；为新闻/产品信息。",
+      "doc_id": "49e9f10b48f0b871f51467ccbac81347142617d40ead567c69f99d688375ee5b",
+      "stratum": "regional_hint_candidate"
+    },
+    {
+      "sample_id": "S045",
+      "topic_relevance": "related",
+      "geographic_context": "australian_context",
+      "note": "墨尔本 Myki 票价、日封顶和实际收费说明。",
+      "doc_id": "4a55608c975b4248aac7f155a52dc85304f72010971eeed79d8541ef2ee54902",
+      "stratum": "regional_hint_candidate"
+    }
+  ],
+  "sample_sha256": "1d3270fa3f788e8750613374ca9fd30e4ce419b446ca60f446a9c55be5b687bb",
+  "reviewed_at_utc": "2026-10-01T08:52:14.630820+00:00"
+}

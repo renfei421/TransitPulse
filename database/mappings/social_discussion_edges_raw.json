@@ -1,0 +1,36 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 1,
+      "number_of_replicas": 1
+    }
+  },
+  "mappings": {
+    "properties": {
+      "edge_id": { "type": "keyword" },
+
+      "platform": { "type": "keyword" },
+
+      "seed_doc_id": { "type": "keyword" },
+      "seed_post_id": { "type": "keyword" },
+      "seed_type": { "type": "keyword" },
+      "seed_query": { "type": "keyword" },
+      "seed_candidate_topics": { "type": "keyword" },
+      "seed_created_at": { "type": "date" },
+
+      "descendant_doc_id": { "type": "keyword" },
+      "descendant_post_id": { "type": "keyword" },
+      "parent_post_id": { "type": "keyword" },
+      "thread_root_id": { "type": "keyword" },
+
+      "depth_from_seed": { "type": "integer" },
+
+      "descendant_has_keyword": { "type": "boolean" },
+      "descendant_direct_candidate_topics": { "type": "keyword" },
+      "inherited_candidate_topics": { "type": "keyword" },
+
+      "expanded_at": { "type": "date" },
+      "collection_method": { "type": "keyword" }
+    }
+  }
+}

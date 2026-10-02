@@ -1,0 +1,52 @@
+{
+  "experiment_id": "iran-20260228-v1",
+  "processed_before_resume": 38114,
+  "attempts_before_resume": 38122,
+  "accounted_usd_before_resume": 4.937347842,
+  "failed_calls_before_resume": 8,
+  "uncertain_reserved_usd_before_resume": 0.005122572,
+  "latest_incident": {
+    "failed_requests": 3,
+    "errors": {
+      "ReadTimeout": 3
+    },
+    "saved_native_responses": 0,
+    "uncertain_reserved_usd": 0.001921752
+  },
+  "retry_policy": "transient-3-total-v1",
+  "maximum_paid_attempts_per_document_across_restarts": 3,
+  "backoff_seconds": [
+    5,
+    10
+  ],
+  "cost_cap_usd": 15,
+  "release_sha256": "8b9f18ae5813be00922941ba38484f1679ae869996123d2b198d7b638cad842c",
+  "job": "transport-jev-event-74914e82",
+  "tests": {
+    "passed": 35,
+    "skipped": 0,
+    "provider_calls": "mocked",
+    "persistence": "real isolated local Elasticsearch",
+    "ruff": "passed"
+  },
+  "source_sha256": {
+    "backend/data_process/event_jev.py": "4e7481dfd3839a649887fa805ee76ee6c9d3e8a5420e6b66bad3e52b3b3c6a68",
+    "test/test_event_experiment.py": "f466e84b03d82e2f3739466673262152f1b7ff76522ea9e7e6a146baba59a6e8"
+  },
+  "resume_verified": true,
+  "resume_snapshot": {
+    "updated_at": "2026-10-01T15:09:14.023655+00:00",
+    "processed": 38535,
+    "already_processed": 38114,
+    "succeeded_this_run": 400,
+    "failed_this_run": 0,
+    "transient_request_failures_this_run": 0,
+    "accounted_cost_usd": 4.991073654000008,
+    "input_sha256": "467b1612b53efbaf86a0357159d8cfd52ba554142823deb3e183ae7d76b39463",
+    "contract_sha256": "1fd68c77ba3a4febbbb5fc7fae903f643ac69d7cab2e51312edae1027b19d416"
+  },
+  "credential_scan": {
+    "public_files_checked": 268,
+    "matches": 0
+  }
+}

@@ -1,0 +1,500 @@
+{
+  "checked_at_utc": "2026-10-01T08:48:36.959651+00:00",
+  "dataset": "mastodon_query_reuse_20261001",
+  "window": {
+    "from": "2026-07-03T08:45:56.120992+00:00",
+    "to": "2026-10-01T08:45:56.120992+00:00"
+  },
+  "query_bank": {
+    "search_queries": 58,
+    "keywords_by_topic": {
+      "public_transport": 21,
+      "fuel_price": 19,
+      "ev": 17,
+      "oil_vehicle": 14
+    },
+    "search_queries_sha256": "2c21f0bddbaf4b792d23af78304743ee1d5786cc33e7c0976bf4e572a1d78adc",
+    "tag_seeds": [
+      {
+        "topic": "public_transport",
+        "keyword": "public transport",
+        "hashtag": "publictransport"
+      },
+      {
+        "topic": "public_transport",
+        "keyword": "myki",
+        "hashtag": "myki"
+      },
+      {
+        "topic": "public_transport",
+        "keyword": "tram",
+        "hashtag": "tram"
+      },
+      {
+        "topic": "fuel_price",
+        "keyword": "petrol",
+        "hashtag": "petrol"
+      },
+      {
+        "topic": "fuel_price",
+        "keyword": "fuel prices",
+        "hashtag": "fuelprices"
+      },
+      {
+        "topic": "ev",
+        "keyword": "electric vehicles",
+        "hashtag": "electricvehicles"
+      },
+      {
+        "topic": "ev",
+        "keyword": "ev",
+        "hashtag": "ev"
+      },
+      {
+        "topic": "oil_vehicle",
+        "keyword": "driving",
+        "hashtag": "driving"
+      }
+    ],
+    "keyword_bank_sha256": "e6c9015d4356fa8b7cd3e37f22dfb732018e5f58c801ccc52817cf48fa5f960a",
+    "adapter_version": "keyword-hashtag-pilot-v1"
+  },
+  "funnel": {
+    "returned_records": 1680,
+    "missing_identity": 0,
+    "duplicates_removed": 697,
+    "unique_posts": 983,
+    "outside_window": 174,
+    "malformed_or_empty": 0,
+    "valid_in_window": 809,
+    "original_text_rule_candidates": 689,
+    "topic_candidates_with_hashtags": 809,
+    "geographic_evidence": {
+      "unknown": 747,
+      "explicit_text_hint": 60,
+      "ambiguous_text_hint": 2
+    },
+    "region_filter_dropped": 0
+  },
+  "languages": {
+    "unknown": 85,
+    "en": 638,
+    "de": 54,
+    "cs": 6,
+    "it": 9,
+    "fi": 2,
+    "fr": 9,
+    "sma": 1,
+    "lt": 1,
+    "es": 1,
+    "sv": 1,
+    "jv": 1,
+    "nl": 1
+  },
+  "review_sample": {
+    "selected": 45,
+    "strata": {
+      "hashtag_added_candidate": 15,
+      "other_topic_candidate": 15,
+      "regional_hint_candidate": 15
+    },
+    "reviewer": "Codex assistant",
+    "labels": {
+      "unrelated": 2,
+      "adjacent": 16,
+      "uncertain": 5,
+      "related": 22
+    },
+    "reviewer_type": "ai",
+    "reviewed_at_utc": "2026-10-01T08:52:14.630820+00:00",
+    "sample_sha256": "1d3270fa3f788e8750613374ca9fd30e4ce419b446ca60f446a9c55be5b687bb",
+    "by_stratum": {
+      "hashtag_added_candidate": {
+        "unrelated": 1,
+        "adjacent": 7,
+        "uncertain": 4,
+        "related": 3
+      },
+      "other_topic_candidate": {
+        "related": 9,
+        "uncertain": 1,
+        "adjacent": 4,
+        "unrelated": 1
+      },
+      "regional_hint_candidate": {
+        "adjacent": 5,
+        "related": 10
+      }
+    },
+    "interpretation": "Assistant triage of a stratified sample, not human gold labels or accuracy",
+    "candidate_storage_policy": "Raw candidates retained including reviewed noise; labels are diagnostic, not a hidden filter"
+  },
+  "sink": {
+    "status": "completed",
+    "index": "v2_social_discussion_posts_raw",
+    "attempted": 809,
+    "created": 809,
+    "updated": 0,
+    "noop": 0,
+    "failed": 0,
+    "succeeded": 809,
+    "read_back": 809,
+    "dataset_kind": "live",
+    "processed_documents_this_run": 0
+  },
+  "requests": [
+    {
+      "host": "mastodon.social",
+      "hashtag": "publictransport",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "publictransport",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "myki",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "myki",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "tram",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "tram",
+      "page": 2,
+      "error_type": "ReadTimeout"
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "petrol",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "petrol",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "fuelprices",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "fuelprices",
+      "page": 2,
+      "error_type": "ReadTimeout"
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "electricvehicles",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "electricvehicles",
+      "page": 2,
+      "http_status": 503
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "ev",
+      "page": 1,
+      "http_status": 503
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "driving",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "driving",
+      "page": 2,
+      "http_status": 503
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "publictransport",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "publictransport",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "myki",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "myki",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "tram",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "tram",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "petrol",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "petrol",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "fuelprices",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "fuelprices",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "electricvehicles",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "electricvehicles",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "ev",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "ev",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "driving",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "driving",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "publictransport",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "publictransport",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "myki",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "myki",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "tram",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "tram",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "petrol",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "petrol",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "fuelprices",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "fuelprices",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "electricvehicles",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "electricvehicles",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "ev",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "ev",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "driving",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "driving",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    }
+  ],
+  "limits": [
+    "Public hashtag adaptation is not execution of the original 58 full-text queries",
+    "Candidates are not all reviewed; geography is a partition, not an exclusion gate",
+    "No language filter; English model processing must be considered separately",
+    "Current 90-day pilot, not restoration of the original February-May study window",
+    "No author residence inferred; no thread expansion or model inference"
+  ],
+  "topic_counts_overlap": {
+    "public_transport": 302,
+    "fuel_price": 284,
+    "oil_vehicle": 147,
+    "ev": 180
+  },
+  "cloud_api_check": {
+    "path": "/api/v1/quality",
+    "params": {
+      "from": "2026-07-03",
+      "to": "2026-10-01",
+      "source_dataset": "mastodon_query_reuse_20261001"
+    },
+    "status": 200,
+    "raw_documents": 809,
+    "processed_documents": 0,
+    "processing_coverage": 0.0
+  },
+  "artifacts": {
+    "records_sha256": "d43566886ef330ae05aaa2fa39c4253e7d4da7d121cb28e1408ebabb290467e5",
+    "review_labels_sha256": "93e90648108a2da1eb0eeb33fcd926aaa8a86779e19ac71a4d194778fe955234"
+  }
+}

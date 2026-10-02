@@ -1,0 +1,648 @@
+{
+  "phase_summaries": [
+    {
+      "phase": "pre_period",
+      "platform": "bluesky",
+      "target": "fuel_price",
+      "calendar_days": 31,
+      "raw_posts": 11287,
+      "raw_posts_per_calendar_day": 364.0967741935484,
+      "processed_posts": 8922,
+      "accepted_targets": 227,
+      "eligible_score_days": 16,
+      "equal_day_mean_target_polarity": -0.6993340483920841
+    },
+    {
+      "phase": "pre_period",
+      "platform": "bluesky",
+      "target": "public_transport",
+      "calendar_days": 31,
+      "raw_posts": 11287,
+      "raw_posts_per_calendar_day": 364.0967741935484,
+      "processed_posts": 8922,
+      "accepted_targets": 1210,
+      "eligible_score_days": 31,
+      "equal_day_mean_target_polarity": 0.10958276834582865
+    },
+    {
+      "phase": "pre_period",
+      "platform": "bluesky",
+      "target": "ev",
+      "calendar_days": 31,
+      "raw_posts": 11287,
+      "raw_posts_per_calendar_day": 364.0967741935484,
+      "processed_posts": 8922,
+      "accepted_targets": 91,
+      "eligible_score_days": 8,
+      "equal_day_mean_target_polarity": 0.25673214285714285
+    },
+    {
+      "phase": "pre_period",
+      "platform": "bluesky",
+      "target": "oil_vehicle",
+      "calendar_days": 31,
+      "raw_posts": 11287,
+      "raw_posts_per_calendar_day": 364.0967741935484,
+      "processed_posts": 8922,
+      "accepted_targets": 141,
+      "eligible_score_days": 12,
+      "equal_day_mean_target_polarity": -0.8132886904761905
+    },
+    {
+      "phase": "pre_period",
+      "platform": "mastodon",
+      "target": "fuel_price",
+      "calendar_days": 31,
+      "raw_posts": 622,
+      "raw_posts_per_calendar_day": 20.06451612903226,
+      "processed_posts": 285,
+      "accepted_targets": 2,
+      "eligible_score_days": 0,
+      "equal_day_mean_target_polarity": null
+    },
+    {
+      "phase": "pre_period",
+      "platform": "mastodon",
+      "target": "public_transport",
+      "calendar_days": 31,
+      "raw_posts": 622,
+      "raw_posts_per_calendar_day": 20.06451612903226,
+      "processed_posts": 285,
+      "accepted_targets": 15,
+      "eligible_score_days": 0,
+      "equal_day_mean_target_polarity": null
+    },
+    {
+      "phase": "pre_period",
+      "platform": "mastodon",
+      "target": "ev",
+      "calendar_days": 31,
+      "raw_posts": 622,
+      "raw_posts_per_calendar_day": 20.06451612903226,
+      "processed_posts": 285,
+      "accepted_targets": 9,
+      "eligible_score_days": 0,
+      "equal_day_mean_target_polarity": null
+    },
+    {
+      "phase": "pre_period",
+      "platform": "mastodon",
+      "target": "oil_vehicle",
+      "calendar_days": 31,
+      "raw_posts": 622,
+      "raw_posts_per_calendar_day": 20.06451612903226,
+      "processed_posts": 285,
+      "accepted_targets": 3,
+      "eligible_score_days": 0,
+      "equal_day_mean_target_polarity": null
+    },
+    {
+      "phase": "post_month_1",
+      "platform": "bluesky",
+      "target": "fuel_price",
+      "calendar_days": 28,
+      "raw_posts": 62825,
+      "raw_posts_per_calendar_day": 2243.75,
+      "processed_posts": 45711,
+      "accepted_targets": 7208,
+      "eligible_score_days": 27,
+      "equal_day_mean_target_polarity": -0.9041626617271888
+    },
+    {
+      "phase": "post_month_1",
+      "platform": "bluesky",
+      "target": "public_transport",
+      "calendar_days": 28,
+      "raw_posts": 62825,
+      "raw_posts_per_calendar_day": 2243.75,
+      "processed_posts": 45711,
+      "accepted_targets": 1596,
+      "eligible_score_days": 27,
+      "equal_day_mean_target_polarity": 0.1825190450196365
+    },
+    {
+      "phase": "post_month_1",
+      "platform": "bluesky",
+      "target": "ev",
+      "calendar_days": 28,
+      "raw_posts": 62825,
+      "raw_posts_per_calendar_day": 2243.75,
+      "processed_posts": 45711,
+      "accepted_targets": 582,
+      "eligible_score_days": 27,
+      "equal_day_mean_target_polarity": 0.6160344631751402
+    },
+    {
+      "phase": "post_month_1",
+      "platform": "bluesky",
+      "target": "oil_vehicle",
+      "calendar_days": 28,
+      "raw_posts": 62825,
+      "raw_posts_per_calendar_day": 2243.75,
+      "processed_posts": 45711,
+      "accepted_targets": 316,
+      "eligible_score_days": 23,
+      "equal_day_mean_target_polarity": -0.8289296359366691
+    },
+    {
+      "phase": "post_month_1",
+      "platform": "mastodon",
+      "target": "fuel_price",
+      "calendar_days": 28,
+      "raw_posts": 1003,
+      "raw_posts_per_calendar_day": 35.82142857142857,
+      "processed_posts": 478,
+      "accepted_targets": 10,
+      "eligible_score_days": 0,
+      "equal_day_mean_target_polarity": null
+    },
+    {
+      "phase": "post_month_1",
+      "platform": "mastodon",
+      "target": "public_transport",
+      "calendar_days": 28,
+      "raw_posts": 1003,
+      "raw_posts_per_calendar_day": 35.82142857142857,
+      "processed_posts": 478,
+      "accepted_targets": 13,
+      "eligible_score_days": 0,
+      "equal_day_mean_target_polarity": null
+    },
+    {
+      "phase": "post_month_1",
+      "platform": "mastodon",
+      "target": "ev",
+      "calendar_days": 28,
+      "raw_posts": 1003,
+      "raw_posts_per_calendar_day": 35.82142857142857,
+      "processed_posts": 478,
+      "accepted_targets": 14,
+      "eligible_score_days": 0,
+      "equal_day_mean_target_polarity": null
+    },
+    {
+      "phase": "post_month_1",
+      "platform": "mastodon",
+      "target": "oil_vehicle",
+      "calendar_days": 28,
+      "raw_posts": 1003,
+      "raw_posts_per_calendar_day": 35.82142857142857,
+      "processed_posts": 478,
+      "accepted_targets": 5,
+      "eligible_score_days": 0,
+      "equal_day_mean_target_polarity": null
+    },
+    {
+      "phase": "post_month_2",
+      "platform": "bluesky",
+      "target": "fuel_price",
+      "calendar_days": 32,
+      "raw_posts": 47632,
+      "raw_posts_per_calendar_day": 1488.5,
+      "processed_posts": 34647,
+      "accepted_targets": 4460,
+      "eligible_score_days": 32,
+      "equal_day_mean_target_polarity": -0.9062195508654183
+    },
+    {
+      "phase": "post_month_2",
+      "platform": "bluesky",
+      "target": "public_transport",
+      "calendar_days": 32,
+      "raw_posts": 47632,
+      "raw_posts_per_calendar_day": 1488.5,
+      "processed_posts": 34647,
+      "accepted_targets": 2018,
+      "eligible_score_days": 32,
+      "equal_day_mean_target_polarity": 0.23640660082660192
+    },
+    {
+      "phase": "post_month_2",
+      "platform": "bluesky",
+      "target": "ev",
+      "calendar_days": 32,
+      "raw_posts": 47632,
+      "raw_posts_per_calendar_day": 1488.5,
+      "processed_posts": 34647,
+      "accepted_targets": 501,
+      "eligible_score_days": 31,
+      "equal_day_mean_target_polarity": 0.5605657127775462
+    },
+    {
+      "phase": "post_month_2",
+      "platform": "bluesky",
+      "target": "oil_vehicle",
+      "calendar_days": 32,
+      "raw_posts": 47632,
+      "raw_posts_per_calendar_day": 1488.5,
+      "processed_posts": 34647,
+      "accepted_targets": 334,
+      "eligible_score_days": 28,
+      "equal_day_mean_target_polarity": -0.8370871648193077
+    },
+    {
+      "phase": "post_month_2",
+      "platform": "mastodon",
+      "target": "fuel_price",
+      "calendar_days": 32,
+      "raw_posts": 1122,
+      "raw_posts_per_calendar_day": 35.0625,
+      "processed_posts": 533,
+      "accepted_targets": 11,
+      "eligible_score_days": 0,
+      "equal_day_mean_target_polarity": null
+    },
+    {
+      "phase": "post_month_2",
+      "platform": "mastodon",
+      "target": "public_transport",
+      "calendar_days": 32,
+      "raw_posts": 1122,
+      "raw_posts_per_calendar_day": 35.0625,
+      "processed_posts": 533,
+      "accepted_targets": 10,
+      "eligible_score_days": 0,
+      "equal_day_mean_target_polarity": null
+    },
+    {
+      "phase": "post_month_2",
+      "platform": "mastodon",
+      "target": "ev",
+      "calendar_days": 32,
+      "raw_posts": 1122,
+      "raw_posts_per_calendar_day": 35.0625,
+      "processed_posts": 533,
+      "accepted_targets": 12,
+      "eligible_score_days": 0,
+      "equal_day_mean_target_polarity": null
+    },
+    {
+      "phase": "post_month_2",
+      "platform": "mastodon",
+      "target": "oil_vehicle",
+      "calendar_days": 32,
+      "raw_posts": 1122,
+      "raw_posts_per_calendar_day": 35.0625,
+      "processed_posts": 533,
+      "accepted_targets": 3,
+      "eligible_score_days": 0,
+      "equal_day_mean_target_polarity": null
+    }
+  ],
+  "oil_sentiment_associations": [
+    {
+      "lag_calendar_days": -7,
+      "definition": "Positive lag: oil date precedes sentiment date",
+      "primary": false,
+      "paired_observations": 47,
+      "pearson_r": -0.06225231096424649,
+      "first_date": "2026-01-28",
+      "last_date": "2026-04-21",
+      "block_bootstrap_95pct_ci": [
+        -0.20981253158686247,
+        0.08510303060282787
+      ],
+      "bootstrap_block_observations": 5,
+      "interpretation": "Observed association, not a causal estimate; exploratory lags are not independent confirmatory tests"
+    },
+    {
+      "lag_calendar_days": -3,
+      "definition": "Positive lag: oil date precedes sentiment date",
+      "primary": false,
+      "paired_observations": 47,
+      "pearson_r": -0.09595467503588828,
+      "first_date": "2026-01-30",
+      "last_date": "2026-04-25",
+      "block_bootstrap_95pct_ci": [
+        -0.3134120884085616,
+        0.06670849140897585
+      ],
+      "bootstrap_block_observations": 5,
+      "interpretation": "Observed association, not a causal estimate; exploratory lags are not independent confirmatory tests"
+    },
+    {
+      "lag_calendar_days": -1,
+      "definition": "Positive lag: oil date precedes sentiment date",
+      "primary": false,
+      "paired_observations": 51,
+      "pearson_r": -0.08983840972051409,
+      "first_date": "2026-01-28",
+      "last_date": "2026-04-27",
+      "block_bootstrap_95pct_ci": [
+        -0.23441369477822677,
+        0.03558620043593954
+      ],
+      "bootstrap_block_observations": 5,
+      "interpretation": "Observed association, not a causal estimate; exploratory lags are not independent confirmatory tests"
+    },
+    {
+      "lag_calendar_days": 0,
+      "definition": "Positive lag: oil date precedes sentiment date",
+      "primary": true,
+      "paired_observations": 52,
+      "pearson_r": -0.004594702981981965,
+      "first_date": "2026-01-28",
+      "last_date": "2026-04-28",
+      "block_bootstrap_95pct_ci": [
+        -0.132843442423437,
+        0.1318382701405032
+      ],
+      "bootstrap_block_observations": 5,
+      "interpretation": "Observed association, not a causal estimate; exploratory lags are not independent confirmatory tests"
+    },
+    {
+      "lag_calendar_days": 1,
+      "definition": "Positive lag: oil date precedes sentiment date",
+      "primary": false,
+      "paired_observations": 52,
+      "pearson_r": -0.04022320770530211,
+      "first_date": "2026-01-29",
+      "last_date": "2026-04-28",
+      "block_bootstrap_95pct_ci": [
+        -0.17665116002706083,
+        0.10333115553770413
+      ],
+      "bootstrap_block_observations": 5,
+      "interpretation": "Observed association, not a causal estimate; exploratory lags are not independent confirmatory tests"
+    },
+    {
+      "lag_calendar_days": 3,
+      "definition": "Positive lag: oil date precedes sentiment date",
+      "primary": false,
+      "paired_observations": 48,
+      "pearson_r": -0.0384421031868213,
+      "first_date": "2026-02-13",
+      "last_date": "2026-04-27",
+      "block_bootstrap_95pct_ci": [
+        -0.151814811013252,
+        0.10643446640292563
+      ],
+      "bootstrap_block_observations": 5,
+      "interpretation": "Observed association, not a causal estimate; exploratory lags are not independent confirmatory tests"
+    },
+    {
+      "lag_calendar_days": 7,
+      "definition": "Positive lag: oil date precedes sentiment date",
+      "primary": false,
+      "paired_observations": 49,
+      "pearson_r": -0.04202060900042587,
+      "first_date": "2026-02-10",
+      "last_date": "2026-04-28",
+      "block_bootstrap_95pct_ci": [
+        -0.1956704981205536,
+        0.09663219213700476
+      ],
+      "bootstrap_block_observations": 5,
+      "interpretation": "Observed association, not a causal estimate; exploratory lags are not independent confirmatory tests"
+    }
+  ],
+  "whole_post_labels": {
+    "negative": 45203,
+    "neutral": 11787,
+    "unclassified": 24153,
+    "positive": 5676,
+    "mixed": 3757
+  },
+  "relevance": {
+    "adjacent": 6284,
+    "related": 78621,
+    "unrelated": 4673,
+    "insufficient": 998
+  },
+  "content_types": {
+    "opinion": 61383,
+    "personal_experience": 5874,
+    "news_or_link": 19492,
+    "other": 2491,
+    "insufficient": 508,
+    "promotion": 828
+  },
+  "target_abstention_reasons": {
+    "factual_only": 47538,
+    "low_state_confidence": 57467,
+    "topic_not_clearly_related": 96776,
+    "not_mentioned": 261364,
+    "low_score_confidence": 146555,
+    "insufficient": 7058,
+    "mixed": 338,
+    "choice_probability_disagreement": 121,
+    "input_truncated": 4
+  },
+  "bluesky_capped_days": [
+    "2026-03-09"
+  ],
+  "minimum_target_scores_per_day": 5,
+  "price_observations": 63,
+  "missing_price_policy": "No interpolation or zero filling; align only available daily returns",
+  "limits": [
+    "Search results are platform-selected, not an exhaustive population",
+    "Capped/repeated-cursor Bluesky days excluded from primary association and phase sentiment means",
+    "Mastodon is supplemental; platform volumes must not be pooled as a population estimate",
+    "Confidence threshold is provisional; no human-gold accuracy/F1 claim",
+    "Whole-post emotional tone is separate from the poster attitude toward each target",
+    "No causal interpretation: topic demand, platform exposure and author composition can change"
+  ],
+  "experiment_id": "iran-20260228-v1",
+  "verified_at": "2026-10-01T17:06:56.220414+00:00",
+  "window": {
+    "start": "2026-01-28",
+    "end": "2026-04-28",
+    "timezone": "UTC"
+  },
+  "raw_records": 124491,
+  "processed_records": 90576,
+  "provenance_checks_passed": 90576,
+  "model": "jev-1.13.0",
+  "contract_sha256": "1fd68c77ba3a4febbbb5fc7fae903f643ac69d7cab2e51312edae1027b19d416",
+  "cohort": {
+    "prepared_at": "2026-10-01T12:48:21.583244+00:00",
+    "raw_records": 124491,
+    "eligible_records": 90576,
+    "eligibility_reasons": {
+      "eligible": 90576,
+      "no_topic_keyword": 26746,
+      "insufficient_prose": 1534,
+      "duplicate_model_text": 3104,
+      "language_disagreement": 1247,
+      "provider_language_unknown": 326,
+      "language_uncertain": 784,
+      "provider_non_english": 174
+    },
+    "eligible_by_platform": {
+      "bluesky": 89280,
+      "mastodon": 1296
+    },
+    "input_sha256": "467b1612b53efbaf86a0357159d8cfd52ba554142823deb3e183ae7d76b39463",
+    "raw_sha256": "98335d2c8de1f1e58dd1aa42bbaf38261d7d6ce881023e5d81fdeff7e877be31",
+    "decisions_sha256": "46ddb3ecdf4b9b074331cbc4cc757a5e278c0f285d1af8e1292b50e42066060a",
+    "deduplication": "Earliest post per normalized model-text fingerprint",
+    "collection_statuses": [
+      {
+        "platform": "bluesky",
+        "status": "capped",
+        "tasks": 1
+      },
+      {
+        "platform": "bluesky",
+        "status": "exhausted",
+        "tasks": 545
+      },
+      {
+        "platform": "mastodon",
+        "status": "capped",
+        "tasks": 4
+      },
+      {
+        "platform": "mastodon",
+        "status": "passed_start",
+        "tasks": 14
+      }
+    ],
+    "collection_gaps": [
+      {
+        "platform": "bluesky",
+        "query": "\"gas prices\"",
+        "day": "2026-03-09",
+        "host": null,
+        "pages": 30,
+        "status": "capped"
+      },
+      {
+        "platform": "mastodon",
+        "query": "electriccars",
+        "day": null,
+        "host": "aus.social",
+        "pages": 100,
+        "status": "capped"
+      },
+      {
+        "platform": "mastodon",
+        "query": "electricvehicles",
+        "day": null,
+        "host": "aus.social",
+        "pages": 100,
+        "status": "capped"
+      },
+      {
+        "platform": "mastodon",
+        "query": "electriccars",
+        "day": null,
+        "host": "mastodon.au",
+        "pages": 100,
+        "status": "capped"
+      },
+      {
+        "platform": "mastodon",
+        "query": "electricvehicles",
+        "day": null,
+        "host": "mastodon.au",
+        "pages": 100,
+        "status": "capped"
+      }
+    ],
+    "limits": [
+      "Provider language plus langid routing is not human language annotation",
+      "Text deduplication may remove later reposts; raw daily volume is reported separately",
+      "Parent context not inferred: direct-text Jev rubric may abstain on replies"
+    ]
+  },
+  "collection_gaps": [
+    {
+      "platform": "bluesky",
+      "query": "\"gas prices\"",
+      "day": "2026-03-09",
+      "host": null,
+      "pages": 30,
+      "status": "capped"
+    },
+    {
+      "platform": "mastodon",
+      "query": "electriccars",
+      "day": null,
+      "host": "aus.social",
+      "pages": 100,
+      "status": "capped"
+    },
+    {
+      "platform": "mastodon",
+      "query": "electricvehicles",
+      "day": null,
+      "host": "aus.social",
+      "pages": 100,
+      "status": "capped"
+    },
+    {
+      "platform": "mastodon",
+      "query": "electriccars",
+      "day": null,
+      "host": "mastodon.au",
+      "pages": 100,
+      "status": "capped"
+    },
+    {
+      "platform": "mastodon",
+      "query": "electricvehicles",
+      "day": null,
+      "host": "mastodon.au",
+      "pages": 100,
+      "status": "capped"
+    }
+  ],
+  "validation_versions": {
+    "jev-rounded-wire-v3": 89885,
+    "jev-rounded-wire-v2": 691
+  },
+  "inference": {
+    "attempts": 90587,
+    "statuses": {
+      "succeeded": 90576,
+      "failed": 11
+    },
+    "reconciled_native_responses": 1,
+    "accounted_cost_usd": 11.732167901998785,
+    "estimated_usage_cost_usd": 11.725119546,
+    "input_tokens": 279169513,
+    "https_latency_p50_seconds": 0.362,
+    "https_latency_p95_seconds": 0.4463,
+    "cost_note": "Token-rate estimate and conservative unknown-request reservations; not a billing invoice",
+    "uncertain_failed_reservations_usd": 0.007048355998785283
+  },
+  "assistant_review": {
+    "status": "completed_ai_review",
+    "reviewed_at": "2026-10-01T17:11:05.325781+00:00",
+    "reviewer": "Codex assistant semantic review",
+    "not_human_gold": true,
+    "sample_size": 48,
+    "content_strata_sample_size": 34,
+    "accepted_supplement_size": 14,
+    "selection": "Lexicographically first doc_id in each observed platform/phase/model-content-type stratum (34); supplementary first accepted platform/target/model-label examples, deduplicated (14). Purposive, model-stratified, not random.",
+    "outcome_counts": {
+      "likely_omission": 3,
+      "plausible": 28,
+      "ambiguous": 9,
+      "metadata_concern": 2,
+      "temporal_referent_concern": 1,
+      "likely_false_acceptance": 5
+    },
+    "accuracy_estimated": false,
+    "changed_frozen_results": false,
+    "findings": [
+      "Conservative topic gating misses explicit fuel complaints and positive transit experiences.",
+      "Some accepted neutral scores are factual explanations rather than expressed evaluation.",
+      "Unspecified car powertrains can be misattributed to combustion vehicles.",
+      "Preference for low fuel prices is not necessarily attitude toward prevailing prices."
+    ],
+    "interpretation": "Diagnostic research review only; technical acceptance does not establish semantic accuracy or population representativeness."
+  },
+  "scoring_verification": {
+    "frozen_file_hashes": 3,
+    "scoring_records": 90576,
+    "accepted_public_transport": 4862,
+    "accepted_oil_vehicle": 802,
+    "accepted_fuel_price": 11918,
+    "accepted_ev": 1209,
+    "rounded_decision_choices": 74,
+    "rounded_state_measurements_abstained": 134
+  },
+  "acceptance_scope": "Technical contract/data acceptance; exploratory analysis with known semantic limitations, not a validated classifier benchmark"
+}

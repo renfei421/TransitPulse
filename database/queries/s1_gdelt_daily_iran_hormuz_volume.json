@@ -1,0 +1,35 @@
+{
+  "size": 0,
+  "query": {
+    "bool": {
+      "filter": [
+        {
+          "term": {
+            "keyword": "iran_hormuz"
+          }
+        }
+      ]
+    }
+  },
+  "aggs": {
+    "by_day": {
+      "date_histogram": {
+        "field": "date",
+        "calendar_interval": "day",
+        "min_doc_count": 0
+      },
+      "aggs": {
+        "daily_volume": {
+          "sum": {
+            "field": "volume"
+          }
+        },
+        "avg_share_percent": {
+          "avg": {
+            "field": "share_percent"
+          }
+        }
+      }
+    }
+  }
+}

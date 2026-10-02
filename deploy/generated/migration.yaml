@@ -1,0 +1,56 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: transport-schema-migration
+  namespace: default
+  labels: &id001
+    app.kubernetes.io/part-of: transport-analytics
+spec:
+  backoffLimit: 2
+  activeDeadlineSeconds: 3600
+  ttlSecondsAfterFinished: 86400
+  template:
+    metadata:
+      labels: *id001
+    spec:
+      restartPolicy: Never
+      automountServiceAccountToken: false
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        fsGroup: 10001
+      containers:
+      - name: transport
+        image: transport-app:review
+        command:
+        - python
+        - -m
+        - database.migrate
+        args:
+        - --replicas
+        - '1'
+        envFrom:
+        - configMapRef:
+            name: transport-config
+        - secretRef:
+            name: transport-migration-secrets
+        resources:
+          requests:
+            cpu: 100m
+            memory: 256Mi
+          limits:
+            cpu: '1'
+            memory: 1Gi
+        securityContext:
+          allowPrivilegeEscalation: false
+          capabilities:
+            drop:
+            - ALL
+        volumeMounts:
+        - name: es-ca
+          mountPath: /etc/es-ca
+          readOnly: true
+      volumes:
+      - name: es-ca
+        secret:
+          secretName: transport-es-ca

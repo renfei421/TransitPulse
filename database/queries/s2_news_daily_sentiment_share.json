@@ -1,0 +1,46 @@
+{
+  "size": 0,
+  "query": {
+    "bool": {
+      "filter": [
+        {
+          "exists": {
+            "field": "sentiment"
+          }
+        }
+      ]
+    }
+  },
+  "aggs": {
+    "by_day": {
+      "date_histogram": {
+        "field": "time",
+        "calendar_interval": "day",
+        "min_doc_count": 0
+      },
+      "aggs": {
+        "by_sentiment": {
+          "filters": {
+            "filters": {
+              "positive": {
+                "term": {
+                  "sentiment": "positive"
+                }
+              },
+              "neutral": {
+                "term": {
+                  "sentiment": "neutral"
+                }
+              },
+              "negative": {
+                "term": {
+                  "sentiment": "negative"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

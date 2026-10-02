@@ -1,0 +1,284 @@
+{
+  "checked_at_utc": "2026-10-01T06:47:16.926531+00:00",
+  "context": "do-sgp1-k8s-1-34-10-do-5-sgp1-1790830229700",
+  "fission_version": "1.23.0",
+  "metrics_api_available": true,
+  "api_checks": [
+    {
+      "path": "/api/v1/meta",
+      "status": 200,
+      "duration_ms": 176.37,
+      "request_id_present": true,
+      "has_data_or_error": true
+    },
+    {
+      "path": "/api/v1/health",
+      "status": 200,
+      "duration_ms": 233.66,
+      "request_id_present": true,
+      "has_data_or_error": true
+    },
+    {
+      "path": "/api/v1/openapi.json",
+      "status": 200,
+      "duration_ms": 263.85,
+      "request_id_present": false,
+      "has_data_or_error": true
+    },
+    {
+      "path": "/api/v1/social/volume",
+      "status": 200,
+      "duration_ms": 249.09,
+      "request_id_present": true,
+      "has_data_or_error": true
+    },
+    {
+      "path": "/api/v1/social/sentiment",
+      "status": 200,
+      "duration_ms": 238.5,
+      "request_id_present": true,
+      "has_data_or_error": true
+    },
+    {
+      "path": "/api/v1/social/posts",
+      "status": 200,
+      "duration_ms": 229.7,
+      "request_id_present": true,
+      "has_data_or_error": true
+    },
+    {
+      "path": "/api/v1/news/volume",
+      "status": 200,
+      "duration_ms": 237.35,
+      "request_id_present": true,
+      "has_data_or_error": true
+    },
+    {
+      "path": "/api/v1/news/sentiment",
+      "status": 200,
+      "duration_ms": 233.17,
+      "request_id_present": true,
+      "has_data_or_error": true
+    },
+    {
+      "path": "/api/v1/oil/prices",
+      "status": 200,
+      "duration_ms": 233.06,
+      "request_id_present": true,
+      "has_data_or_error": true
+    },
+    {
+      "path": "/api/v1/platforms/profiles",
+      "status": 200,
+      "duration_ms": 255.44,
+      "request_id_present": true,
+      "has_data_or_error": true
+    },
+    {
+      "path": "/api/v1/quality",
+      "status": 200,
+      "duration_ms": 264.77,
+      "request_id_present": true,
+      "has_data_or_error": true
+    },
+    {
+      "path": "/api/v1/analyses/oil-sentiment?model=cloud-acceptance-nonexistent",
+      "status": 404,
+      "duration_ms": 230.47,
+      "request_id_present": true,
+      "has_data_or_error": true
+    },
+    {
+      "path": "/api/v1/social/posts?limit=101",
+      "status": 400,
+      "duration_ms": 200.78,
+      "request_id_present": true,
+      "has_data_or_error": true
+    },
+    {
+      "path": "/api/v1/unknown",
+      "status": 404,
+      "duration_ms": 176.38,
+      "request_id_present": true,
+      "has_data_or_error": true
+    },
+    {
+      "path": "/api/social-topic-volume",
+      "status": 200,
+      "duration_ms": 249.87,
+      "request_id_present": true,
+      "has_data_or_error": true
+    }
+  ],
+  "pods": [
+    {
+      "name": "newdeploy-transport-api-default-89bd-8c92f4fe07ab-d85dc6759ttcm",
+      "namespace": "default",
+      "ready": true,
+      "images": [
+        {
+          "name": "fetcher",
+          "image_id": "ghcr.io/fission/fetcher@sha256:ff6fc92edfb976412686adb2a1a71c723e096e1b12d20b342c2fde93057c3a43"
+        },
+        {
+          "name": "transport-python",
+          "image_id": "ghcr.io/fission/python-env@sha256:446f2cd7c2a8c835deb925586d8f761aed288e0eba4437230996573612bab266"
+        }
+      ]
+    },
+    {
+      "name": "buildermgr-7bd7db77f8-42vqs",
+      "namespace": "fission",
+      "ready": true,
+      "images": [
+        {
+          "name": "buildermgr",
+          "image_id": "ghcr.io/fission/fission-bundle@sha256:042a9d114ad2e4056b28dc6c13301ba52c072591ecb4cc2b275bc981af54a12d"
+        }
+      ]
+    },
+    {
+      "name": "executor-f9ddd447b-nh5qp",
+      "namespace": "fission",
+      "ready": true,
+      "images": [
+        {
+          "name": "executor",
+          "image_id": "ghcr.io/fission/fission-bundle@sha256:042a9d114ad2e4056b28dc6c13301ba52c072591ecb4cc2b275bc981af54a12d"
+        }
+      ]
+    },
+    {
+      "name": "kubewatcher-754f4f95b7-5hrcj",
+      "namespace": "fission",
+      "ready": true,
+      "images": [
+        {
+          "name": "kubewatcher",
+          "image_id": "ghcr.io/fission/fission-bundle@sha256:042a9d114ad2e4056b28dc6c13301ba52c072591ecb4cc2b275bc981af54a12d"
+        }
+      ]
+    },
+    {
+      "name": "router-589f47cbdf-dvggs",
+      "namespace": "fission",
+      "ready": true,
+      "images": [
+        {
+          "name": "router",
+          "image_id": "ghcr.io/fission/fission-bundle@sha256:042a9d114ad2e4056b28dc6c13301ba52c072591ecb4cc2b275bc981af54a12d"
+        }
+      ]
+    },
+    {
+      "name": "storagesvc-7dcc56dc86-6q6zd",
+      "namespace": "fission",
+      "ready": true,
+      "images": [
+        {
+          "name": "storagesvc",
+          "image_id": "ghcr.io/fission/fission-bundle@sha256:042a9d114ad2e4056b28dc6c13301ba52c072591ecb4cc2b275bc981af54a12d"
+        }
+      ]
+    },
+    {
+      "name": "timer-59599c9465-jrcnh",
+      "namespace": "fission",
+      "ready": true,
+      "images": [
+        {
+          "name": "timer",
+          "image_id": "ghcr.io/fission/fission-bundle@sha256:042a9d114ad2e4056b28dc6c13301ba52c072591ecb4cc2b275bc981af54a12d"
+        }
+      ]
+    },
+    {
+      "name": "webhook-59947b58df-lw8nd",
+      "namespace": "fission",
+      "ready": true,
+      "images": [
+        {
+          "name": "webhook",
+          "image_id": "ghcr.io/fission/fission-bundle@sha256:042a9d114ad2e4056b28dc6c13301ba52c072591ecb4cc2b275bc981af54a12d"
+        }
+      ]
+    }
+  ],
+  "hpa": [
+    {
+      "name": "newdeploy-transport-api-default-89bd-8c92f4fe07ab",
+      "spec": {
+        "maxReplicas": 3,
+        "metrics": [
+          {
+            "resource": {
+              "name": "cpu",
+              "target": {
+                "averageUtilization": 70,
+                "type": "Utilization"
+              }
+            },
+            "type": "Resource"
+          }
+        ],
+        "minReplicas": 1,
+        "scaleTargetRef": {
+          "apiVersion": "apps/v1",
+          "kind": "Deployment",
+          "name": "newdeploy-transport-api-default-89bd-8c92f4fe07ab"
+        }
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-01T06:35:47Z",
+            "message": "recommended size matches current size",
+            "reason": "ReadyForNewScale",
+            "status": "True",
+            "type": "AbleToScale"
+          },
+          {
+            "lastTransitionTime": "2026-10-01T06:43:48Z",
+            "message": "the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)",
+            "reason": "ValidMetricFound",
+            "status": "True",
+            "type": "ScalingActive"
+          },
+          {
+            "lastTransitionTime": "2026-10-01T06:36:17Z",
+            "message": "the desired count is within the acceptable range",
+            "reason": "DesiredWithinRange",
+            "status": "False",
+            "type": "ScalingLimited"
+          }
+        ],
+        "currentMetrics": [
+          {
+            "resource": {
+              "current": {
+                "averageUtilization": 1,
+                "averageValue": "2m"
+              },
+              "name": "cpu"
+            },
+            "type": "Resource"
+          }
+        ],
+        "currentReplicas": 1,
+        "desiredReplicas": 1
+      }
+    }
+  ],
+  "package": {
+    "archive": "C:\\Users\\RENFEI\\Desktop\\cloud cluster\\COMP90024_group_repo\\artifacts\\transport-api-linux.zip",
+    "sha256": "3e02f65818dafc9bb3cb51adaaf430afc7d457d46d5d411db87ad6b603211cf1",
+    "bytes": 3494594,
+    "runtime_image": "ghcr.io/fission/python-env@sha256:446f2cd7c2a8c835deb925586d8f761aed288e0eba4437230996573612bab266",
+    "dependency_lock_sha256": "0d2ebe581bcc4b3e593fff1f1c405d48c43ba0a1b2e4e4235358b3af221823eb"
+  },
+  "limits": [
+    "Requests used an authenticated kubectl tunnel; no public Internet endpoint was created",
+    "No production throughput or autoscaling-under-load claim",
+    "Read-only route checks do not establish historical-data recovery or ingestion"
+  ]
+}

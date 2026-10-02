@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "network_calls": 0,
+  "provider_calls": 0,
+  "processed_verified": 90576,
+  "aggregate_fields_compared": [
+    "daily",
+    "phase_summaries",
+    "oil_sentiment_associations",
+    "whole_post_labels",
+    "relevance",
+    "content_types",
+    "target_abstention_reasons",
+    "bluesky_capped_days",
+    "minimum_target_scores_per_day",
+    "price_observations",
+    "missing_price_policy",
+    "limits"
+  ],
+  "receipts": {
+    "succeeded": 90576,
+    "failed": 11
+  },
+  "accounted_cost_usd": 11.732167901998785,
+  "figure": "event-iran-20260228.png",
+  "human_review": {
+    "status": "unlabelled",
+    "task_count": 233,
+    "unique_posts": 225,
+    "selection": "up to 5 hash-ranked tasks per platform/phase/target/model-acceptance stratum; not population-representative"
+  }
+}

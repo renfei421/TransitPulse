@@ -1,0 +1,86 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 1,
+      "number_of_replicas": 1
+    }
+  },
+  "mappings": {
+    "properties": {
+      "id": {
+        "type": "keyword"
+      },
+      "time": {
+        "type": "date"
+      },
+      "sentiment": {
+        "type": "keyword"
+      },
+      "sentiment_score": {
+        "type": "float"
+      },
+      "dataset_kind": {
+        "type": "keyword"
+      },
+      "source_dataset": {
+        "type": "keyword"
+      },
+      "model_name": {
+        "type": "keyword"
+      },
+      "model_revision": {
+        "type": "keyword"
+      },
+      "pipeline_version": {
+        "type": "keyword"
+      },
+      "score_type": {
+        "type": "keyword"
+      },
+      "processing_run_id": {
+        "type": "keyword"
+      },
+      "schema_version": {
+        "type": "integer"
+      },
+      "fetched_at": {
+        "type": "date"
+      },
+      "processed_at": {
+        "type": "date"
+      },
+      "url": {
+        "type": "keyword"
+      },
+      "source_domain": {
+        "type": "keyword"
+      },
+      "input_scope": {
+        "type": "keyword"
+      },
+      "sentiment_polarity": {
+        "type": "float"
+      },
+      "input_characters": {
+        "type": "integer"
+      },
+      "sentiment_probabilities": {
+        "properties": {
+          "negative": {
+            "type": "float"
+          },
+          "neutral": {
+            "type": "float"
+          },
+          "positive": {
+            "type": "float"
+          }
+        }
+      }
+    },
+    "_meta": {
+      "schema_version": 2,
+      "source": "database/mappings"
+    }
+  }
+}

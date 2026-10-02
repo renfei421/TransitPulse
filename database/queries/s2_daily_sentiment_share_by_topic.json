@@ -1,0 +1,84 @@
+{
+  "size": 0,
+  "query": {
+    "bool": {
+      "filter": [
+        {
+          "terms": {
+            "candidate_topics": [
+              "ev",
+              "public_transport",
+              "fuel_price"
+            ]
+          }
+        },
+        {
+          "exists": {
+            "field": "contextual_sentiment_label"
+          }
+        }
+      ]
+    }
+  },
+  "aggs": {
+    "by_day": {
+      "date_histogram": {
+        "field": "created_at",
+        "calendar_interval": "day",
+        "time_zone": "Australia/Sydney",
+        "min_doc_count": 0
+      },
+      "aggs": {
+        "by_topic": {
+          "filters": {
+            "filters": {
+              "ev": {
+                "term": {
+                  "candidate_topics": "ev"
+                }
+              },
+              "public_transport": {
+                "term": {
+                  "candidate_topics": "public_transport"
+                }
+              },
+              "fuel_price": {
+                "term": {
+                  "candidate_topics": "fuel_price"
+                }
+              }
+            }
+          },
+          "aggs": {
+            "by_sentiment": {
+              "filters": {
+                "filters": {
+                  "positive": {
+                    "term": {
+                      "contextual_sentiment_label": "positive"
+                    }
+                  },
+                  "neutral": {
+                    "term": {
+                      "contextual_sentiment_label": "neutral"
+                    }
+                  },
+                  "negative": {
+                    "term": {
+                      "contextual_sentiment_label": "negative"
+                    }
+                  }
+                }
+              }
+            },
+            "avg_contextual_sentiment_polarity": {
+              "avg": {
+                "field": "contextual_sentiment_polarity"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

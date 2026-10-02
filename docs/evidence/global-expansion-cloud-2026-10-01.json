@@ -1,0 +1,204 @@
+{
+  "checked_at_utc": "2026-10-01T09:17:31.251546+00:00",
+  "context": "do-sgp1-k8s-1-34-10-do-5-sgp1-1790830229700",
+  "input_snapshots": [
+    {
+      "dataset": "mastodon_query_reuse_20261001",
+      "records_sha256": "d43566886ef330ae05aaa2fa39c4253e7d4da7d121cb28e1408ebabb290467e5"
+    },
+    {
+      "dataset": "mastodon_global_en_20261001",
+      "records_sha256": "9f999d92e7164327874bd0314ac3ec4256fd55ff4a93cc7c407adc530e338d77"
+    }
+  ],
+  "verified_first_observations": 1403,
+  "stored_first_source_counts": {
+    "mastodon_query_reuse_20261001": 809,
+    "mastodon_global_en_20261001": 594
+  },
+  "raw_index_total": 1403,
+  "language_routes_from_provider_metadata": {
+    "needs_language_review": 103,
+    "english_candidate": 1203,
+    "other_language": 97
+  },
+  "cloud_api": [
+    {
+      "params": {
+        "from": "2026-07-03",
+        "to": "2026-10-02",
+        "dataset_kind": "live"
+      },
+      "status": 200,
+      "body": {
+        "data": {
+          "raw_documents": 1403,
+          "processed_documents": 0,
+          "selected_processed_documents": 0,
+          "processing_coverage": 0.0,
+          "coverage_scope": "Source/date/platform cohort before topic filtering; optional model filter applies to processed records only",
+          "unique_authors_approx": 0,
+          "unique_threads_approx": 0,
+          "unassigned_topics": 0,
+          "missing_parent_context": 0,
+          "models": [],
+          "latest_fetched_at": null,
+          "latest_processed_at": null,
+          "interpretation": "Observed sample; topic groups overlap; counts do not estimate population opinion."
+        },
+        "meta": {
+          "from": "2026-07-03",
+          "to": "2026-10-02",
+          "dataset_kind": "live",
+          "sentiment_definition": "(positive-negative)/classified_count",
+          "timezone": "Australia/Sydney",
+          "topic_counts_overlap": true
+        },
+        "request_id": "51923556-1e13-4bb5-9585-6eb1d02f7769"
+      }
+    },
+    {
+      "params": {
+        "from": "2026-07-03",
+        "to": "2026-10-02",
+        "dataset_kind": "live",
+        "source_dataset": "mastodon_query_reuse_20261001"
+      },
+      "status": 200,
+      "body": {
+        "data": {
+          "raw_documents": 809,
+          "processed_documents": 0,
+          "selected_processed_documents": 0,
+          "processing_coverage": 0.0,
+          "coverage_scope": "Source/date/platform cohort before topic filtering; optional model filter applies to processed records only",
+          "unique_authors_approx": 0,
+          "unique_threads_approx": 0,
+          "unassigned_topics": 0,
+          "missing_parent_context": 0,
+          "models": [],
+          "latest_fetched_at": null,
+          "latest_processed_at": null,
+          "interpretation": "Observed sample; topic groups overlap; counts do not estimate population opinion."
+        },
+        "meta": {
+          "from": "2026-07-03",
+          "to": "2026-10-02",
+          "dataset_kind": "live",
+          "sentiment_definition": "(positive-negative)/classified_count",
+          "timezone": "Australia/Sydney",
+          "topic_counts_overlap": true
+        },
+        "request_id": "0d0e0183-cfad-4bcd-ace0-4361238f50f8"
+      }
+    },
+    {
+      "params": {
+        "from": "2026-07-03",
+        "to": "2026-10-02",
+        "dataset_kind": "live",
+        "source_dataset": "mastodon_global_en_20261001"
+      },
+      "status": 200,
+      "body": {
+        "data": {
+          "raw_documents": 594,
+          "processed_documents": 0,
+          "selected_processed_documents": 0,
+          "processing_coverage": 0.0,
+          "coverage_scope": "Source/date/platform cohort before topic filtering; optional model filter applies to processed records only",
+          "unique_authors_approx": 0,
+          "unique_threads_approx": 0,
+          "unassigned_topics": 0,
+          "missing_parent_context": 0,
+          "models": [],
+          "latest_fetched_at": null,
+          "latest_processed_at": null,
+          "interpretation": "Observed sample; topic groups overlap; counts do not estimate population opinion."
+        },
+        "meta": {
+          "from": "2026-07-03",
+          "to": "2026-10-02",
+          "dataset_kind": "live",
+          "sentiment_definition": "(positive-negative)/classified_count",
+          "timezone": "Australia/Sydney",
+          "topic_counts_overlap": true
+        },
+        "request_id": "c485a360-95f4-4614-9f2c-19f11ac67fd4"
+      }
+    }
+  ],
+  "limits": [
+    "Language metadata not independently verified",
+    "Raw candidates include noise",
+    "Country hints are not author locations",
+    "This check does not run model processing"
+  ],
+  "schema_migration": {
+    "checked_at_utc": "2026-10-01T09:14:43.661774+00:00",
+    "context": "do-sgp1-k8s-1-34-10-do-5-sgp1-1790830229700",
+    "raw_before": 809,
+    "baseline_dataset_count": 809,
+    "migration": [
+      {
+        "index": "v2_gdelt_news_raw",
+        "action": "mapping_updated"
+      },
+      {
+        "index": "v2_gdelt_news_volume_raw",
+        "action": "mapping_updated"
+      },
+      {
+        "index": "v2_health_log",
+        "action": "mapping_updated"
+      },
+      {
+        "index": "v2_ingestion_checkpoints",
+        "action": "mapping_updated"
+      },
+      {
+        "index": "v2_news_processed",
+        "action": "mapping_updated"
+      },
+      {
+        "index": "v2_oil_prices_raw",
+        "action": "mapping_updated"
+      },
+      {
+        "index": "v2_oil_sentiment_corr_results",
+        "action": "mapping_updated"
+      },
+      {
+        "index": "v2_pipeline_runs",
+        "action": "mapping_updated"
+      },
+      {
+        "index": "v2_post_comment_crawler_runs_raw",
+        "action": "mapping_updated"
+      },
+      {
+        "index": "v2_social_discussion_edges_raw",
+        "action": "mapping_updated"
+      },
+      {
+        "index": "v2_social_discussion_posts_raw",
+        "action": "mapping_updated"
+      },
+      {
+        "index": "v2_social_posts_processed",
+        "action": "mapping_updated"
+      }
+    ]
+  },
+  "local_validation": {
+    "full_non_model_suite_passed": 150,
+    "model_tests_deselected": 1,
+    "full_suite_junit": "artifacts/global-expansion-tests.xml",
+    "subsequent_focused_tests_passed": 11,
+    "focused_file": "test/test_search_reuse.py",
+    "note": "Focused run includes one newly added global capture regression after the full 150-test run; 151 distinct tests passed across these executions",
+    "offline_declarative_resources_validated": 32,
+    "ruff": "passed",
+    "repository_credential_tls_audit": "passed"
+  }
+}

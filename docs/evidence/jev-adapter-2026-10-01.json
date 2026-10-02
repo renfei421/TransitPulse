@@ -1,0 +1,41 @@
+{
+  "checked_at_utc": "2026-10-01T10:20:31.658070+00:00",
+  "model": "jev-1.13.0",
+  "rubric_version": "transport-jev-v1",
+  "scoring_version": "probability-polarity-v1",
+  "contract_sha256": "00b2f9a3993e55cbcf749b94a55543d1775f9ad63b088118b389a7a29d2cf922",
+  "typed_questions_per_post": 12,
+  "prepared_samples": 30,
+  "sample_sha256": "ff5feea24adf8f35e1a7b4a65d34221502e1c323b35f904ebf5f80f3529b184b",
+  "live_jev_calls": 0,
+  "cloud_deployment_changed": false,
+  "cloud_cutover": false,
+  "access_status": "No TypeSafe credential; user explicitly chose adapter and plan first",
+  "adapter_tests": {
+    "tests": 16,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "sha256": "619396016bf2f07605ad2efecca26dd55830cadea1f4dd06d2869b7cb07831c0"
+  },
+  "regression_tests": {
+    "tests": 176,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 1,
+    "sha256": "b98add9cac2a610c9080b63c4e7b2654d13fc175ab3039a60214dfa0a8c3bb65"
+  },
+  "test_scope": "HTTP responses are protocol fixtures. Integration uses real local Elasticsearch with isolated test index prefixes. No Jev accuracy/latency result.",
+  "regression_skip": "Existing real RoBERTa weight test intentionally not rerun for an additive Jev adapter",
+  "post_regression_change": "Clear old regional event metadata in Jev candidates; final 16 adapter tests rerun and passed",
+  "score_definition": "p(positive)-p(negative) = native three-level Score-1; confidence remains separate; rejected scores are null",
+  "provisional_confidence_threshold": 0.6,
+  "sources": [
+    "https://github.com/yzfly/awesome-jev-zh",
+    "https://docs.typesafe.ai/api",
+    "https://docs.typesafe.ai/primitives/score",
+    "https://docs.typesafe.ai/confidence",
+    "https://docs.typesafe.ai/models",
+    "https://docs.typesafe.ai/model-jaggedness/jev-1.13"
+  ]
+}

@@ -1,0 +1,57 @@
+name: transport-analytics
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.19.1
+    environment:
+      discovery.type: single-node
+      xpack.security.enabled: "false"
+      ES_JAVA_OPTS: -Xms512m -Xmx512m
+    ports: ["127.0.0.1:19200:9200"]
+    volumes: ["es-data:/usr/share/elasticsearch/data"]
+    mem_limit: 2g
+    healthcheck:
+      test: [CMD-SHELL, "curl -fsS http://localhost:9200/_cluster/health >/dev/null"]
+      interval: 5s
+      timeout: 3s
+      retries: 40
+  redis:
+    image: redis:7.4.5-alpine
+    command: [redis-server, --appendonly, "yes"]
+    ports: ["127.0.0.1:16379:6379"]
+    volumes: ["redis-data:/data"]
+    healthcheck:
+      test: [CMD, redis-cli, ping]
+      interval: 3s
+      timeout: 2s
+      retries: 20
+  seed:
+    profiles: [demo]
+    build: {context: ., target: base}
+    image: transport-app:review
+    command: [python, -m, scripts.demo]
+    environment:
+      ES_HOST: http://elasticsearch:9200
+      ES_ALLOW_ANONYMOUS: "true"
+      ES_INDEX_PREFIX: demo_v2_
+    depends_on:
+      elasticsearch: {condition: service_healthy}
+  api:
+    profiles: [demo]
+    build: {context: ., target: base}
+    image: transport-app:review
+    command: [python, -m, flask, --app, "backend.api.app:create_app", run, --host, "0.0.0.0", --port, "9090"]
+    environment:
+      ES_HOST: http://elasticsearch:9200
+      ES_ALLOW_ANONYMOUS: "true"
+      ES_INDEX_PREFIX: demo_v2_
+    ports: ["127.0.0.1:9090:9090"]
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:9090/api/v1/health', timeout=3)"]
+      interval: 5s
+      timeout: 4s
+      retries: 12
+    depends_on:
+      seed: {condition: service_completed_successfully}
+volumes:
+  es-data:
+  redis-data:

@@ -1,0 +1,112 @@
+stages: [test, package, build, deploy]
+
+variables:
+  UV_VERSION: "0.12.13"
+  UV_CACHE_DIR: "$CI_PROJECT_DIR/.cache/uv"
+  PYTHONUNBUFFERED: "1"
+  ES_REPLICAS: "1"  # Override with 0 for the single-node DOKS acceptance deployment.
+
+default:
+  image: python:3.11.14-slim-bookworm@sha256:65a93d69fa75478d554f4ad27c85c1e69fa184956261b4301ebaf6dbb0a3543d
+  before_script:
+    - pip install "uv==$UV_VERSION"
+  cache:
+    key:
+      files: [uv.lock]
+    paths: [.cache/uv]
+
+unit:
+  stage: test
+  script:
+    - uv sync --frozen
+    - uv run --no-sync ruff check backend database scripts test
+    - uv run --no-sync python -m scripts.validate_deployment
+    - uv run --no-sync python -m scripts.audit_repository
+    - uv run --no-sync pytest -m "not integration and not e2e and not model" --junitxml=artifacts/unit.xml
+  artifacts:
+    when: always
+    reports:
+      junit: artifacts/unit.xml
+
+integration:
+  stage: test
+  services:
+    - name: docker.elastic.co/elasticsearch/elasticsearch:8.19.1
+      alias: elasticsearch
+      command: ["-Ediscovery.type=single-node", "-Expack.security.enabled=false", "-Expack.ml.enabled=false"]
+    - name: redis:7.4.5-alpine
+      alias: redis
+  variables:
+    ES_JAVA_OPTS: "-Xms512m -Xmx512m"
+    TEST_ES_URL: "http://elasticsearch:9200"
+    TEST_REDIS_URL: "redis://redis:6379/0"
+  script:
+    - uv sync --frozen --extra notebook
+    - uv run --no-sync python -m scripts.wait_services
+    - uv run --no-sync pytest -m "integration or e2e" --junitxml=artifacts/integration.xml --cov=backend --cov-report=xml:artifacts/coverage.xml
+  artifacts:
+    when: always
+    reports:
+      junit: artifacts/integration.xml
+      coverage_report:
+        coverage_format: cobertura
+        path: artifacts/coverage.xml
+
+model:
+  stage: test
+  variables:
+    RUN_MODEL_TESTS: "1"
+    HF_HOME: "$CI_PROJECT_DIR/.cache/huggingface"
+    OMP_NUM_THREADS: "2"
+  script:
+    - uv sync --frozen --extra model
+    - uv run --no-sync pytest -m model --junitxml=artifacts/model.xml
+  rules:
+    - if: '$RUN_MODEL_CI == "true"'
+  cache:
+    key: model-3216a57
+    paths: [.cache/huggingface, .cache/uv]
+
+package:
+  stage: package
+  script:
+    - uv sync --frozen
+    - uv run --no-sync python -m scripts.package_fission
+  artifacts:
+    paths: [artifacts/transport-functions.zip, specs, deploy/generated]
+    expire_in: 14 days
+
+images:
+  stage: build
+  image: docker:28.5.1-cli
+  services: [docker:28.5.1-dind]
+  variables:
+    DOCKER_TLS_CERTDIR: "/certs"
+  before_script: []
+  script:
+    - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" --password-stdin "$CI_REGISTRY"
+    - docker build --target base -t "$CI_REGISTRY_IMAGE/app:$CI_COMMIT_SHA" .
+    - docker build --target model -t "$CI_REGISTRY_IMAGE/model:$CI_COMMIT_SHA" .
+    - docker build -f deploy/Dockerfile.fission -t "$CI_REGISTRY_IMAGE/fission:$CI_COMMIT_SHA" .
+    - docker push "$CI_REGISTRY_IMAGE/app:$CI_COMMIT_SHA"
+    - docker push "$CI_REGISTRY_IMAGE/model:$CI_COMMIT_SHA"
+    - docker push "$CI_REGISTRY_IMAGE/fission:$CI_COMMIT_SHA"
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $BUILD_IMAGES == "true"'
+
+deploy:
+  stage: deploy
+  # Protected shell runner: pinned Python/uv, kubectl and Fission installed by admin.
+  tags: [transport-deploy]
+  environment: staging
+  resource_group: transport-staging
+  before_script: []
+  needs: [package, images]
+  script:
+    - uv sync --frozen
+    - uv run --no-sync python -m scripts.render_deployment --image "$CI_REGISTRY_IMAGE/app:$CI_COMMIT_SHA" --model-image "$CI_REGISTRY_IMAGE/model:$CI_COMMIT_SHA" --fission-image "$CI_REGISTRY_IMAGE/fission:$CI_COMMIT_SHA" --namespace "$DEPLOY_NAMESPACE" --runtime-namespace "$FISSION_RUNTIME_NAMESPACE" --es-replicas "$ES_REPLICAS"
+    - uv run --no-sync python -m scripts.deploy_release
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $BUILD_IMAGES == "true"'
+      when: manual
+  allow_failure: false

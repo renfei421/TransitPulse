@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-10-01T09:57:59.063986+00:00",
+  "tests": 160,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "junit_sha256": "653288e1ba95330a06ace5d01375a795880b80d8d216423d2fd013bd9a985313",
+  "services": "Real local Elasticsearch and Redis, pinned local RoBERTa; isolated test prefixes",
+  "cloud_validation": "Separate real DOKS Job and Fission checks in cloud-model-processing-2026-10-01.json",
+  "post_suite_change": "OpenAPI operationId corrected and uniqueness checked offline and on deployed API; no runtime classification change."
+}

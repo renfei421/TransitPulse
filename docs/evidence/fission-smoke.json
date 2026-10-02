@@ -1,0 +1,8 @@
+{
+  "runtime_image": "transport-fission:review",
+  "specialization": "passed",
+  "metadata_status": 200,
+  "health_status": 200,
+  "analytics_rows": 180,
+  "kubernetes_deployment": "not tested by this check"
+}

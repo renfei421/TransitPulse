@@ -1,0 +1,603 @@
+{
+  "checked_at_utc": "2026-10-01T09:11:50.965368+00:00",
+  "dataset": "mastodon_global_en_20261001",
+  "window": {
+    "from": "2026-07-03T09:10:26.671812+00:00",
+    "to": "2026-10-01T09:10:26.671812+00:00"
+  },
+  "query_bank": {
+    "profile": "global_en",
+    "search_queries": 62,
+    "keywords_by_topic": {
+      "public_transport": 27,
+      "fuel_price": 24,
+      "ev": 20,
+      "oil_vehicle": 16
+    },
+    "search_queries_sha256": "3cbe3370fabd989d022c00b5e1225970f42c9153ae49269fa557eed4d9292c13",
+    "keyword_bank_sha256": "5e215aba86575dfdb71482f7a2e36bc53a436c251a45ad496a4682801b9180c1",
+    "adapter_version": "keyword-hashtag-pilot-v2",
+    "tag_seeds": [
+      {
+        "topic": "public_transport",
+        "keyword": "public transit",
+        "hashtag": "publictransit"
+      },
+      {
+        "topic": "public_transport",
+        "keyword": "mass transit",
+        "hashtag": "masstransit"
+      },
+      {
+        "topic": "fuel_price",
+        "keyword": "gas prices",
+        "hashtag": "gasprices"
+      },
+      {
+        "topic": "fuel_price",
+        "keyword": "fuel prices",
+        "hashtag": "fuelprices"
+      },
+      {
+        "topic": "fuel_price",
+        "keyword": "oil prices",
+        "hashtag": "oilprices"
+      },
+      {
+        "topic": "ev",
+        "keyword": "ev charging",
+        "hashtag": "evcharging"
+      },
+      {
+        "topic": "ev",
+        "keyword": "electric cars",
+        "hashtag": "electriccars"
+      },
+      {
+        "topic": "oil_vehicle",
+        "keyword": "driving",
+        "hashtag": "driving"
+      }
+    ]
+  },
+  "budget": {
+    "hosts": [
+      "mastodon.social",
+      "mastodon.au",
+      "aus.social"
+    ],
+    "pages_per_tag": 2,
+    "max_requests": 48,
+    "max_returned_records": 1920
+  },
+  "funnel": {
+    "returned_records": 1520,
+    "missing_identity": 0,
+    "duplicates_removed": 437,
+    "unique_posts": 1083,
+    "outside_window": 163,
+    "malformed_or_empty": 0,
+    "valid_in_window": 920,
+    "original_text_rule_candidates": 681,
+    "topic_candidates_with_hashtags": 920,
+    "geographic_evidence": {
+      "unknown": 881,
+      "explicit_text_hint": 30,
+      "ambiguous_text_hint": 9
+    },
+    "geographic_evidence_scope": "Australian text lexicon only, not global location coverage",
+    "country_mention_posts": 327,
+    "region_filter_dropped": 0
+  },
+  "topic_counts_overlap": {
+    "fuel_price": 454,
+    "oil_vehicle": 165,
+    "public_transport": 160,
+    "ev": 272
+  },
+  "languages": {
+    "en": 873,
+    "fr": 3,
+    "it": 1,
+    "de": 4,
+    "unknown": 33,
+    "lt": 1,
+    "es": 1,
+    "zh-TW": 1,
+    "fi": 1,
+    "pt": 1,
+    "nl": 1
+  },
+  "analysis_language_routes": {
+    "english_candidate": 873,
+    "other_language": 14,
+    "needs_language_review": 33
+  },
+  "country_mentions_overlap": {
+    "FR": 11,
+    "GB": 60,
+    "CA": 16,
+    "IR": 175,
+    "US": 20,
+    "CN": 21,
+    "NZ": 1,
+    "AU": 26,
+    "DE": 21,
+    "IN": 6,
+    "JP": 14,
+    "SG": 3,
+    "MY": 3
+  },
+  "review_sample": {
+    "selected": 30,
+    "strata": {
+      "hashtag_added_candidate": 10,
+      "other_topic_candidate": 10,
+      "regional_hint_candidate": 10
+    },
+    "reviewer": "Codex assistant",
+    "labels": {
+      "uncertain": 2,
+      "unrelated": 2,
+      "related": 18,
+      "adjacent": 8
+    },
+    "reviewer_type": "ai",
+    "reviewed_at_utc": "2026-10-01T09:13:41.838065+00:00",
+    "sample_sha256": "ff5feea24adf8f35e1a7b4a65d34221502e1c323b35f904ebf5f80f3529b184b",
+    "by_stratum": {
+      "hashtag_added_candidate": {
+        "uncertain": 1,
+        "unrelated": 2,
+        "related": 4,
+        "adjacent": 3
+      },
+      "other_topic_candidate": {
+        "uncertain": 1,
+        "related": 5,
+        "adjacent": 4
+      },
+      "regional_hint_candidate": {
+        "related": 9,
+        "adjacent": 1
+      }
+    },
+    "interpretation": "Assistant triage of a stratified sample, not human gold labels or accuracy",
+    "candidate_storage_policy": "Raw candidates retained including reviewed noise; labels are diagnostic, not a hidden filter"
+  },
+  "sink": {
+    "started_at_utc": "2026-10-01T09:16:53.453244+00:00",
+    "mode": "create_only",
+    "status": "completed",
+    "index": "v2_social_discussion_posts_raw",
+    "attempted": 920,
+    "created": 0,
+    "already_present": 920,
+    "failed": 0,
+    "read_back": 920,
+    "first_source_dataset_counts": {
+      "mastodon_query_reuse_20261001": 326,
+      "mastodon_global_en_20261001": 594
+    },
+    "this_dataset_stored_language_routes": {
+      "english_candidate": 565,
+      "other_language": 11,
+      "needs_language_review": 18
+    },
+    "dataset_kind": "live",
+    "processed_documents_this_run": 0
+  },
+  "requests": [
+    {
+      "host": "mastodon.social",
+      "hashtag": "publictransit",
+      "page": 1,
+      "error_type": "ReadTimeout"
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "masstransit",
+      "page": 1,
+      "http_status": 503
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "gasprices",
+      "page": 1,
+      "http_status": 503
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "fuelprices",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "fuelprices",
+      "page": 2,
+      "http_status": 503
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "oilprices",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "oilprices",
+      "page": 2,
+      "http_status": 503
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "evcharging",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "evcharging",
+      "page": 2,
+      "http_status": 503
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "electriccars",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "electriccars",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "driving",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.social",
+      "hashtag": "driving",
+      "page": 2,
+      "http_status": 503
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "publictransit",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "publictransit",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "masstransit",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "masstransit",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "gasprices",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "gasprices",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "fuelprices",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "fuelprices",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "oilprices",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "oilprices",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "evcharging",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "evcharging",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "electriccars",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "electriccars",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "driving",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "mastodon.au",
+      "hashtag": "driving",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "publictransit",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "publictransit",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "masstransit",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "masstransit",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "gasprices",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "gasprices",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "fuelprices",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "fuelprices",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "oilprices",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "oilprices",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "evcharging",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "evcharging",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "electriccars",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "electriccars",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "driving",
+      "page": 1,
+      "http_status": 200,
+      "returned": 40
+    },
+    {
+      "host": "aus.social",
+      "hashtag": "driving",
+      "page": 2,
+      "http_status": 200,
+      "returned": 40
+    }
+  ],
+  "limits": [
+    "Public hashtag adaptation is not execution of the full-text queries",
+    "English query profile does not guarantee English posts; provider language is unverified",
+    "Country hints are non-exhaustive text mentions, not country-specific opinions or author locations",
+    "Candidates are not all reviewed; geography is a partition, not an exclusion gate",
+    "No language filter; English model processing must be considered separately",
+    "Current 90-day pilot, not restoration of the original February-May study window",
+    "No author residence inferred; no thread expansion or model inference"
+  ],
+  "sink_history": [
+    {
+      "started_at_utc": "2026-10-01T09:15:08.299012+00:00",
+      "mode": "create_only",
+      "status": "completed",
+      "index": "v2_social_discussion_posts_raw",
+      "attempted": 920,
+      "created": 594,
+      "already_present": 326,
+      "failed": 0,
+      "read_back": 920,
+      "first_source_dataset_counts": {
+        "mastodon_query_reuse_20261001": 326,
+        "mastodon_global_en_20261001": 594
+      },
+      "this_dataset_stored_language_routes": {
+        "english_candidate": 565,
+        "other_language": 11,
+        "needs_language_review": 18
+      },
+      "dataset_kind": "live",
+      "processed_documents_this_run": 0
+    }
+  ],
+  "incremental_analysis": {
+    "comparison_dataset": "mastodon_query_reuse_20261001",
+    "per_tag_counts_overlap": [
+      {
+        "hashtag": "publictransit",
+        "requests": 5,
+        "returned": 160,
+        "in_window_candidates": 113,
+        "new_vs_previous_batch": 102
+      },
+      {
+        "hashtag": "masstransit",
+        "requests": 5,
+        "returned": 160,
+        "in_window_candidates": 21,
+        "new_vs_previous_batch": 21
+      },
+      {
+        "hashtag": "gasprices",
+        "requests": 5,
+        "returned": 160,
+        "in_window_candidates": 129,
+        "new_vs_previous_batch": 116
+      },
+      {
+        "hashtag": "fuelprices",
+        "requests": 6,
+        "returned": 200,
+        "in_window_candidates": 143,
+        "new_vs_previous_batch": 0
+      },
+      {
+        "hashtag": "oilprices",
+        "requests": 6,
+        "returned": 200,
+        "in_window_candidates": 182,
+        "new_vs_previous_batch": 179
+      },
+      {
+        "hashtag": "evcharging",
+        "requests": 6,
+        "returned": 200,
+        "in_window_candidates": 91,
+        "new_vs_previous_batch": 89
+      },
+      {
+        "hashtag": "electriccars",
+        "requests": 6,
+        "returned": 240,
+        "in_window_candidates": 159,
+        "new_vs_previous_batch": 102
+      },
+      {
+        "hashtag": "driving",
+        "requests": 6,
+        "returned": 200,
+        "in_window_candidates": 112,
+        "new_vs_previous_batch": 0
+      }
+    ],
+    "canonical_uri_unique_candidates": 920,
+    "exact_normalized_text_unique": 881,
+    "extra_posts_with_identical_normalized_text": 39,
+    "normalization": "Whitespace collapse and Unicode casefold; URLs kept; no semantic deduplication",
+    "limits": [
+      "Per-tag rows overlap and cannot be summed",
+      "Two captures have different queries and timestamps; this is observed incremental yield, not a causal A/B estimate",
+      "Different post IDs, or even different text, do not establish independent people or opinions"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = 'Reviewed file SHA-256, not a credential'
+condition = 'AND'
+paths = ['''^docs/evidence/checksums\.json$''']
+regexTarget = 'line'
+regexes = ['''^\s*"cloud\-fission\-api\-2026\-10\-01\.json":\ "93fc0e4a66d0dbc47d0fc00d2f0442863b1eba6dda405818744ee92a04021247",\s*$''']
+
+[[allowlists]]
+description = 'Reviewed file SHA-256, not a credential'
+condition = 'AND'
+paths = ['''^docs/evidence/event\-start\-2026\-10\-01\.json$''']
+regexTarget = 'line'
+regexes = ['''^\s*"backend/api/openapi\.json":\ "73dc8b703abebedd526e2b5d56be7f7d8fece15e800fd9c36f08bc6c58edba9a",\s*$''']
+
+[[allowlists]]
+description = 'Reviewed file SHA-256, not a credential'
+condition = 'AND'
+paths = ['''^docs/evidence/event\-start\-2026\-10\-01\.json$''']
+regexTarget = 'line'
+regexes = ['''^\s*"backend/ingestion/authenticated_bluesky\.py":\ "0ec7bfb717aa70b2b473d20c832099f14619907590eee9a09f01c8900b76b58a",\s*$''']

@@ -1,0 +1,45 @@
+# Private credentials — never commit
+config_private.py
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.eggs/
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Local data, reports, credentials and build products
+artifacts/
+data/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.log
+*.zip
+*secret.local*
+*kubeconfig*.yaml
+*kubeconfig*.yml
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# macOS
+.DS_Store
+backend/api/backend_api_query_specs.md
+backend/api/backend_api_query_specs_simple.md

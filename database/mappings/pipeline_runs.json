@@ -1,0 +1,93 @@
+{
+  "mappings": {
+    "properties": {
+      "run_id": {
+        "type": "keyword"
+      },
+      "component": {
+        "type": "keyword"
+      },
+      "status": {
+        "type": "keyword"
+      },
+      "model_name": {
+        "type": "keyword"
+      },
+      "model_revision": {
+        "type": "keyword"
+      },
+      "source": {
+        "type": "keyword"
+      },
+      "dataset_kind": {
+        "type": "keyword"
+      },
+      "time_field": {
+        "type": "keyword"
+      },
+      "started_at": {
+        "type": "date"
+      },
+      "completed_at": {
+        "type": "date"
+      },
+      "start_date": {
+        "type": "date"
+      },
+      "end_date": {
+        "type": "date"
+      },
+      "processed_rows": {
+        "type": "integer"
+      },
+      "seen_rows": {
+        "type": "integer"
+      },
+      "created": {
+        "type": "integer"
+      },
+      "updated": {
+        "type": "integer"
+      },
+      "noop": {
+        "type": "integer"
+      },
+      "failed": {
+        "type": "integer"
+      },
+      "malformed": {
+        "type": "integer"
+      },
+      "filtered": {
+        "type": "integer"
+      },
+      "duplicates": {
+        "type": "integer"
+      },
+      "input_records": {
+        "type": "integer"
+      },
+      "duration_seconds": {
+        "type": "float"
+      },
+      "records_per_second": {
+        "type": "float"
+      },
+      "dry_run": {
+        "type": "boolean"
+      },
+      "writes": {
+        "type": "object",
+        "enabled": false
+      },
+      "details": {
+        "type": "object",
+        "enabled": false
+      }
+    },
+    "_meta": {
+      "schema_version": 2,
+      "source": "database/mappings"
+    }
+  }
+}

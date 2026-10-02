@@ -1,0 +1,11 @@
+{
+  "size": 1,
+  "query": {
+    "match_all": {}
+  },
+  "sort": [
+    {
+      "computed_at": "desc"
+    }
+  ]
+}
