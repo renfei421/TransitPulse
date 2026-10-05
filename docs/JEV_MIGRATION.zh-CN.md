@@ -140,7 +140,7 @@ HTTP 错误会停止后续调用，也不会回退到 RoBERTa/GPT。网络超时
 
 ## 当前可以执行
 
-从 `Desktop/cloud cluster/COMP90024_group_repo` 运行：
+从项目仓库根目录运行：
 
 ```powershell
 # 无密钥也可运行；本轮已为相同的30条分层样本生成请求文件。

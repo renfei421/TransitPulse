@@ -4,10 +4,10 @@
 
 ## 本次工作位置
 
-- 主工作区：`C:\Users\RENFEI\Desktop\cloud cluster\COMP90024_group_repo`
+- 主工作区：项目仓库根目录（下述路径以仓库根目录为基准）
 - 连接入口：上级目录的 `Connect-Cloud.ps1`
 - kubeconfig：上级目录中的 `k8s-1-34-10-do-5-sgp1-1790830229700-kubeconfig.yaml`
-- 原 `Desktop\CCC New\COMP90024_group_repo` 保留为迁移前备份；后续修改在新工作区进行。
+- 迁移前的工作区保留为本地备份，后续修改在新工作区进行。
 
 Git 历史和原有 artifacts/data 已保留。Windows 阻止部分目录的直接移动，因此采用
 复制、Git 完整性校验和补齐旧副本的方式迁移。新路径的 Python 虚拟环境按 uv.lock
@@ -21,7 +21,7 @@ Git 历史和原有 artifacts/data 已保留。Windows 阻止部分目录的直�
 ~~~
 
 脚本设置当前终端的 KUBECONFIG 和仓库目录，并检查节点；不改写全局默认 kubeconfig。
-后续自动化命令同样显式指定此 kubeconfig，避免误操作原学校集群。
+后续自动化命令同样显式指定此 kubeconfig，避免误操作其他集群。
 凭据文件位于 Git 仓库外；仓库另加 kubeconfig 文件忽略规则。
 
 迁移后已实际执行连接脚本，并在新虚拟环境下通过源码凭据/TLS 检查、32 项声明式

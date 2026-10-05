@@ -119,7 +119,7 @@ def request_gdelt_json_with_limited_backoff(params: Dict[str, Any], timeout: Opt
                 config.GDELT_DOC_API,
                 params=params,
                 timeout=timeout,
-                headers={"User-Agent": "COMP90024 fast direct ES GDELT scraper"},
+                headers={"User-Agent": "TransitPulse fast direct ES GDELT scraper"},
             )
 
             if response.status_code == 429:
@@ -160,7 +160,7 @@ def fetch_article_fast(url: str) -> requests.Response:
         response = requests.get(
             url,
             timeout=ARTICLE_CONNECT_TIMEOUT,
-            headers={"User-Agent": "Mozilla/5.0 COMP90024 research scraper"},
+            headers={"User-Agent": "Mozilla/5.0 TransitPulse research scraper"},
         )
         if response.status_code in {403, 404, 410, 451}:
             raise RuntimeError(f"{response.status_code} permanent article HTTP error")

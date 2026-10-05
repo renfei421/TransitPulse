@@ -15,7 +15,7 @@ hashtag、跨实例去重、45 条 AI 初审，以及 809 条候选原始记录�
 
 对 Bluesky public search 的历史回填请求收到 HTTP 403。程序保留了明确
 错误，没有把拒绝访问算成“检索结果为空”。EIA 需要有效 API key；
-本次没有凭空使用或编造价格数据。未找到可直接导入的 Assignment 1 原始
+本次没有凭空使用或编造价格数据。未找到可直接导入的历史原始
 NDJSON，因此没有声称已导入那批真实数据。
 
 10 万条压测记录、720 条演示帖、60 条演示新闻均为 **synthetic**。
@@ -25,7 +25,7 @@ NDJSON，因此没有声称已导入那批真实数据。
 
 | 路线 | 解决的问题 | 已提供实现 | 实际限制 |
 |---|---|---|---|
-| Assignment 1 / 合法历史导出 | 快速获得更大的真实历史语料 | NDJSON/gzip 流式读取、格式适配、稳定 ID、断点、隔离坏行 | 需要真实文件及使用权限；未知格式先显式转换 |
+| 有使用权限的历史导出 | 快速获得更大的真实历史语料 | NDJSON/gzip 流式读取、格式适配、稳定 ID、断点、隔离坏行 | 需要真实文件及使用权限；未知格式先显式转换 |
 | Bluesky 按日期×查询回填 | 避免单次最新搜索截断历史 | 每页 cursor、请求预算、重复游标检测、窗口截断审计 | 当前公共搜索 403；搜索可见性不等于完整档案 |
 | Jetstream 连续增量 | 持续积累新帖，避免只依赖关键词搜索分页 | v1 微秒 cursor、重放去重、预算、删除事件处理 | 只能获得流及可回放范围；不是 2–5 月历史恢复工具 |
 | GDELT 自适应时间切片 | 突发新闻日超过单窗 250 URL | 满窗拆分、URL 去重、确定性候选排序、截断日志 | API 保留窗口、源站拒绝/失效、全文提取失败仍存在 |
@@ -38,7 +38,7 @@ NDJSON，因此没有声称已导入那批真实数据。
   协议迁移必须另写适配器并重新验证参数、游标和删除语义。
 - [GDELT DOC API 原始说明](https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/amp/)：
   按文档的滚动检索窗口与单次 ArtList 上限设计，不假定当前接口能完整恢复
-  数月前的数据。更老的历史应优先使用原始课程数据或有明确许可的存档。
+  数月前的数据。更老的历史应优先使用已有历史数据或有明确许可的存档。
 - [Mastodon 搜索接口](https://docs.joinmastodon.org/methods/search/)：
   核对具体实例的认证与搜索能力后再安排采集。
 
@@ -46,7 +46,7 @@ NDJSON，因此没有声称已导入那批真实数据。
 
 ~~~powershell
 # 文件格式可以是平台记录、ES _source 导出，或文档约定的标准字段。
-uv run python -m backend.ingestion.import_ndjson data/imported/assignment1.ndjson.gz --source-dataset assignment1_2026 --topics-only --checkpoint data/checkpoints/assignment1.json
+uv run python -m backend.ingestion.import_ndjson data/imported/historical.ndjson.gz --source-dataset historical_2026 --topics-only --checkpoint data/checkpoints/historical.json
 
 # 明确分割时间与请求预算；HTTP 403/401 需要解决访问条件，不能靠无限重试。
 uv run python -m backend.ingestion.backfill --start 2026-09-01 --end 2026-09-07 --query "public transport Australia" --query "petrol prices Australia" --request-budget 30
@@ -62,7 +62,7 @@ uv run python -m backend.ingestion.jetstream --seconds 600 --max-events 100000 -
 ~~~
 
 每条记录还应尽量提供 parent_post_id、thread_root_id、lang 和可追溯的来源。
-未知 Assignment 1 包装结构会明确拒绝，不猜字段。拒绝记录保存行号、
+未知历史导出包装结构会明确拒绝，不猜字段。拒绝记录保存行号、
 错误类型和内容哈希，原始输入文件仍是修复依据。gzip 恢复通过跳过已提交
 行实现，内存有界，但恢复时读取旧前缀仍有 I/O 成本。
 

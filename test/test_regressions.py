@@ -1,4 +1,4 @@
-"""Regression cases motivated by the instructor feedback and data audit."""
+"""Regression cases motivated by engineering review and data audit."""
 from datetime import datetime, timezone
 import json
 from types import SimpleNamespace

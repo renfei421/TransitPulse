@@ -6,7 +6,7 @@ description = 'Reviewed file SHA-256, not a credential'
 condition = 'AND'
 paths = ['''^docs/evidence/checksums\.json$''']
 regexTarget = 'line'
-regexes = ['''^\s*"cloud\-fission\-api\-2026\-10\-01\.json":\ "93fc0e4a66d0dbc47d0fc00d2f0442863b1eba6dda405818744ee92a04021247",\s*$''']
+regexes = ['''^\s*"cloud\-fission\-api\-2026\-10\-01\.json":\ "(?:93fc0e4a66d0dbc47d0fc00d2f0442863b1eba6dda405818744ee92a04021247|148034cad4039d662ae2eb072e14222d24fb5c522ee2ac087b622056f04ef2be)",\s*$''']
 
 [[allowlists]]
 description = 'Reviewed file SHA-256, not a credential'

@@ -25,6 +25,6 @@
   "processing_duration_seconds_excluding_load": 1.281,
   "historical_search_attempt": "Bluesky public search HTTP 403; no successful backfill claimed",
   "eia": "Not executed without a supplied valid API key",
-  "assignment1": "No source NDJSON provided; import tested with isolated fixtures",
+  "historical_import": "No source NDJSON provided; import tested with isolated fixtures",
   "record_privacy": "No real post text or author identities included in this artifact"
 }

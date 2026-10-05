@@ -53,7 +53,7 @@
   "exact_private_credential_scan_files": 272,
   "exact_private_credential_matches": 0,
   "package": {
-    "archive": "C:\\Users\\RENFEI\\Desktop\\cloud cluster\\COMP90024_group_repo\\artifacts\\transport-api-linux.zip",
+    "archive": "artifacts/transport-api-linux.zip",
     "sha256": "16458b50ee7e4a57dd5786289422d7aa9a9497a3f42793951f24b0f46833f0a7",
     "bytes": 3527924,
     "runtime_image": "ghcr.io/fission/python-env@sha256:446f2cd7c2a8c835deb925586d8f761aed288e0eba4437230996573612bab266",

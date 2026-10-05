@@ -5,8 +5,8 @@
 记录了前后 Pod UID、保留的 PVC/PV 及测试记录 ID。单次重建到验收收尾约 127 秒，
 这不是持续测量的服务中断时间或承诺的恢复 SLA。
 
-本阶段在 DigitalOcean 的 SGP1 集群上重建数据库服务。原学校云端的数据尚未恢复或导入。
-工作目录为 `C:\Users\RENFEI\Desktop\cloud cluster\COMP90024_group_repo`。
+本阶段在 DigitalOcean 的 SGP1 集群上重建数据库服务。历史云端数据尚未恢复或导入。
+以下命令从项目仓库根目录运行。
 
 ## 部署配置
 

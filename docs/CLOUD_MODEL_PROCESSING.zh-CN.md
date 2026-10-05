@@ -1,6 +1,6 @@
 # 云端模型处理与 LLM 结构化标注验收
 
-2026-10-01。工作目录为 `Desktop/cloud cluster/COMP90024_group_repo`。
+2026-10-01。以下命令从项目仓库根目录运行。
 后续用户明确要求改用 TypeSafe Jev；[Jev 迁移方案](JEV_MIGRATION.zh-CN.md)记录适配与待上线状态。
 本页保留实际 RoBERTa/GPT 验收结果，不能将 GPT 的性能数字解释为 Jev 性能。
 本轮接通真实采集数据 → 语言与正文筛选 → 云端 RoBERTa → Elasticsearch → Fission API，

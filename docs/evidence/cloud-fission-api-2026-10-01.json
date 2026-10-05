@@ -270,7 +270,7 @@
     }
   ],
   "package": {
-    "archive": "C:\\Users\\RENFEI\\Desktop\\cloud cluster\\COMP90024_group_repo\\artifacts\\transport-api-linux.zip",
+    "archive": "artifacts/transport-api-linux.zip",
     "sha256": "3e02f65818dafc9bb3cb51adaaf430afc7d457d46d5d411db87ad6b603211cf1",
     "bytes": 3494594,
     "runtime_image": "ghcr.io/fission/python-env@sha256:446f2cd7c2a8c835deb925586d8f761aed288e0eba4437230996573612bab266",

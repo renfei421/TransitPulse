@@ -4,6 +4,8 @@ Recorded on 2026-10-01 Australia/Sydney from local runs, a read-only cloud prefl
 and subsequent Elasticsearch and Fission/API cloud acceptance. These compact JSON files
 contain no real post text, secrets or model weights. checksums.json records their
 SHA-256 hashes of the JSON files with repository-standard LF line endings.
+Public evidence uses repository-relative archive paths and generic historical-data
+labels. These editorial changes do not alter measured counts, results or timestamps.
 Full JUnit/coverage, executed notebook and HTML stay in ignored
 artifacts/; commands below regenerate them.
 

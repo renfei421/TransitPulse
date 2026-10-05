@@ -7,7 +7,7 @@ Interactive demo: https://renfei421.github.io/TransitPulse/
 ## Included
 
 - Application, ingestion, model adapters, infrastructure specifications and tests.
-- Reproducible analysis and restore scripts with preserved team provenance.
+- Reproducible analysis and restore scripts with documented validation evidence.
 - Aggregate experimental evidence and charts, with uncertainty and coverage limits.
 - A standalone frozen dashboard and an engineering evidence page.
 

@@ -130,7 +130,7 @@
   "limits": [
     "Single ES node, zero index replicas; not highly available",
     "No node-loss, cross-node reattachment, snapshot restore or load benchmark in this test",
-    "Original university data has not been recovered or imported"
+    "Historical source data has not been recovered or imported"
   ],
   "app_cannot_explicitly_change_mappings": true,
   "app_can_bulk_upsert": true

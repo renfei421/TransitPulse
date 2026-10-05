@@ -39,10 +39,10 @@ Delivery date: 2026-10-01 Australia/Sydney.
 - [ ] Reach the cloud cluster and execute native conflict/admission/deployment checks.
 - [ ] Inspect and retire the reportedly unused old FastAPI workload.
 - [ ] Execute remote GitLab CI and cloud KEDA scale/recovery experiments.
-- [ ] Supply/import authentic Assignment-1 data or other authorized historical exports.
+- [ ] Supply/import authentic, authorized historical exports.
 - [ ] Resolve historical search access and supply valid source API credentials.
 - [ ] Obtain human sentiment gold labels and report held-out domain model quality.
 
 Do not infer cloud success from local tests, rewrite Git history, claim synthetic
 records as harvested data, or infer causality from exploratory correlation.
-See DELIVERY_REPORT.zh-CN.md and INSTRUCTOR_FEEDBACK.md for the final evidence.
+See DELIVERY_REPORT.zh-CN.md and ENGINEERING_REVIEW.md for the final evidence.

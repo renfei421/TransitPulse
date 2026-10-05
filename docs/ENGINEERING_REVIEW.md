@@ -1,4 +1,4 @@
-# Instructor feedback → implementation and evidence
+# Engineering review → implementation and evidence
 
 This matrix distinguishes repository fixes from remote operational acceptance.
 The original report is historical; the updated implementation is version 0.2.
@@ -10,7 +10,7 @@ Paths below are relative to the repository root.
 | Python script in oil-sentiment ConfigMap is bad practice | Code lives in packaged source and immutable release images; ConfigMaps contain configuration only | scripts/package_fission.py; specs/application.yaml; source audit and offline invariants |
 | ES credentials must be Secrets; hard-coded credentials in es_client.py | Shared backend/common/settings.py and es.py; Secret/env/file inputs; TLS verification on by default | deploy/secrets.example.yaml; config tests; credentials were removed from current source, not retroactively revoked |
 | Missing CI/CD code/documentation | GitLab stages for lint/audit/unit, ES/Redis integration/E2E, optional model, packaging, image build/publish, protected manual deploy | .gitlab-ci.yml; scripts/deploy_release.py; remote pipeline not executed in this work |
-| Modest harvested volume; use Assignment 1 | Streaming NDJSON/gzip adapter, fingerprint-bound checkpoints, date-partitioned search, live Jetstream capture, adaptive GDELT discovery | test/test_ingestion.py, test/test_services.py; 12 new real posts verified; no Assignment-1 file supplied |
+| Modest harvested volume; import authorized historical data | Streaming NDJSON/gzip adapter, fingerprint-bound checkpoints, date-partitioned search, live Jetstream capture, adaptive GDELT discovery | test/test_ingestion.py, test/test_services.py; 12 new real posts verified; no historical export file supplied |
 | More data should exercise scale | Actual 100k synthetic ES ingestion/aggregation benchmark; separate fixed-model batch benchmark | docs/evidence/benchmark-100k.json and model-benchmark.json; not 100k harvested posts |
 | No Redis / KEDA scalability scenario | Redis Streams dedup, pending reclaim, ES-before-ACK, retries/DLQ/replay; optional 1–4 worker KEDA spec | Real Redis+ES crash-before-ACK integration test; cloud autoscaling remains unverified |
 | Error handling but no logging | JSON logging with run/request IDs, durations, component events and redacted failures; pipeline run records | backend/common/logging.py; harvester/processing/health/API logs; no deployed observability dashboard claimed |

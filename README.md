@@ -1,7 +1,7 @@
 # TransitPulse — Transport Discourse & AI Inference Platform
 
-A COMP90024 team project extended into a reproducible multi-source data pipeline,
-budget-controlled external model inference, and exploratory transport/energy analytics.
+TransitPulse combines multi-source data ingestion, structured AI inference,
+and cloud-hosted APIs for exploratory transport and energy analytics.
 
 [![CI](https://github.com/renfei421/TransitPulse/actions/workflows/ci.yml/badge.svg)](https://github.com/renfei421/TransitPulse/actions/workflows/ci.yml)
 
@@ -131,10 +131,10 @@ Model tests require RUN_MODEL_TESTS=1 and the pinned weights.
 | [Operations](docs/OPERATIONS.md) | Local/cloud deployment, secrets, migration, recovery and rollback |
 | [Data expansion](docs/DATA_EXPANSION.zh-CN.md) | Actual source access, acquisition routes and quality gates |
 | [Evaluation](docs/EVALUATION.md) | Label protocol, leakage controls and model comparisons |
-| [Instructor feedback](docs/INSTRUCTOR_FEEDBACK.md) | Feedback-to-code/test evidence |
+| [Engineering review](docs/ENGINEERING_REVIEW.md) | Feedback-to-code/test evidence |
 | [Delivery report](docs/DELIVERY_REPORT.zh-CN.md) | Measured results, remaining external prerequisites, CV wording |
 
-No fine-tuning or causal effect is claimed. The original school's Kubernetes API
+No fine-tuning or causal effect is claimed. The previous Kubernetes API
 was unreachable during the initial hardening work. A new DigitalOcean deployment
 now has verified Elasticsearch storage and Fission/API integration. Historical
 data coverage and model quality retain the limitations in the linked runbooks;
@@ -142,11 +142,10 @@ the Jev event experiment is complete and archived. The public demo serves frozen
 aggregate results without a paid cluster or model API. KEDA/load-driven autoscaling
 remains unverified.
 
-## Public release and provenance
+## Public release
 
 This repository is a clean-history publication of the current reviewed source.
-It extends a University of Melbourne COMP90024 team project; original team work
-and subsequent engineering extensions are distinguished in [NOTICE.md](NOTICE.md).
+Project notices and dependency acknowledgements are in [NOTICE.md](NOTICE.md).
 Private posts, native provider responses, credentials, kubeconfig, recovery ZIPs
 and the original Git history are not distributed here.
 

@@ -314,7 +314,7 @@ def verify(cluster, restart=False):
                     "restart_verification_seconds": round(time.monotonic()-restart_started, 2) if restart else None},
         "limits": ["Single ES node, zero index replicas; not highly available",
                    "No node-loss, cross-node reattachment, snapshot restore or load benchmark in this test",
-                   "Original university data has not been recovered or imported"]}
+                   "Historical source data has not been recovered or imported"]}
     path = ROOT/"artifacts/cloud-elasticsearch-verification.json"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(result, indent=2)+"\n", encoding="utf-8", newline="\n")

@@ -9,7 +9,7 @@
 flowchart LR
   A[Bluesky search / Mastodon] --> H[Bounded Fission harvest functions]
   J[Jetstream legacy v1] --> L[Cursor-based capture]
-  F[Assignment-1 / licensed NDJSON] --> I[Resumable importer]
+  F[Licensed historical NDJSON] --> I[Resumable importer]
   G[GDELT attention and article discovery] --> N[Budgeted news collection]
   E[EIA Brent observations] --> B[Daily ingestion]
   H --> R[(Elasticsearch raw indices)]
